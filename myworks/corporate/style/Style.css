@@ -1,0 +1,271 @@
+﻿a
+{
+    cursor:pointer;
+}
+body
+{
+    height:100%;
+    background:url(../images/bg.png) repeat;
+}
+.layout
+{
+    margin:0 auto;
+    background:url(../images/layout.png) no-repeat 50% 0;
+    padding:12px 0 0;
+}
+.central-block
+{
+    width:1002px;
+    margin:0 auto;
+}
+.central-top
+{
+    height:3px;
+    background:url(../images/central-top.png) no-repeat;
+}
+.central-center
+{
+    background:url(../images/central-center.png) repeat-y;
+    padding:30px;
+}
+.top
+{
+    overflow:hidden;
+}
+.top a.logo
+{
+    float:left;
+}
+.top .call
+{
+    padding:15px 0 0;
+    float:right;
+    font:22px Myrial Pro;
+    color:#656565;
+    text-transform:uppercase;
+}
+.top .call span
+{   
+    color:#b1b1b1;
+}
+h1
+{
+    font:35px Myrial Pro;
+    color:#000;  
+    text-align:center;  
+}
+img.slider
+{
+    padding:20px 50px 16px 50px;
+    background:url(../images/slider-bg.png) no-repeat 15px bottom;
+}
+.button-block 
+{
+    overflow:hidden;
+    padding:15px 0 0 0;
+}
+a.button
+{
+    float:left;
+    overflow:hidden;
+    margin-left:280px;
+    text-decoration:none;
+}
+a.button span
+{
+    float:left;
+}
+a.button .button-left
+{
+    background:url(../images/button-left.png) no-repeat;
+    width:45px;
+    height:82px;
+}
+a.button .button-center
+{
+    background:url(../images/button-center.png) repeat-x;
+    text-align:center;
+    height:79px;
+    padding:5px;
+}
+a.button .button-center span
+{
+    display:block;
+    float:none;
+}
+a.button .button-center span.button-main-text
+{
+    font:21px Myrial Pro;
+    color:#37567f;
+}
+a.button .button-center span.button-text
+{
+    font:14px Myrial Pro;
+    color:#19293e;
+}
+a.button .button-right
+{
+    background:url(../images/button-right.png) no-repeat;
+    width:45px;
+    height:82px;
+}
+a.arrow
+{
+    float:right;
+    background:url(../images/arrow.png) no-repeat right 15px;
+    padding:10px 50px 65px 0;
+    text-decoration:none;
+    font:Italic 21px Myrial Pro;
+    color:#5790dc;
+}
+ul.features
+{
+    overflow:hidden;
+}
+ul.features li
+{
+    float:left;
+    overflow:hidden;
+    width:280px;
+    height:130px;
+    padding-right:25px;
+}
+ul.features li a
+{ 
+    float:left;
+}
+ul.features li .text
+{ 
+    float:right;
+    width:200px;
+    font:bold 16px Arial;
+    color:#000;
+    padding:5px 0 0 0;
+}
+ul.features li .text .text-bottom
+{ 
+    font:12px Arial;
+    color:#808080;
+    text-align:justify;
+}
+.testimonials
+{
+    overflow:hidden;
+    padding:20px 0 ;
+}
+.testimonials h2
+{
+    font:Italic 22px Arial;
+    color:#5790dc;
+    padding:0 0 5px 0;
+}
+.testimonials p.sign
+{
+    background:url(../images/sign.png) no-repeat;
+    text-align:center;
+    padding:27px 35px 47px;
+    float:none;
+}
+.testimonials p
+{
+    font:Italic 12px Arial;
+    color:#808080;
+    float:right;
+    padding:3px 35px 0 0;
+}
+.button-block-2
+{
+    overflow:hidden;
+    padding:0 0 0 0;
+    margin:-20px 0 0 0;
+}
+a.button2
+{
+    float:left;
+    overflow:hidden;
+    margin:10px 0 0 34px;
+    text-decoration:none;
+}
+a.arrow2
+{
+    float:left;
+    background:url(../images/arrow2.png) no-repeat;
+    padding:40px 0 15px 110px;
+    text-decoration:none;
+    font:Italic 21px Myrial Pro;
+    color:#5790dc;
+}
+.footer-bg
+{
+    background:url(../images/footer.png) no-repeat;
+    height:169px;
+    width:1003px;
+    margin:0 auto 40px auto;
+    padding:30px 0 0;
+}
+ul.footer
+{
+    overflow:hidden;
+}
+ul.footer li
+{
+    float:left;
+    width:210px;
+    padding-left:30px;
+}
+ul.footer li p.main
+{
+    font:18px Arial;
+    color:#000;
+    padding:0 0 10px 0;
+}
+ul.footer li p
+{  
+    font:12px Arial;
+    color:#000;
+}
+ul.footer li .map
+{
+    padding:20px 0 0;
+    position:relative;
+}
+ul.footer li .map a.rise
+{
+    display:block;
+    position:absolute;    
+    right:12px;    
+    bottom:3px;
+    background:url(../images/rise.png) no-repeat;
+    width:24px;
+    height:26px;
+}
+ul.social
+{
+    overflow:hidden;
+}
+ul.social li
+{
+    float:left;
+    width:24px;
+    height:24px;
+    padding:0 5px 0 0;
+}
+ul.social li a
+{
+    display:block;
+}
+.footer-content
+{
+    overflow:hidden;
+    color:#1d1d1d;
+    font:12px Arial;
+    padding:53px 10px 0;
+}
+.footer-content .footer-content-left
+{
+    float:left;
+}
+.footer-content .footer-content-right
+{
+    float:right;
+}

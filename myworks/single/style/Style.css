@@ -1,0 +1,583 @@
+﻿h2
+{
+    color:#634949;
+    font:bold 60px Gill Sans MT;
+}
+h3
+{
+    color:#634949;
+    font:bold 38px Gill Sans MT;
+    padding:0 0 20px 0;
+}
+a
+{
+    cursor:pointer;
+}
+html
+{
+    height:100%;
+    background:url(../images/bg.png) repeat;
+}
+body
+{
+    min-height:100%;
+}
+body.body-secondary
+{
+    background:url(../images/bg-li.png) repeat-x 50px 250px;
+}
+.logo
+{
+    margin:7px auto 50px;
+    width:250px;
+}
+.logo a
+{
+    padding:70px 0 0 0;
+    display:block;
+    font:bold 15px Gill Sans MT;
+    color:#9e9e9e;
+    text-transform:uppercase;
+    text-align:center;
+    text-decoration:none;
+    background:url(../images/logo-bg.png) no-repeat center 0;
+}
+.li-main
+{
+    background:url(../images/bg-li.png) repeat-x 0 120px;
+}
+.layout
+{
+    margin:-30px auto 0;
+    width:980px;
+}
+ul.menu
+{
+    overflow:hidden;
+    padding:0 0 25px 0;
+}
+ul.menu li
+{
+    float:left;
+    padding:0 30px 0 0;
+}
+ul.menu li.last
+{
+    float:left;
+    padding:0;
+}
+ul.menu li a
+{
+    text-decoration:none;
+    display:block;
+    overflow:hidden;
+    font-family:helvetica;
+    font-size:25px;
+    color:#5c4444;
+    text-transform:uppercase;
+}
+ul.menu li a span
+{
+    float:left;
+    height:39px;
+}
+ul.menu li a span.menu-left
+{
+    width:43px;
+}
+ul.menu li a span.menu-center
+{
+    height:27px;
+    padding:12px 0 0 0;
+}
+ul.menu li a span.menu-right
+{
+    width:44px;
+}
+ul.menu li a.active span.menu-left,
+ul.menu li a:hover span.menu-left
+{
+    width:43px;
+    background:url(../images/menu-left.png) no-repeat;
+}
+ul.menu li a.active span.menu-center,
+ul.menu li a:hover span.menu-center
+{
+    height:27px;
+    padding:12px 0 0 0;
+    background:url(../images/menu-center.png) repeat-x;
+}
+ul.menu li a.active span.menu-right,
+ul.menu li a:hover span.menu-right
+{
+    width:44px;
+    background:url(../images/menu-right.png) no-repeat;
+}
+.bottom-menu
+{
+    width:964px;
+}
+.bottom-menu .bg-top
+{
+    background:url(../images/bg-top.png) no-repeat;    
+    height:16px;
+}
+.bottom-menu .bg-center
+{
+    background:url(../images/bg-center.png) repeat-y;
+    padding:20px 55px 0;
+    position:relative;
+}
+.bottom-menu .bg-bottom
+{
+    background:url(../images/bg-bottom.png) no-repeat;
+    height:97px;
+}
+.home
+{
+    overflow:hidden;
+    padding:20px 0 0 0;
+}
+.home .home-left
+{
+    background:url(../images/home-left.png) no-repeat;
+    width:6px;
+    float:left;
+    height:361px;
+}
+.home .home-center
+{
+    background:url(../images/home-center.png) repeat-x;
+    width:830px;
+    float:left;
+    text-align:center;
+}
+.home .home-right
+{
+    background:url(../images/home-right.png) no-repeat;
+    width:9px;
+    float:left;
+    height:361px;
+}
+.home .home-center p.big-text
+{
+    font-size:150px;
+    font-family:helvetica;
+    color:#eaeaea;
+    text-transform:uppercase;
+    padding:35px 0 0 0;
+}
+.home .home-center p.normal-text
+{
+    font-size:40px;
+    font-family:Gill Sans MT;
+    color:#dfdfdf;
+    padding:0 15px;
+}
+.home .home-center a.home-button
+{
+    font-size:20px;
+    font-family:Helvetica;
+    color:#fff;
+    overflow:hidden;
+    display:inline-block;
+    margin:20px auto 80px;
+    text-decoration:none;
+}
+.home .home-center a.home-button span
+{
+    float:left;
+    height:43px;
+}
+.home .home-center a.home-button span.left
+{
+    background:url(../images/home-button-left.png) no-repeat;
+    width:20px;
+}
+.home .home-center a.home-button span.center
+{
+    background:url(../images/home-button-center.png) repeat-x;
+    padding:12px 5px 0;
+    height:31px;
+}
+.home .home-center a.home-button span.right
+{
+    background:url(../images/home-button-right.png) no-repeat;
+    width:40px;
+}
+.home .home-center span.text
+{
+    color:#1b1b21;
+    font:15px Lucida Sans;
+}
+.home .home-center span.text span.color-text
+{
+    color:#838282;
+} 
+.wrapper-button
+{
+    text-align:center;
+}
+a.button
+{
+    font-size:15px;
+    font-family:Helvetica;
+    color:#b0b0b0;
+    overflow:hidden;
+    text-transform:uppercase;  
+    height:36px;
+    text-decoration:none;
+    display:inline-block;
+    margin:20px 0 0;
+} 
+a.button span
+{ 
+    float:left;
+    height:36px;
+} 
+a.button span.button-left
+{ 
+    background:url(../images/button-left.png) no-repeat;
+    width:16px;  
+} 
+a.button span.button-center
+{ 
+    background:url(../images/button-center.png) repeat-x;
+    padding:10px 0 0 0;
+    height:26px;
+} 
+a.button span.button-right
+{ 
+    background:url(../images/button-right.png) no-repeat;
+    width:16px;  
+} 
+.portfolio
+{
+    margin:-20px 0 0 0;
+    padding:20px 0 0 0;
+}
+.portfolio ul.portfolio-menu
+{
+    overflow:hidden;
+    padding:0 0 20px 0;
+}
+.portfolio ul.portfolio-menu li
+{
+    float:left;
+    padding-right:20px;
+}
+.portfolio ul.portfolio-menu li a
+{
+    text-transform:capitalize;
+    text-decoration:none;
+    font:13px Lucida Sans;
+    color:#634949;
+}
+.portfolio ul.portfolio-menu li.active a,
+.portfolio ul.portfolio-menu li a:hover
+{
+    text-decoration:underline;
+}
+.portfolio ul.images
+{
+    overflow:hidden;
+}
+.portfolio ul.images li
+{
+    float:left;
+    height:260px;
+    width:255px;
+    padding:0 33px 25px 0;
+    overflow:hidden;
+}
+.portfolio ul.images li.last
+{
+    padding-right:0;
+}
+.portfolio ul.images li a
+{
+    display:block;
+    padding:0 0 13px 0;
+}
+.portfolio ul.images li a img
+{
+}
+.portfolio ul.images li h4
+{
+    color:#000;
+    font-size:15px;
+    font-family:helvetica;
+    line-height:15px;
+}
+.portfolio ul.images li p
+{
+    font:12px Myrial Pro;
+    color:#686767;
+    line-height:12px;
+    padding:0 0 15px 0;
+}
+.portfolio ul.images li a.link
+{
+    font:12px Lucida Sans;
+    color:#686767;
+    line-height:12px;
+    float:left;
+}
+.what-i-do
+{
+    margin:-20px 0 0 0;
+    padding:20px 0 0 0;
+}
+.what-i-do .text-block
+{
+    overflow:hidden;
+    padding:0 0 20px 0;
+}
+.what-i-do .text-block .word
+{
+    height:66px;
+    width:260px;
+    float:left;
+    font:50px Gill Sans MT;
+    color:#b3b3b3;
+    background:url(../images/bg-word.png) no-repeat right;
+}
+.what-i-do .text-block .words
+{
+    width:505px;
+    text-align:center;
+    float:right;
+    font:Italic 15px Georgia;
+    color:#a5a5a5;
+    padding-right:40px;
+}
+.what-i-do ul
+{
+    overflow:hidden;
+}
+.what-i-do ul li
+{
+    float:left;
+    width:220px;
+    padding-right:80px;
+}
+.what-i-do ul li.last
+{
+    padding-right:0;
+}
+.what-i-do ul li p
+{
+    font-size:25px;
+    font-family:helvetica;
+    color:#000;
+    text-transform:capitalize;
+    padding:0 0 5px 0;
+}
+.what-i-do ul li span
+{
+    font:12px Lucida Sans;
+    color:#686767;
+    line-height:20px;
+}
+.contact
+{
+    margin:-20px 0 0 0;
+    padding:20px 0 0 0;
+    overflow:hidden;
+}
+a.superstructure
+{
+    display:inline-block;
+    position:absolute;
+    top:100px;
+    right:-12px;
+    width:358px;
+    height:96px;
+    background:url(../images/contact.png) no-repeat;
+    color:#ddd;
+    font:bold 35px Gill Sans MT;
+}
+.superstructure p
+{
+    padding:15px 0 0 30px; 
+}
+.contact .left-contact
+{
+    float:left;
+}
+.contact .left-contact ul
+{
+    padding:0 0 15px 0;
+}
+.contact .left-contact ul li
+{
+    overflow:hidden;
+    padding:0 0 10px 0;
+}
+.contact .left-contact ul li .field-left
+{
+    float:left;
+    height:34px;
+    width:20px;
+    background:url(../images/field-left.png) no-repeat;
+}
+.contact .left-contact ul li .field-center
+{
+    float:left;
+    height:27px;
+    background:url(../images/field-center.png) repeat-x;
+    padding:7px 0 0 0;
+    width:378px;
+}
+.contact .left-contact ul li .field-right
+{
+    float:left;
+    height:34px;
+    width:22px;
+    background:url(../images/field-right.png) no-repeat;
+}
+.contact .left-contact ul li.last .field-left
+{
+    float:left;
+    height:181px;
+    width:20px;
+    background:url(../images/field-left-last.png) no-repeat;
+}
+.contact .left-contact ul li.last .field-center
+{
+    float:left;
+    height:174px;
+    background:url(../images/field-center-last.png) repeat-x;
+    padding:7px 0 0 0;
+    width:378px;
+}
+.contact .left-contact ul li.last .field-right
+{
+    float:left;
+    height:181px;
+    width:22px;
+    background:url(../images/field-right-last.png) no-repeat;
+}
+.contact .left-contact ul li .field-center input
+{
+    border:0;
+    background:#dfdfdf;
+    font:12px Gill Sans MT;
+    color:#676767;
+}
+.contact .left-contact a.contact-button
+{
+    font-size:20px;
+    font-family:Helvetica;
+    color:#fff;
+    overflow:hidden;
+    display:block;
+    text-decoration:none;
+    margin:0 0 0 70px;
+    float:left;
+}
+.contact .left-contact a.contact-button span
+{
+    float:left;
+    height:43px;
+}
+.contact .left-contact a.contact-button span.left
+{
+    background:url(../images/home-button-left.png) no-repeat;
+    width:20px;
+}
+.contact .left-contact a.contact-button span.center
+{
+    background:url(../images/home-button-center.png) repeat-x;
+    padding:11px 7px 0;
+    height:32px;
+}
+.contact .left-contact a.contact-button span.right
+{
+    background:url(../images/home-button-right.png) no-repeat;
+    width:40px;
+}   
+.contact .right-contact
+{
+    float:right;
+    width:380px;
+}
+.contact .right-contact p
+{
+    font:12px Lucida Sans;
+    color:#686767;
+    padding:200px 0 15px 100px;
+}
+.contact .right-contact .social
+{
+    overflow:hidden;
+    padding:0 0 50px 100px;
+}
+.contact .right-contact .social a
+{
+    float:left;
+    margin:0 15px 0 0;
+}
+.contact .right-contact .social a img
+{
+    background:url(../images/social.png) no-repeat;
+    padding:5px;
+}
+.contact .right-contact .sleeko
+{
+    padding:50px 0 0 0;
+    background:url(../images/sleeko.png) no-repeat right 0;
+}
+.contact .right-contact .sleeko p
+{
+    padding:0 0 15px 0;
+    text-align:right;
+}
+.to-cat
+{
+    margin:0 auto;
+    width:980px; 
+}
+.to-cat a
+{   
+    padding:0 0 100px 150px;
+    text-transform:uppercase;
+    color:Green;
+    font-size:40px;
+    font-family: Calibri;
+    text-decoration:none;
+}
+a.button-button
+{
+    display:block;
+    font-size:15px;
+    font-family:Helvetica;
+    font-weight:bold;
+    color:Green;
+    overflow:hidden;
+    text-transform:uppercase;  
+    height:36px;
+    text-decoration:none;
+    margin:-40px 0 40px 400px;
+} 
+a.button-button span
+{ 
+    float:left;
+    height:36px;
+} 
+a.button-button span.button-left
+{ 
+    background:url(../images/button-left.png) no-repeat;
+    width:16px;  
+} 
+a.button-button span.button-center
+{ 
+    background:url(../images/button-center.png) repeat-x;
+    padding:12px 12px 0 10px;
+    height:24px;
+} 
+a.button-button span.button-right
+{ 
+    background:url(../images/button-right.png) no-repeat;
+    width:16px;  
+} 

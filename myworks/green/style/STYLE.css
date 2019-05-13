@@ -1,0 +1,547 @@
+﻿body
+{
+    height:100%;
+    margin:0;
+    background:#fdfdfd;
+}
+.main
+{
+    width:543px;
+    min-height:100%;
+    margin:0 auto;
+    padding:10px 0 0 0;
+    overflow:hidden;
+}
+.main .top
+{
+    background:url(../images/logo-top.png) no-repeat #fdfdfd left;
+    height:260px;
+}
+.main .menu
+{
+    height:19px;
+    font:bold 11px tahoma;
+    padding:0 0 4px 0;
+    margin:-10px 0 0 0;
+}
+.main .menu ul.menu-menu
+{
+    border-bottom:2px solid #74ab24;
+    list-style-type:none;   
+    display:block;
+    margin:0;
+    padding:0 0 0 250px;
+    overflow:hidden;
+}
+.main .menu ul.menu-menu li
+{
+    float:left;
+    padding-right:4px;
+    min-width:67px;
+    
+}
+.main .menu ul.menu-menu li a
+{
+    display:block;
+    color:#fff;
+    text-decoration:none;
+    overflow:hidden;
+    height:19px;
+}
+.main .menu ul.menu-menu li a span
+{
+    float:left;
+    height:19px;
+}
+.main .menu ul.menu-menu li a span.left-menu
+{
+    background:url(../images/left-menu.png) no-repeat;
+    width:5px;
+}
+.main .menu ul.menu-menu li a span.center-menu
+{
+    height:16px;
+    background:url(../images/center-menu.png) repeat-x;
+    padding:3px 4px 0;
+}
+.main .menu ul.menu-menu li a span.right-menu
+{
+    background:url(../images/right-menu.png) no-repeat;
+    width:5px;
+}
+.main .border-top-line
+{
+    background:url(../images/bg-top-line.png) repeat-x; 
+    height:14px;
+}
+/*111111111111111*/
+.main .center
+{
+    padding:14px 0 9px 0;
+    overflow:hidden;
+    font:10px Tahoma;
+}
+.main .center .who-we
+{
+    width:189px;
+    float:left;
+    margin:-15px 0 0 0;
+    padding:0 0 0 15px;
+}
+.main .center h2
+{
+    margin:0;
+    padding:0;
+}
+.main .center h2 a
+{
+    margin:0;
+    padding:0 0 11px 0;
+    font: 30px Myriad Pro;
+    color:#ffba00;
+    text-decoration:none;
+}
+.main .center .who-we .images
+{
+    background:url(../images/center-border-images.png) no-repeat;
+    height:64px;
+    width:160px; 
+    padding:0 0 21px 0;   
+}
+.main .center .images img
+{
+    padding:5px 0 0 5px;
+}
+.main .center h5 
+{
+    margin:0;
+    padding:0;
+    font:bold;
+    color:#72aa21;
+    padding:0 0 11px 0;
+    line-height:11px;
+}
+.main .center .who-we span
+{
+    margin:0;
+    color:#888;
+    padding:0 0 8px 0;
+    line-height:11px;
+}
+.main .center .who-we span .color-content
+{
+    margin:0;
+    padding:0;
+    color:#72aa21;
+}
+.main .center h3
+{
+    margin:0;
+    padding:4px 0 0 0;
+}
+.main .center h3 a
+{
+    margin:0;
+    padding:0;
+    color:#ffba00;
+    font:18px Myrial Pro;
+    text-decoration:none;
+}
+.main .center .vertical-line
+{
+    width:1px;
+    background:#dcdcdc;
+    height:195px;
+    float:left;
+}
+.main .center .what-do
+{
+    width:323px;
+    float:left;
+    margin:-15px 0 0 0;
+    padding:0 0 0 15px;
+}
+.main .center .what-do .images-content
+{
+    overflow:hidden;
+    padding:0 0 18px 0;
+}
+.main .center .what-do .images
+{
+    background:url(../images/center-border-right-images.png) no-repeat;
+    height:64px;
+    width:113px; 
+    padding:0 14px 0 0; 
+    margin:0; 
+    float:left; 
+}
+.main .center .what-do span
+{
+    margin:0;
+    padding:0;
+    color:#888;
+    padding:0 0 8px 0;
+    line-height:11px;
+}
+.main .center .what-do span .color-content
+{
+    margin:0;
+    padding:0;
+    color:#ffba00;
+}
+.main .center .what-do .list
+{
+    padding-bottom:4px;
+}
+.main .center .what-do .list ul
+{
+    text-decoration:none;
+    list-style:none;
+    margin:0;
+    padding:0;
+} 
+.main .center .what-do .list ul li
+{
+    margin:0;
+    padding:2px 0 0 0;
+    height:16px;
+}
+.main .center .what-do .list ul li span
+{
+    margin:0;
+    padding:0;
+    height:16px;
+    width:289px;
+    padding-top:1px;
+    color:#72aa21;
+    font:bold 10px Tahoma;
+}
+.main .center .what-do .list ul li span.left-list
+{
+    background:url(../images/left-list.png) no-repeat;
+    height:16px;
+    width:17px;
+    float:left;
+}
+.main .center .what-do .list ul li span.center-list
+{
+    background:url(../images/center-list.png) repeat-x;
+    height:16px;
+    float:left;
+    padding-left:5px;
+}
+.main .center .what-do .list ul li span.right-list
+{
+    background:url(../images/right-list.png) no-repeat;
+    height:16px;
+    width:5px;
+    float:left;
+}
+.main .border-bottom-line
+{
+    background:url(../images/bg-bottom-line.png) repeat-x; 
+    height:8px;
+    padding:0 0 9px 0;
+}
+.main .info
+{
+    float:right;
+    font:10px Tahoma;
+    color:#7f7f7f;
+}
+/*22222222222222222*/
+.main .center2
+{
+    padding:14px 0 9px 0;
+    overflow:hidden;
+}
+.main .center2 .project
+{
+    width:142px;
+    float:left;
+    margin:-15px 0 0 0;
+    padding:0 0 0 15px;
+}
+.main .center2 h2
+{
+    padding:0 0 8px 0;
+    margin:0;
+}
+.main .center2 h2 a
+{
+    font: 30px Myriad Pro;
+    color:#ffba00;
+    text-decoration:none;
+}
+.main .center2 .vertical-line
+{
+    width:1px;
+    background:#dcdcdc;
+    height:195px;
+    float:left;
+}
+.main .center2 .project ul.list
+{
+    padding:0 0 15px 0;
+    text-decoration:none;
+    list-style:none;
+    margin:0;
+} 
+.main .center2 .project ul.list li
+{
+    padding:2px 0 0 0;
+    height:16px;
+}
+.main .center2 .project ul.list li a
+{
+    text-decoration:none;
+}
+.main .center2 .project ul.list li span
+{   
+    height:16px;
+    width:96px;
+    padding-top:1px;
+    color:#72aa21;
+    font:bold 10px Tahoma;
+}
+.main .center2 .project ul.list li span.left-list
+{
+    background:url(../images/left-list.png) no-repeat;
+    height:16px;
+    width:17px;
+    float:left;
+}
+.main .center2 .project ul.list li span.center-list
+{
+    background:url(../images/center-list.png) repeat-x;
+    height:16px;
+    float:left;
+    padding-left:5px;
+}
+.main .center2 .project ul.list li span.right-list
+{
+    background:url(../images/right-list.png) no-repeat;
+    height:16px;
+    width:5px;
+    float:left;
+}
+.main .center2 a.next
+{    
+    display:block;
+    text-decoration:none;
+    color:#ffba00;
+    font:18px Myrial Pro;
+}
+.main .center2 .project-name
+{
+    width:361px;
+    float:left;
+    padding:23px 0 0 24px;
+    overflow:hidden;
+}
+.main .center2 .project-name .images
+{
+    background:url(../images/center-border-right-images.png) no-repeat;
+    height:144px;
+    padding:4px 20px 0 4px; 
+    margin-right:12px; 
+    float:left; 
+}
+.main .center2 .project-name .content
+{
+    float:left;
+    font:10px Tahoma;
+    width:130px;
+}
+.main .center2 .project-name .content h5
+{
+    font:bold;
+    color:#72aa21;
+    margin:0;
+}
+.main .center2 .project-name .content span
+{
+    color:#888;
+}
+
+/*33333333333333333*/
+.main .center3
+{
+    padding:14px 0 9px 0;
+    overflow:hidden;
+    width:551px;
+}
+.main .center3 .our-address
+{
+    width:180px;
+    float:left;
+    margin:-15px 0 0 0;
+    padding:0 0 0 15px;
+}
+.main .center3 h2 a
+{
+    padding:0 0 11px 0;
+    font: 30px Myriad Pro;
+    color:#ffba00;
+    text-decoration:none;
+}
+.main .center3 .our-address .images
+{
+    background:url(../images/center-border-images.png) no-repeat;
+    height:64px;
+    width:160px; 
+    padding:0 0 21px 0;   
+}
+.main .center3 .images img
+{
+    padding:5px 0 0 5px;
+}
+.main .center3 h5 
+{
+    font:bold 10px Tahoma;
+    color:#72aa21;
+    padding:0 0 11px 0;
+    line-height:11px;
+    margin:0;
+}
+.main .center3 .our-address span
+{
+    font:10px Tahoma;
+    color:#888;
+    padding:0 0 8px 0;
+}
+.main .center3 .vertical-line
+{
+    width:1px;
+    background:#dcdcdc;
+    height:195px;
+    float:left;
+}
+.main .center3 .contact
+{
+    width:330px;
+    float:left;
+    margin:-15px -4px 0 0;
+    padding:0 0 0 20px;
+}
+.main .center3 .contact .forms
+{
+    width: 330px;
+    overflow:hidden;
+    margin-bottom:2px;
+}
+.main .center3 .contact .forms ul.contact-form
+{
+    float:left;
+    width: 137px;
+    margin:0 17px 0 0;
+    padding:5px 0 0 0;
+    list-style:none;
+}
+.main .center3 .contact .forms ul.contact-form li .bg-contact-form
+{
+    width: 137px;
+    height:16px;
+}
+.main .center3 .contact .forms ul.contact-form li .bg-contact-form span
+{
+    display:block;
+    height:16px;
+    overflow:hidden;
+}
+.main .center3 .contact .forms ul.contact-form li .bg-contact-form span.bg-contact-form-left
+{
+    width:5px;
+    background:url(../images/bg-contact-form-left.png) no-repeat;
+    float:left;
+}
+.main .center3 .contact .forms ul.contact-form li .bg-contact-form span.bg-contact-form-center
+{
+    width:127px;
+    background:url(../images/bg-contact-form-center.png) repeat-x;
+    float:left;
+}
+.main .center3 .contact .forms ul.contact-form li .bg-contact-form span.bg-contact-form-center input
+{
+    color: #000;
+    background-color: #ebebeb;
+    font-size:10px;
+    border:0;
+    display:block;
+    margin:1px 0 0 0;
+}
+.main .center3 .contact .forms ul.contact-form li .bg-contact-form span.bg-contact-form-right
+{
+    width:5px;
+    background:url(../images/bg-contact-form-right.png) no-repeat;
+    float:left;
+}
+.main .center3 .contact .forms ul.contact-form li h5 
+{
+    font:bold 10px Tahoma;
+    color:#72aa21;
+    padding:0 0 3px 0;
+    line-height:11px;
+    margin:0;
+}
+.main .center3 .contact .forms ul.contact-form ul li
+{
+    padding:0 0 8px 0;
+}
+.main .center3 .contact .forms .message
+{
+    width: 172px;
+    float:left;
+}
+.main .center3 .contact .forms .message h5 
+{
+    font:bold 10px Tahoma;
+    color:#72aa21;
+    padding:0 0 5px 0;
+    line-height:11px;
+}
+.main .center3 .contact .forms .message .text-area
+{
+    width:172px;
+}
+.main .center3 .contact .forms .message .text-area span
+{
+    width:172px;
+    display:block;
+}
+.main .center3 .contact .forms .message .text-area span.bg-top-textarea
+{
+    height:5px;
+    background:url(../images/bg-top-textarea.png) no-repeat;
+}
+.main .center3 .contact .forms .message .text-area span.bg-center-textarea
+{
+    background:url(../images/bg-center-textarea.png) repeat-y;
+    padding: 0 5px;
+}
+.main .center3 .contact .forms .message .text-area span.bg-bottom-textarea
+{
+    height:5px;
+    background:url(../images/bg-bottom-textarea.png) no-repeat;
+}
+.main .center3 .contact .forms .message .text-area span.bg-center-textarea textarea
+{
+    width:162px;
+    height:127px;
+    color: #000;
+    background-color: #ebebeb;
+    font-size:10px;
+    border:0;
+}
+.main .center3 h3
+{    
+    overflow:hidden;
+}
+.main .center3 h3 a
+{    
+    text-decoration:none;
+    color:#ffba00;
+    font:18px Myrial Pro;
+    float:right;
+    padding-right:15px;
+}

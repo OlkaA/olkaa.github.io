@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Animated Nav Toggle</title>
+    <link rel="stylesheet" type="text/css" href="resetCSS.css" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js.js"></script>
+</head>
+<body>
+    <article>Something Cool</article>
+    <div class="wrapper">
+        <nav>
+            <a href="#">Demo</a>
+            <a href="#">Faces</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+        <header>
+            <h1>Click 'sandwich menu'</h1>
+            <a class="menu-button" onclick="$(document.body).toggleClass('menu-open')">
+                <span></span>
+            </a>
+        </header>
+        <main>
+            <h2>ABOUT</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum labore cumque, laborum,
+                dolorem dolor doloribus iste qui omnis? Consequuntur sapiente mollitia iure quas. Rem
+                nobis tenetur, est accusamus iste dolor, necessitatibus, facilis error ratione aliquid
+                sequi voluptates dignissimos. Quidem, quam, rem? Molestias odio, perferendis dolores
+                doloremque eum quo mollitia atque, sit inventore nisi accusamus magnam vitae temporibus
+                maxime et in aliquam qui aliquid obcaecati alias unde repellat laudantium quam blanditiis.
+                Blanditiis, earum itaque veritatis et numquam culpa, tempore magnam. Quas laborum voluptate
+                id vero. Voluptatibus!
+            </p>
+        </main>
+        <!--<div class="container">-->
+            <div class="card">
+                <img src="images/tree.jpg" alt="design" />
+                <span class="text">GREEN TREE</span>
+            </div>
+        <!--</div>-->
+    </div>
+</body>
+</html>

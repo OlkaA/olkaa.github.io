@@ -1,0 +1,256 @@
+﻿html
+{
+    min-height:100%;
+}
+body
+{
+    min-height:100%;
+    background:url(../images/body.png) repeat;
+}
+a
+{
+    cursor:pointer;
+}
+.header
+{
+    background:url(../images/header.png) repeat-x;
+    height:124px;
+    margin:0 0 20px 0;
+    min-width:800px;
+}
+.header .header-main
+{
+    margin:0 auto;
+    width:800px;
+    overflow:hidden;
+}
+.header .header-main a.logo
+{
+    float:left;
+    display:block;
+    padding:25px 0 0 0;
+}
+.header .header-main ul.menu
+{
+    float:right;
+    padding:40px 0 0 0;
+    overflow:hidden;
+}
+.header .header-main ul.menu li
+{
+    float:left;
+}
+.header .header-main ul.menu li a
+{
+    display:block;
+    text-decoration:none;
+    overflow:hidden;
+    text-transform:uppercase;
+    font:24px Arial;
+    color:#949494;
+    letter-spacing:-1px;
+}
+.header .header-main ul.menu li.active a,
+.header .header-main ul.menu li a:hover
+{
+    color:#d2d2d2;
+}
+.header .header-main ul.menu li a span
+{
+    display:block;
+    height:39px;
+    float:left;
+}
+.header .header-main ul.menu li a span.menu-left
+{
+    width:5px;
+}
+.header .header-main ul.menu li a span.menu-center
+{
+    padding:5px 5px 0;
+    height:34px;
+}
+.header .header-main ul.menu li a span.menu-right
+{
+    width:5px;
+}
+.header .header-main ul.menu li a span.menu-left-active,
+.header .header-main ul.menu li a:hover span.menu-left
+{
+    background:url(../images/menu-left-active.png) no-repeat;
+    width:5px;
+}
+.header .header-main ul.menu li a span.menu-center-active,
+.header .header-main ul.menu li a:hover span.menu-center
+{
+    background:url(../images/menu-center-active.png) repeat-x;
+    padding:5px 5px 0;
+    height:34px;
+}
+.header .header-main ul.menu li a span.menu-right-active,
+.header .header-main ul.menu li a:hover span.menu-right
+{
+    background:url(../images/menu-right-active.png) no-repeat;
+    width:5px;
+}
+.main
+{
+    margin:0 auto;
+    width:770px;
+    background:url(../images/main.png) no-repeat;
+    padding:10px 0 115px 30px;
+}
+.main h2
+{
+    font:bold 49px Calibri;
+    color:#1f1f1f;
+    text-transform:uppercase;
+    letter-spacing:-3px;
+}
+.main .main-bg
+{
+    background:url(../images/portfolio.png) no-repeat 530px 90px;
+}
+.main .content
+{
+    overflow:hidden;
+    padding:10px 20px 0 0;
+}
+.main .content .work
+{
+    float:left;
+    width:236px;
+    position:relative;
+    padding:0 0 20px 0;
+}
+.main .content a.more
+{
+    display:block;   
+    overflow:hidden;
+    text-decoration:none;
+    color:#fff;
+    font:12px Arial;
+    text-transform:uppercase;
+    position:absolute;
+    bottom:5px;
+    right:-25px;
+}
+.main .content a.more span
+{
+    display:block;   
+    height:32px;
+    float:left
+}
+.main .content a.more span.more-left
+{ 
+    background:url(../images/more-left.png) no-repeat;
+    width:12px;
+}
+.main .content a.more span.more-center
+{ 
+    background:url(../images/more-center.png) repeat-x;
+    padding:7px 0 0 0;
+    height:25px;
+}
+.main .content a.more span.more-right
+{ 
+    background:url(../images/more-right.png) no-repeat;
+    width:12px;
+}
+.main .content .portfolio
+{
+    float:right;
+    width:480px;
+    font:bold 16px Arial;
+    color:#1f1f1f;
+}
+.main .content .portfolio p
+{
+    padding:5px 0 0 0;
+    font:12px Arial;
+    color:#d2d2d2;
+    width:250px;
+    line-height:20px;
+}
+.main ul.center-menu
+{
+    padding:20px 0 0 0;
+    overflow:hidden;
+}
+.main ul.center-menu li
+{
+    float:left;
+    padding-right:20px;
+    width:230px;
+}
+.main ul.center-menu li h3
+{
+   font:bold 24px Arial;
+   color:#1f1f1f;
+   padding:0 0 10px 0;
+   text-transform:uppercase;
+}
+.main ul.center-menu li p
+{
+   font:12px 'Arial';
+   color:#1f1f1f;
+   line-height:16px;
+}
+.footer
+{
+    background:url(../images/footer.png);
+    height:71px;
+    min-width:800px;
+    margin:0 0 0 0;
+}
+.footer .footer-main
+{
+    margin:0 auto;
+    width:800px;
+    overflow:hidden;
+}
+.footer .footer-main .footer-left
+{
+    float:left;
+    font:12px Arial;
+    color:#949494;
+    padding:30px 0 0 0;
+}
+.footer .footer-main .footer-right
+{
+    float:right;
+    font:12px Arial;
+    color:#949494;
+    padding:23px 120px 15px 0;
+    background:url(../images/twitter.png) no-repeat 130px 10px;
+}
+a.follow
+{
+    display:block;   
+    overflow:hidden;
+    text-decoration:none;
+    color:#d4d7dc;
+    font:12px Arial;
+}
+a.follow span
+{
+    display:block;   
+    height:27px;
+    float:left
+}
+a.follow span.follow-left
+{ 
+    background:url(../images/follow-left.png) no-repeat;
+    width:10px;
+}
+a.follow span.follow-center
+{ 
+    background:url(../images/follow-center.png) repeat-x;
+    padding:7px 0 0 0;
+    height:20px;
+}
+a.follow span.follow-right
+{ 
+    background:url(../images/follow-right.png) no-repeat;
+    width:10px;
+}

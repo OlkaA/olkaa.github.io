@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TestDome</title>
+    <link rel="stylesheet" type="text/css" href="resetCSS.css" />
+    <!--<link rel="stylesheet" type="text/css" href="style.css" />-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="progress-bar.css" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="#"><span class="material-icons">computer</span>TestDome</a>
+        </h1>
+
+        <nav>
+            <a href="#">Tour</a>
+            <a href="#">Tests</a>
+            <a href="#">Questions</a>
+            <a href="#">Priving</a>
+            <a href="#">Blog</a>
+            <a href="#">For Jobseekers</a>
+            <a href="#">Sign in</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Peter Gibson</h2>
+        <a href="#" class="send-email">send.emai.joke@gmail.com</a><!--mailto:-->
+        <div class="info">
+            <div class="column info-first-column">
+                <h3>Result</h3>
+                <div class="status">
+                    <div>Status:<span class="change-color">Fail</span></div>
+                    <div>Time:<span>7 min</span></div>
+                </div>
+                <div data-type="pie-chart" data-value="48" data-radius="40"></div>
+                
+            </div>
+            <div class="column info-second-column">
+                <h3>Breakdown</h3>
+                <div class="line">
+                    <span class="name">C#</span>
+                    <progress value="33" max="100"></progress>
+                    <span class="percent">33%</span>
+                </div>
+                <div class="line">
+                    <span class="name">HTML/CSS</span>
+                    <progress value="53" max="100">
+                    </progress>
+                    <span class="percent">53%</span>
+                </div>
+            </div>
+            <div class="column info-third-column">
+                <div class="pages">
+                    <a href="" class="active">History</a>
+                    <a href="">Notes</a>
+                </div>
+                <div class="links">
+                    <a href="">Test URL was created on May 25. 16</a>
+                    <a href="">Test URL was created on May 25. 16</a>
+                    <a href="">Test URL was created on May 25. 16</a>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <a href="#">Import</a>
+            <a href="#">Export</a>
+        </div>
+        <table>
+            <tr>
+                <th>Order</th>
+                <th>Question / Answer (<span>Expand all</span>)</th>
+                <th>Score</th>
+                <th>Time</th>
+                <th>Type</th>
+                <th class="underline">Max Points</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>
+                    <a class="color bold">Q: Ddkghkdskjdsgfklsdjfdsjglkasgl</a>
+                    <a class="color">A: using Ssdlfhu;dshlgfhds;agkjhdsfjkgj</a>
+                </td>
+                <td>
+                    <div class="color bold">33%</div>
+                    <progress value="33" max="100"></progress>
+                </td>
+                <td>
+                    <div class="bold">1min 26sec </div>
+                    <div>(expected 10min)</div>
+                </td>
+                <td class="underline">Code</td>
+                <td>3 points</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>
+                    <a class="color bold">Q: Ddkghkdskjdsgfklsdjfdsjglkasgl</a>
+                    <a class="color">A: using Ssdlfhu;dshlgfhds;agkjhdsfjkgj</a>
+                </td>
+                <td>
+                    <div class="color bold">25%</div>
+                    <progress value="25" max="100"></progress>
+                </td>
+                <td>
+                    <div class="bold">3min 26sec </div>
+                    <div>(expected 10min)</div>
+                </td>
+                <td class="underline">Code</td>
+                <td>3 points</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>
+                    <a class="color bold">Q: Ddkghkdskjdsgfklsdjfdsjglkasgl</a>
+                    <a class="color">A: using Ssdlfhu;dshlgfhds;agkjhdsfjkgj</a>
+                </td>
+                <td>
+                    <div class="color bold">67%</div>
+                    <progress value="67" max="100"></progress>
+                </td>
+                <td>
+                    <div class="bold">26sec </div>
+                    <div>(expected 10min)</div>
+                </td>
+                <td class="underline">Code</td>
+                <td>3 points</td>
+            </tr>
+        </table>
+    </main>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="js.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+d:\Study\code\TestDome\bin\WebApplication1.dll
+d:\Study\code\TestDome\bin\WebApplication1.pdb
+d:\Study\code\TestDome\obj\Debug\WebApplication1.csprojAssemblyReference.cache
+d:\Study\code\TestDome\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+d:\Study\code\TestDome\obj\Debug\WebApplication1.dll
+d:\Study\code\TestDome\obj\Debug\WebApplication1.pdb
+D:\Study\code\tests for job search\CSS-JS\bin\WebApplication1.dll
+D:\Study\code\tests for job search\CSS-JS\bin\WebApplication1.pdb
+D:\Study\code\tests for job search\CSS-JS\obj\Debug\WebApplication1.csprojAssemblyReference.cache
+D:\Study\code\tests for job search\CSS-JS\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+D:\Study\code\tests for job search\CSS-JS\obj\Debug\WebApplication1.dll
+D:\Study\code\tests for job search\CSS-JS\obj\Debug\WebApplication1.pdb
+d:\Study\code\tests for job search\Animated Nav Toggle & Menu\bin\WebApplication1.dll
+d:\Study\code\tests for job search\Animated Nav Toggle & Menu\bin\WebApplication1.pdb
+d:\Study\code\tests for job search\Animated Nav Toggle & Menu\obj\Debug\WebApplication1.csprojAssemblyReference.cache
+d:\Study\code\tests for job search\Animated Nav Toggle & Menu\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+d:\Study\code\tests for job search\Animated Nav Toggle & Menu\obj\Debug\WebApplication1.dll
+d:\Study\code\tests for job search\Animated Nav Toggle & Menu\obj\Debug\WebApplication1.pdb

@@ -1,0 +1,167 @@
+﻿body {
+    height: 100%;
+    background: #f0f5f5 url(../images/bg.png) repeat;
+    padding: 100px 0 0 0;
+    overflow: hidden;
+}
+.layout
+{
+    width:806px;
+    margin:0 auto;
+    background:url(../images/layout.png) no-repeat;
+    padding:100px 0 100px 70px;
+}
+.header
+{
+    background:url(../images/header.png) no-repeat;
+    padding:10px 0 0 280px;
+}
+.header .title
+{
+    font:bold 24px Georgia;
+    color:#414040;
+    padding:0 0 0 15px;
+    line-height:24px;
+}
+.header .title-two
+{
+    font:11px Arial;
+    color:#949494;
+    padding:0 0 0 15px;
+    line-height:11px;
+}
+.main
+{
+    overflow:hidden;
+    width:700px;
+}
+.main .main-left
+{
+    width:420px;
+    float:left;
+    padding:15px 0 0 25px;
+}
+.main .main-left h2
+{
+    font:bold 18px Georgia;
+    color:#414040;
+    padding:0 0 10px 0;
+}
+.main .main-left .content
+{
+    overflow:hidden;
+    padding:0 0 30px 0;
+    background:url(../images/content.png) repeat-x bottom;
+}
+.main .main-left .content img
+{
+    float:left;
+}
+.main .main-left .content p
+{
+    float:right;
+    font:12px Arial;
+    color:#888888;
+    width:330px;
+    line-height:18px;
+}
+.main .main-left .content-bottom
+{
+    overflow:hidden;
+    padding:15px 0 0 0;
+}
+.main .main-left .content-bottom .service
+{
+    float:left;
+}
+.main .main-left .content-bottom .service ul
+{
+}
+.main .main-left .content-bottom .service ul li
+{
+    background:url(../images/service.png) no-repeat 0 1px;
+    padding:0 0 13px 25px;
+    font:bold 12px Arial;
+    color:#7e7d7d;
+}
+.main .main-left .content-bottom .network
+{
+    float:right;
+}
+.main .main-left .content-bottom .network ul
+{
+    padding:0 20px 0 0;
+}
+.main .main-left .content-bottom .network ul li
+{
+    font:bold 12px Arial;
+    color:#7e7d7d;
+    overflow:hidden;
+}
+.main .main-left .content-bottom .network ul li img
+{
+    float:left;
+    padding:0 10px 0 0;
+}
+.main .main-left .content-bottom .network ul li .text
+{
+    float:left;
+}
+.main .main-left .content-bottom .network ul li .text .social
+{
+    font:bold 14px Arial;
+    color:#666;
+    text-transform:uppercase;
+}
+.main .main-left .content-bottom .network ul li .text a.address
+{
+    display:block;
+    font:10px Arial;
+    color:#888;
+    text-decoration:none;
+}
+.main .main-right
+{
+    width:220px;
+    float:right;
+    padding:15px 10px 0 0;
+}
+.main .main-right ul.custome
+{
+    background:url(../images/custome.png) no-repeat;
+    padding:40px 0 75px 15px;
+}
+.main .main-right ul.custome li
+{
+    overflow:hidden;
+    padding:0 0 15px 0;
+}
+.main .main-right ul.custome li img
+{
+    float:left;
+    padding:0 10px 0 0;
+}
+.main .main-right ul.custome li .text
+{
+    float:left;
+    width:150px;
+}
+.main .main-right ul.custome li .text h3
+{
+    font:bold 14px Georgia;
+    color:#fff;
+    padding:0 0 7px 0;
+}
+.main .main-right ul.custome li .text span
+{
+    font:12px Arial;
+    color:#666;
+    display:block;
+    line-height:16px;
+}
+.footer
+{
+    font:11px Arial;
+    color:#707070;
+    text-align:center;
+}

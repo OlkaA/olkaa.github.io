@@ -1,0 +1,855 @@
+﻿html, body
+{
+    height:100%;
+    background:#fff;
+}
+.wrapper
+{
+    background:url(../images/bg.png) no-repeat;
+    width:747px;
+    margin:0 auto;
+    padding:10px;
+}
+.layout-top
+{
+    background:url(../images/layout-top.png) no-repeat;
+    width:747px;
+    height:10px;
+}
+.layout-bottom
+{
+    background:url(../images/layout-bottom.png) no-repeat;
+    width:747px;
+    height:9px;
+}
+.layout
+{
+    background:url(../images/layout.png) repeat-y;
+    padding:1px 8px 0 8px;
+    width:731px;
+}
+.layout a.logo
+{
+    display:block;
+    height:165px;
+    background:url(../images/line-bottom.png) no-repeat bottom;
+    padding:0 0 9px 3px;
+    margin:0 -2px 0 -2px;
+}
+ .layout span.logo-bg
+{
+    height:165px;
+    background:url(../images/logo-bg.png) no-repeat;
+    display:block;
+}
+.layout a.logo img
+{
+    padding:40px 0 0 40px;
+}
+.layout .main
+{
+    overflow:hidden;
+    padding:1px 0 0 0;
+    margin:0 0 0 -2px;
+}
+.layout .main-left
+{
+    float:left;
+    width:545px;
+    background:url(../images/touch-line.png) repeat-y right;
+    padding:0 5px 0 0;
+}
+.layout .main-left .main-wrapper
+{
+    background:url(../images/line-bottom.png) no-repeat bottom;
+    padding:0 0 10px 4px;
+}
+.layout .main-left .main-wrapper ul.menu
+{
+    overflow:hidden;
+    background:url(../images/ul-menu.png) repeat-y;
+    height:38px;
+}
+.layout .main-left ul.menu li
+{
+    float:left;
+    padding:10px 5px 13px 0;
+    text-align:center;
+    width:86px;
+    background:url(../images/ul-menu-li.png) repeat-y right;
+}
+.layout .main-left ul.menu li.last
+{
+    width:80px;
+    padding:10px 0 0 0;
+    background:none;
+}
+.layout .main-left ul.menu li a
+{
+    display:block;
+    font:bold 13px Calibri;
+    color:#003876;
+    text-decoration:none;
+}
+.layout .main-left .top
+{
+    overflow:hidden;
+    padding:0 0 8px 0;
+    background:url(../images/line-bottom.png) no-repeat bottom;
+}
+.layout .main-left .top .top-left
+{
+    float:left;
+    width:177px;
+    background:url(../images/touch-line.png) repeat-y right;
+    padding:0 8px 0 0;
+}
+.layout .main-left .top .top-left ul.top-left-menu
+{
+    padding:10px 0 15px 15px;
+}
+.layout .main-left .top .top-left ul.top-left-menu li
+{
+    margin:0 0 1px 0;
+    height:22px;
+    overflow:hidden;
+    width:145px;
+}
+.layout .main-left .top .top-left ul.top-left-menu li a
+{
+    display:block;
+    background:url(../images/li-menu-vertical.png) no-repeat;
+    text-decoration:none;
+    text-transform:uppercase;
+    font:bold 10px Tahoma;
+    color:#003876;
+    padding:5px 0 6px 15px;
+    line-height:10px;
+}
+.layout .top-right
+{
+    float:right;
+    width:348px;
+    background:#ecf1f6;
+    padding:6px 0 0 10px;
+    height:110px;
+}
+.layout .top-right-title
+{
+    overflow:hidden;
+    margin:0 0 0 1px;
+    padding:6px 0;
+    background:#dde6ef;
+}
+.layout .top-right-title a
+{
+    float:left;
+    background:url(../images/arrow.png) no-repeat;
+    width:15px;
+    height:14px;
+}
+.layout .top-right-title span
+{
+    float:left;
+    padding:0 0 0 15px;
+    font:bold 14px 'Tahoma';
+    color:#003876;
+    margin:-3px 0 0 0;
+}
+.layout .top-right p.right
+{
+    padding:5px 0 5px 15px;
+    font:11px 'Tahoma';
+    color:#003876;
+    line-height:11px;
+    width:305px;
+}
+.layout .main-left .bottom
+{
+    overflow:hidden;
+    padding:0 0 0 0;
+}
+.layout .main-left .bottom .bottom-left
+{
+    float:left;
+    width:168px;
+    padding:7px 7px 7px 10px;
+    background:url(../images/touch-line.png) repeat-y right;
+    text-decoration:none;
+}
+.layout .main-left .bottom .bottom-left a
+{
+    background:url(../images/img.png) no-repeat;
+    display:block;
+    height:301px;
+    text-decoration:none;
+}
+.layout .main-left .bottom .bottom-left a span.inscription
+{
+    float:left;
+    font:bold 30px Calibri;
+    color:#003876;
+    padding:0 0 7px 0;
+}
+.layout .main-left .bottom .bottom-left a span.inscription-color
+{
+    font:bold 65px Calibri;
+    color:#940022;
+    float:right;
+    padding:80px 10px 10px 0;
+}
+.layout .main-left .bottom .bottom-right
+{
+    float:right;
+    width:348px;
+    background:#ecf1f6;
+    padding:7px 0 3px 10px;
+}
+.layout .main-left .bottom .bottom-right-title
+{
+    overflow:hidden;
+    padding:6px 0;
+    background:#dde6ef;
+}
+.layout .bottom-right-title a
+{
+    float:left;
+    background:url(../images/arrow.png) no-repeat;
+    width:15px;
+    height:14px;
+}
+.layout .bottom-right-title span
+{
+    float:left;
+    padding:0 0 0 15px;
+    font:bold 14px Tahoma;
+    color:#003876;
+    margin:-3px 0 0 0;
+}
+.layout .main-left .bottom-right p
+{
+    padding:10px 15px 0 15px;
+    font:11px 'Tahoma';
+    color:#003876;
+    line-height:12px;
+    width:285px;
+}
+.layout .bottom-right p.last
+{
+    padding:10px 15px 33px 15px;
+    font:11px 'Tahoma';
+    color:#003876;
+    line-height:12px;
+    width:285px;
+}
+.layout .main-left .bottom-right p span.color
+{
+    font:bold 11px 'Tahoma';
+}
+.layout .main-right
+{
+    float:right;
+    width:183px;
+}
+.layout .main-right .main-right-top
+{
+    background:url(../images/line-bottom.png) no-repeat bottom;
+    padding:0 0 9px 1px;
+    margin:0 0 0 -1px;
+}
+.layout .main-right .main-right-top .main-right-top-wrapper
+{
+    background:#a4bbd5 url(../images/main-right-top.png) no-repeat;
+    width:173px;
+    padding:0 0 0 10px;
+    text-align:center;
+}
+.layout .main-right .main-right-top .top-bg
+{
+    float:none;
+    padding:6px 0;
+}
+.layout .main-right .top-right-title
+{
+    overflow:hidden;
+    background:#bfd0e2;
+}
+.layout .main-right .top-right-title a
+{
+    background:url(../images/arrow2.png) no-repeat;
+}
+.layout .main-right .top-right-title span
+{
+    color:#7d001d;
+}
+.layout .main-right .main-right-top p
+{
+    color:#fff;
+    font-weight:bold;
+}
+.layout .main-right .main-right-top p span.color
+{
+    color:#003876;
+}
+.layout .main-right .main-right-top form
+{
+    padding:5px 0 3px 25px;
+}
+.layout .main-right .main-right-top form .form-shell
+{
+   overflow:hidden;
+   padding:0 0 0 15px;
+}
+.layout .main-right .main-right-top form .form-shell .input-wrapper
+{
+    float:left;
+    overflow:hidden;
+    padding:0 10px 10px 0;
+}
+.layout .main-right .main-right-top form .form-shell input
+{
+    float:left;
+}
+.layout .main-right .main-right-top form .form-shell .text
+{
+    float:left;
+    padding:0 0 0 3px;
+    font:bold 11px Tahoma;
+    text-transform:capitalize;
+    color:#fff;
+}
+.layout .main-right .main-right-top form a
+{
+    display:block;
+    overflow:hidden;
+    padding:0 0 0 20px;
+    text-decoration:none;
+}
+.layout .main-right .main-right-top form a span
+{
+    float:left;
+    height:22px;
+}
+.layout .main-right .main-right-top form a span.button-left
+{
+    width:7px;
+    background:url(../images/button-left.png) no-repeat;
+}
+.layout .main-right .main-right-top form a span.button-center
+{
+    height:19px;
+    padding:3px 10px 0 10px;
+    background:url(../images/button-center.png) repeat-x;
+    font:bold 10px Tahoma;
+    color:#003876;
+    text-transform:capitalize;
+}
+.layout .main-right .main-right-top form a span.button-right
+{
+    width:7px;
+    background:url(../images/button-right.png) no-repeat;
+}
+
+.layout .main-right .main-right-center
+{
+    background:#a4bbd5;
+    padding:7px 0 12px 10px;
+}
+.layout .main-right .main-right-center .top-bg
+{
+    background:url(../images/arrow-1.png) no-repeat;
+    float:none;
+    padding:0 0 13px 0;
+}
+.layout .main-right .main-right-center .top-right-title
+{
+    padding:6px 0;
+    margin:0 0 10px 0;
+}
+.layout .main-right .main-right-center p
+{
+    padding:0 25px 0 15px;
+    font:11px 'Tahoma';
+    color:#003876;
+    line-height:11px;
+}
+.layout .main-right .main-right-center p:first-letter
+{
+    font-weight:bold;
+}
+.layout .main-right ul.main-right-bottom
+{
+    margin:0 0 0 -1px;
+    overflow:hidden;
+    width:183px;
+    background:url(../images/line-bottom.png) no-repeat top;
+    padding:12px 0 0 1px;
+}
+.layout .main-right ul.main-right-bottom li
+{
+    float:left;
+    background:url(../images/main-right-bottom-li.png) no-repeat 0 6px;
+    width:70px;
+    margin:0 0 0 10px;
+    padding:2px 0 0 8px;
+}
+.layout .main-right ul.main-right-bottom li.second-td
+{
+    margin:0 0 0 0;
+}
+.layout .main-right ul.main-right-bottom li a
+{
+    text-decoration:none;
+    font:bold 10px Tahoma;
+    color:#003876;
+    display:block;
+}
+ul.bottom-menu
+{
+    overflow:hidden;
+    padding:0 0 0 200px;
+}
+ul.bottom-menu li
+{
+    float:left;
+    padding-right:15px;
+}
+ul.bottom-menu li a
+{
+    text-decoration:none;
+    font:bold 11px Tahoma;
+    color:#7d001d;
+}
+.footer
+{
+    background:url(../images/footer.png) no-repeat;
+    width:766px;
+    padding:2px 0 2px 0;
+    margin:0 auto;
+    font:11px Tahoma;
+    color:#fff;
+    text-align:center;
+}
+/*to newcars*/
+.newcars-wrapper
+{
+    background:url(../images/bg.png) no-repeat;
+    width:747px;
+    margin:0 auto;
+    padding:10px;
+}
+.newcars-wrapper .layout .main-left .top
+{
+    overflow:hidden;
+}
+.newcars-wrapper .layout .main-left .top-left
+{
+    width:179px;
+    padding:7px 6px 0 0;
+}
+.newcars-wrapper .top-left-title
+{
+    overflow:hidden;
+    margin:0 0 0 10px;
+    padding:6px 0 6px 0;
+    background:#ecf1f6;
+    overflow:hidden;
+    height:15px;
+}
+.newcars-wrapper .top-left-title a
+{
+    float:left;
+    background:url(../images/arrow2.png) no-repeat;
+    width:15px;
+    height:14px;
+}
+.newcars-wrapper .top-left-title span
+{
+    float:left;
+    padding:0 0 0 15px;
+    font:bold 14px 'Tahoma';
+    color:#7d001d;
+    margin:-3px 0 0 0;
+    height:18px;
+    width:130px;
+}
+.newcars-wrapper .layout .main-left .top-left ul.top-left-menu
+{
+    padding:0 0 10px 15px;
+    height:77px;
+    overflow:scroll;
+}
+.newcars-wrapper .layout .main-left .top-left ul.top-left-menu li
+{
+    margin:1px 0 0 0;
+    height:auto;
+}
+.newcars-wrapper .layout .main-left .top-left ul.top-left-menu li a
+{
+    display:block;
+    background:none;
+    text-decoration:none;
+    text-transform:capitalize;
+    font:10px 'Tahoma';
+    padding:0 0 0 15px;
+    line-height:10px;
+    color:#003876;
+}
+.newcars-wrapper .layout .main-left .top-left ul.bottom-left-menu
+{
+    padding:0 0 10px 15px;
+    height:250px;
+    overflow:scroll;
+}
+.newcars-wrapper .layout .main-left .top-left ul.bottom-left-menu li
+{
+    margin:1px 0 0 0;
+    height:auto;
+}
+.newcars-wrapper .layout .main-left .top-left ul.bottom-left-menu li a
+{
+    display:block;
+    background:none;
+    text-decoration:none;
+    text-transform:capitalize;
+    font:10px 'Tahoma';
+    padding:0 0 0 15px;
+    line-height:10px;
+    color:#003876;
+}
+.newcars-wrapper .layout .top-right
+{
+    float:right;
+    width:350px;
+    background:#ecf1f6;
+    padding:7px 0 0 10px;
+}
+.newcars-wrapper .layout .top-right-title
+{
+    overflow:hidden;
+    margin:0 0 5px 1px;
+    padding:6px 0;
+}
+.newcars-wrapper .layout .top-right-title a
+{
+    float:left;
+    background:url(../images/arrow.png) no-repeat;
+    width:15px;
+    height:14px;
+}
+.newcars-wrapper .layout .main-right .top-bg .top-right-title a 
+{
+    float:left;
+    background:url(../images/arrow2.png) no-repeat;
+    width:15px;
+    height:14px;
+}
+.newcars-wrapper .layout .top-right-title span
+{
+    float:left;
+    padding:0 0 0 15px;
+    font:bold 14px 'Tahoma';
+    color:#003876;
+    margin:-3px 0 0 0;
+}
+.newcars-wrapper .layout .top-right .car
+{
+    overflow:hidden;
+    padding:0 0 12px 0;
+}
+.newcars-wrapper .layout .top-right .car p.right
+{
+    float:left;
+    padding:5px 0 5px 15px;
+    font:11px 'Tahoma';
+    color:#003876;
+    line-height:11px;
+    width:210px;
+    margin:0;
+}
+.newcars-wrapper .layout .top-right .car p.right:first-letter
+{
+    font:bold 11px "Tahoma";
+}
+.newcars-wrapper .layout .top-right .car img
+{
+    float:right;
+    padding:0 10px 0 0;
+}
+.newcars-wrapper .layout .main-left .top-left
+{
+    width:179px;
+    padding:7px 6px 0 0;
+}
+.newcars-wrapper .layout .main-left .bottom
+{
+    overflow:hidden;
+    padding:0 0 0 0;
+}
+.newcars-wrapper .layout .main-left .bottom .top-left
+{
+    float:left;
+    background:url(../images/touch-line.png) repeat-y right;
+}
+.newcars-wrapper .layout .main-left .bottom .top-left ul.top-left-menu
+{
+    padding:0 0 56px 15px;
+}
+.newcars-wrapper .layout .main-left .bottom .top-right
+{
+    float:left;
+    padding:10px 0 0 0;
+    width:360px;
+}
+.newcars-wrapper .search-block
+{
+    background:url(../images/line-bottom.png) no-repeat 0 top;
+    padding:17px 0 0 0;
+}
+.newcars-wrapper .bottom .top-right-title
+{
+    margin:0 0 5px 10px;
+}
+.newcars-wrapper .bottom .top-right .car
+{
+    margin:0 0 0 10px;
+}
+.newcars-wrapper ul.search
+{
+    overflow:hidden;
+    padding:0 0 40px 10px;
+}
+.newcars-wrapper ul.search li
+{
+    float:left;
+    padding:0 10px 0 0;
+    overflow:hidden;
+    width:102px;
+}
+.newcars-wrapper ul.search li .text-input
+{
+    font:11px Arial;
+    color:#003876;
+    padding:0 0 5px 0;
+}
+.newcars-wrapper ul.search li input
+{
+    width:96px;
+}
+.newcars-wrapper ul.search li a
+{
+    display:block;
+    overflow:hidden;
+    padding:17px 0 0 15px;
+    text-decoration:none;
+}
+.newcars-wrapper ul.search li a span
+{
+    height:24px;
+    float:left;
+}
+.newcars-wrapper ul.search li a span.search-left
+{
+    width:2px;
+    background:url(../images/search-left.png) no-repeat;
+}
+.newcars-wrapper ul.search li a span.search-center
+{
+    background:url(../images/search-center.png) repeat-x;
+    padding:2px 5px;
+    height:20px;
+    width:50px;
+}
+.newcars-wrapper ul.search li a span.search-center .first-word
+{
+    float:none;
+    color:#7d001d;
+    font:10px Tahoma;
+}
+.newcars-wrapper ul.search li a span.search-center .second-word
+{
+    float:none;
+    color:#003876;
+    font:10px Tahoma;
+}
+.newcars-wrapper ul.search li a span.search-right
+{
+    width:20px;
+    background:url(../images/search-right.png) no-repeat;
+}
+.newcars-wrapper .layout .main-right .top-right-title span
+{
+    color:#7d001d;
+    padding:0 0 0 5px;
+    height:18px;
+    width:150px;
+}
+.newcars-wrapper .layout .main-right h3
+{
+    color:#fff;
+    font:bold 12px Tahoma;
+}
+.newcars-wrapper .layout .main-right ul.top-10
+{
+    padding:10px 0 0 0;
+}
+.newcars-wrapper .layout .main-right ul.top-10 li
+{
+    padding:0;
+    margin:-6px 0 0 0;
+}
+.newcars-wrapper .layout .main-right ul.top-10 li a
+{
+    color:#003876;
+    font:11px Tahoma;
+}
+.newcars-wrapper .layout .main-right .main-right-center
+{
+    background:#a4bbd5;
+    padding:7px 0 0 10px;
+}
+.newcars-wrapper .layout .main-right .main-right-center .top-bg
+{
+    background:url(../images/arrow-1.png) no-repeat;
+    float:none;
+    padding:0 0 5px 0;
+}
+
+
+/*About*/
+.about-wrapper
+{
+    background:url(../images/bg.png) no-repeat;
+    width:747px;
+    margin:0 auto;
+    padding:10px;
+}
+.about-wrapper .layout .top-right .adress
+{
+    overflow:hidden;
+    padding:10px 0 0 0;
+}
+.about-wrapper .layout .top-right .adress p.right
+{
+    float:left;
+    padding:0 0 0 5px;
+    font:11px 'Tahoma';
+    color:#003876;
+    line-height:13px;
+    width:220px;
+    margin:0;
+}
+
+
+
+.about-wrapper .layout .top-right .adress img
+{
+    float:right;
+    padding:0 10px 0 0;
+}
+.about-wrapper .layout .main-left .bottom
+{
+    overflow:hidden;
+    padding:0 0 0 0;
+    background:none;
+}
+.about-wrapper .layout .main-left .bottom .top-left
+{
+    float:left;
+    background:url(../images/touch-line.png) repeat-y right;
+}
+.about-wrapper .layout .main-left .bottom .bottom-left .top-left-title
+{
+    overflow:hidden;
+    margin:0 0 0 10px;
+    padding:6px 0;
+    background:#ecf1f6;
+}
+.about-wrapper .layout .main-left .bottom .bottom-left .top-left-title a
+{
+    float:left;
+    background:url(../images/arrow2.png) no-repeat;
+    width:15px;
+    height:14px;
+}
+.about-wrapper .layout .main-left .bottom .bottom-left .top-left-title span
+{
+    float:left;
+    padding:0 0 0 15px;
+    font:bold 14px 'Tahoma';
+    color:#7d001d;
+    margin:-3px 0 0 0;
+}
+.about-wrapper .layout .main-left .bottom .bottom-left p
+{
+    padding:2px 20px 0 10px;
+    font:11px 'Tahoma';
+    color:#003876;
+    line-height:13px;
+}
+.about-wrapper .layout .main-left .bottom .bottom-left p.first
+{
+    padding:10px 0 0 10px;
+}
+.about-wrapper .layout .main-left .bottom .bottom-left p span
+{
+    font:bold 9px 'Tahoma';
+    color:#003876;
+}
+.about-wrapper .layout .main-left .bottom .bottom-right .bottom-right-title
+{
+    margin:0 0 10px 0;
+}
+.about-wrapper .layout .main-left .bottom-right p
+{
+    padding:0 10px 0 15px;
+    font:11px 'Tahoma';
+    color:#003876;
+    line-height:12px;
+    overflow:hidden;
+    width:323px;
+}
+.about-wrapper .layout .main-left .bottom-right p span.color
+{
+    font:bold 11px 'Tahoma';
+    margin:0 -2px 0 0;
+}
+.about-wrapper .layout .main-left .bottom-right p img
+{
+    float:right;
+}
+.about-wrapper .layout .main-right .main-right-center 
+{
+    padding: 7px 0 0 10px;
+}
+.about-wrapper .layout .main-right .main-right-center .top-bg
+{    
+    padding: 0 0 0 0;
+}
+.about-wrapper ul.distrib
+{
+}
+.about-wrapper ul.distrib li
+{
+    background:url(../images/distrib-li.png) no-repeat left 5px;
+    padding:0 0 10px 15px;
+    margin:0 0 0 10px;
+}
+.about-wrapper ul.distrib li a
+{
+    display:block;
+    text-decoration:none;
+    font:bold 11px 'Tahoma';
+    color:#003876;
+}
+.about-wrapper ul.distrib span
+{    
+    display:block;
+    font:11px 'Tahoma';
+    color:#003876;
+    margin:-2px 0 0 0;
+}
+
+
+/*
+*/

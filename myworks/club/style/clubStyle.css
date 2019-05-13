@@ -1,0 +1,206 @@
+﻿body
+{
+    width:100%;
+    height:100%;
+    position:relative;
+    background:#cf0264;
+}
+.bg-left
+{
+    position:absolute;
+    left:0;
+    top:0;
+    width:50%;
+    height:1047px;
+    background: url(../images/bg-body-left.png) repeat-x;
+}
+.bg-right
+{
+    position:absolute;
+    right:0;
+    top:0;
+    width:50%;
+    height:1047px;
+    background: url(../images/bg-body-right.png) repeat-x;
+}
+.main
+{
+    width:1190px;
+    min-height:100%;
+    margin:0 auto;
+    background:url(../images/bg-club.png) no-repeat;
+    position:relative;
+}
+.main a
+{
+    text-decoration: underline;
+    color:#000;
+    display:block
+}
+.main a span
+{
+    font:bold 21px System;
+    color:#000;
+    display:block;
+}
+.main a .color
+{
+    text-decoration: underline;
+    color:#cc8b00;
+    display:block;
+}
+.main a span.color
+{
+    color:#cc8b00;
+    display:block
+}
+.main .Gallery
+{
+    position:absolute;
+    top:74px;
+    left:760px;
+}
+.main .Poster
+{
+    position:absolute;
+    top:200px;
+    left:505px;
+}
+.main .Developments
+{
+    position:absolute;
+    top:224px;
+    left:700px;
+}
+.main .Menu
+{
+    position:absolute;
+    top:285px;
+    left:495px;
+}
+.main .Forum
+{
+    position:absolute;
+    top:337px;
+    left:915px;
+}
+.main .Contacts
+{
+    position:absolute;
+    top:407px;
+    left:921px;
+}
+.main .center-block
+{
+    width:840px;
+    margin:0 auto;
+    overflow:hidden;
+    padding:346px 0 33px 0;
+}
+.main .center-block .advertising
+{
+    float:left;
+    padding:33px 0 0 18px;
+    width:178px;
+}
+.main .center-block .advertising img
+{
+    background:url(../images/bg-images.png) no-repeat top;
+    padding:10px;
+}
+.main .center-block .advertising h2
+{  
+    padding:10px 0 0 0;
+    font:bold 21px System;
+}
+.main .center-block .advertising h3
+{
+    padding:5px 0 9px 0;
+    font:11px Tahoma;
+}
+.main .center-block .advertising a
+{
+    text-decoration:none;
+}
+.main .center-block .advertising a span
+{
+    display:block;
+    background-color:#ffe900;
+    display:block;
+    width:80px;
+    height:18px;
+    text-decoration:none;
+    padding:2px 0 0 10px; 
+    font:bold 12px tahoma;
+}
+.main .center-block .bg-center
+{
+    width:406px;
+    height:515px;
+    float:left;
+    background:url(../images/bg-center.png) no-repeat;
+    margin-top:-45px;
+    font:14px Georgia;
+    color:#c59388;  
+    padding:60px 38px 0 65px;  
+}
+.main .center-block .bg-center span
+{
+}
+.main .center-block .bg-center p
+{
+    padding:0 0 15px 0;  
+    margin:0;
+}
+.main .bottom
+{
+    width:580px;
+    margin:0 auto;
+    overflow:hidden;
+    padding:0 0 50px 170px;
+}
+.main .bottom h4
+{
+    font:bold 11px Tahoma;
+    color:#e1b3b6;
+}
+.main .bottom .left-block
+{
+    width:200px;
+    float:left;
+    padding:0 135px 0 0;
+}
+.main .bottom a.content
+{
+    font:11px Tahoma;
+    color:#e1b3b6;
+    display:block;
+    padding:10px 0 0 0;
+}
+.main .bottom .left-block .Call
+{
+    padding:0 0 10px 0;
+}
+.main .bottom .left-block .Call a
+{
+    text-decoration:none;
+}
+.main .bottom .right-block
+{
+    width:200px;
+    float:left;
+}
+.main .bottom .right-block .How-us-search
+{
+    padding:0 0 5px 0;
+}
+.main .bottom .right-block .How-us-search a
+{
+    text-decoration:none;
+}
+.main .bottom .right-block .text
+{
+    font:11px Tahoma;
+    color:#e1b3b6;
+    display:block;
+}

@@ -1,0 +1,54 @@
+﻿body
+{
+    background:url(pictures/bg.png);
+    min-height:100%;
+}
+.layout
+{
+    background: url(pictures/bgpicture.png) no-repeat 100% 0;
+    padding:100px 0 0 50px;
+    font-family: 'Franklin Gothic Medium', Sans-Serif;
+}
+ul.begin 
+{
+    overflow:hidden;
+    font-size:15px;
+}
+ul.begin  li
+{
+    float:left;
+    width:70px;
+    height:20px;
+}
+ul.begin  li a
+{
+    text-decoration:none; 
+    color : #b1bbcb;
+}
+ul.begin  li.active,
+ul.begin  li:hover
+{  
+    font-weight:bold;
+}
+.basis
+{
+    color: #fff;
+    width: 430px;
+    padding:50px 0 350px 20px;
+}
+h1
+{
+    font-size: 25px;
+    padding:0 0 20px 0;
+}
+.basis p
+{
+    font-size: 13px;
+    padding:0 0 5px 0;
+}
+.end
+{
+    color: #54595f;
+    overflow: hidden;
+    font-size: 12px;
+}
