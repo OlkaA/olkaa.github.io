@@ -32,30 +32,30 @@ h2 {
     z-index: 10001;
     display: none;
 }
-.hide-button {
+.close-button {
     display: none;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 50px;
+    right: 50px;
     z-index: 10002;
 }
-    .hide-button::before,
-    .hide-button::after {
-        content: '';
-        display: block;
-        height: 6px;
-        width: 40px;
-        margin-bottom: 5px;
-        background-color: darkorange;
-        border-radius: 4px;
-        cursor: pointer;
-    }
-    .hide-button::before {
-        transform: translate(0, 0) rotate(45deg);
-    }
-    .hide-button::after {
-        transform: translate(0,-11px) rotate(-45deg);
-    }
+.close-button::before,
+.close-button::after {
+    content: '';
+    display: block;
+    height: 6px;
+    width: 40px;
+    margin-bottom: 5px;
+    background-color: darkorange;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.close-button::before {
+    transform: translate(0, 0) rotate(45deg);
+}
+.close-button::after {
+    transform: translate(0,-11px) rotate(-45deg);
+}
 
 
 #portfolioJS{
