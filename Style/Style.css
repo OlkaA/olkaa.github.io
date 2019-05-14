@@ -17,20 +17,24 @@ h2 {
 }
 
 #preview_bg {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    background: #333;
-    opacity: 0.5;
+    right:0;
+    bottom: 0;
+    background: rgba(0,0,0,.5);
     z-index: 10000;
     display: none;
+    align-items: center;
+    justify-content: center;
 }
 #preview_box {
-    position: absolute;
-    top: 100px;
-    left: 0;
     z-index: 10001;
     display: none;
+}
+#preview_frame {
+    height: calc(100% - 200px);
+    width: 700px;
 }
 .close-button {
     display: none;
@@ -99,10 +103,6 @@ header{
 {
     overflow:hidden;
 }
-/*.list a.left-arrow
-{
-    position:absolute;
-}*/
 .list ul.portfolio li
 {
     float:left;
@@ -116,7 +116,6 @@ header{
     top: 125px;
     width: 26px;
     height: 45px;
-    /*background:url(../images/arrow-left.png) no-repeat;*/
     text-decoration: none;
     font-size: 100px;
     color: rgba(0, 0, 0, 0.4);
