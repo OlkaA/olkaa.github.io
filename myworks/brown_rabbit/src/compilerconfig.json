@@ -1,0 +1,10 @@
+﻿[
+  {
+    "outputFile": "css/main.css",
+    "inputFile": "css/main.scss"
+  },
+  {
+    "outputFile": "js/aticles.es5.js",
+    "inputFile": "js/aticles.js"
+  }
+]

@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Tipcalculator</title>
+    <link rel="stylesheet" type="text/css" href="../StyleSheet.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../modules/clocks.js"></script>
+</head>
+<body>
+    <div class="clocks">
+        <div class="styleBlock" id="ClockVue">
+            <h2>Vue Clock</h2>
+            <p>
+                Today is: {{date}}<br />
+                Current time: {{time}}
+            </p>
+            <div class="message" v-if="chooseMessage">{{chooseMessage}}</div>
+
+            <div class="timer">
+                <label name="setWakeUp">Set wake up time</label>
+                <select name="setWakeUp" v-model="wakeUpHours">
+                    <option v-for="item in hours">{{item}}</option>
+                </select>
+                <span>:</span>
+                <select name="setWakeUp" v-model="wakeUpMinutes">
+                    <option v-for="item in minutes">{{item}}</option>
+                </select>
+            </div>
+            <div class="timer">
+                <label name="setLunch">Set lunch time</label>
+                <select name="setLunch" v-model="lunchHours">
+                    <option v-for="item in hours">{{item}}</option>
+                </select>
+                <span>:</span>
+                <select name="setLunch" v-model="lunchMinutes">
+                    <option v-for="item in minutes">{{item}}</option>
+                </select>
+            </div>
+            <div class="timer">
+                <label name="setNap">Set nap time</label>
+                <select name="setNap" v-model="napHours">
+                    <option v-for="item in hours">{{item}}</option>
+                </select>
+                <span>:</span>
+                <select name="setNap" v-model="napMinutes">
+                    <option v-for="item in minutes">{{item}}</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="styleBlock" id="ClockjQuery">
+            <h2>jQuery Clock</h2>
+            <p class="fullDate">
+                Today is: <span data-date="date"></span><br />
+                Current time: <span data-time="time"></span>
+            </p>
+            <div class="message" data-message="message"></div>
+
+            <div class="timer">
+                <label name="setWakeUp">Set wake up time</label>
+                <select name="setWakeUp" data-wakeUpHours="wakeUpHours"></select>
+                <span>:</span>
+                <select name="setWakeUp" data-wakeUpMinutes="wakeUpMinutes"></select>
+            </div>
+
+            <div class="timer">
+                <label name="setLunch">Set lunch time</label>
+                <select name="setLunch" data-lunchHours="lunchHours"></select>
+                <span>:</span>
+                <select name="setLunch" data-lunchMinutes="lunchMinutes"></select>
+            </div>
+
+            <div class="timer">
+                <label name="setNap">Set nap time</label>
+                <select name="setNap" data-napHours="napHours"></select>
+                <span>:</span>
+                <select name="setNap" data-napMinutes="napMinutes"></select>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

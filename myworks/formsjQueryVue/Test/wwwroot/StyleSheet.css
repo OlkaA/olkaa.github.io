@@ -1,0 +1,275 @@
+﻿* {
+  box-sizing: border-box; }
+  * body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #ffffe6; }
+    * body .wrapper {
+      padding: 50px;
+      min-height: 100vh;
+      width: 960px;
+      margin: 0 auto;
+      position: relative;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: flex-start; }
+      * body .wrapper nav {
+        width: 20%;
+        display: flex;
+        flex-flow: column nowrap;
+        margin-right: 10px; }
+        * body .wrapper nav a {
+          background-color: blanchedalmond;
+          text-decoration: none;
+          font: 30px Calibri;
+          color: forestgreen;
+          padding: 10px;
+          box-shadow: 0 0 3px 0 red; }
+          * body .wrapper nav a:hover {
+            background-color: burlywood; }
+          * body .wrapper nav a span {
+            display: block;
+            margin-top: -10px; }
+      * body .wrapper iframe {
+        width: 80%;
+        min-height: 70vh;
+        border: none; }
+  * .styleBlock {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(50% - 2px);
+    border: 2px solid #8ad1d5;
+    padding: 10px 20px;
+    background-color: #f2f2f2;
+    color: #00264d;
+    position: relative; }
+    * .styleBlock::before, * .styleBlock::after {
+      content: '';
+      position: absolute;
+      top: 90%;
+      bottom: 4px;
+      box-shadow: 0 4px 5px rgba(0, 0, 0, 0.5);
+      z-index: -1; }
+    * .styleBlock::before {
+      background: transparent;
+      left: 5px;
+      right: 45px;
+      transform: rotate(-2deg); }
+    * .styleBlock::after {
+      background-color: transparent;
+      left: 45px;
+      right: 5px;
+      transform: rotate(2deg); }
+    * .styleBlock h2 {
+      color: #3d4a97; }
+    * .styleBlock input, * .styleBlock select {
+      margin: 5px 5px 5px 0;
+      padding: 5px 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      color: #00264d; }
+      * .styleBlock input[type="button"], * .styleBlock input[type="text"]:focus, * .styleBlock select[type="button"], * .styleBlock select[type="text"]:focus {
+        background-color: #e6f2ff; }
+      * .styleBlock input[type="button"], * .styleBlock select[type="button"] {
+        width: 100%;
+        background-color: #b3d9ff;
+        cursor: pointer; }
+      * .styleBlock input[type="button"]:hover, * .styleBlock select[type="button"]:hover {
+        background-color: #80bfff; }
+      * .styleBlock input[type="text"], * .styleBlock select[type="text"] {
+        width: 60%; }
+    * .styleBlock label {
+      display: inline-block;
+      width: 30%; }
+    * .styleBlock select {
+      width: 100%; }
+    * .styleBlock ul {
+      padding: 0;
+      list-style: none;
+      margin: 17px 0 0; }
+      * .styleBlock ul li {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between; }
+        * .styleBlock ul li label span {
+          display: block;
+          margin-top: -5px; }
+      * .styleBlock ul .validation-message {
+        color: red; }
+      * .styleBlock ul .invalid {
+        border-color: red; }
+  * #VueTipCalculator label, * #jQueryTipCalculator label {
+    width: 100%; }
+  * #VueTipCalculator input[type="text"], * #jQueryTipCalculator input[type="text"] {
+    display: block;
+    width: 100%; }
+  * #VueTipCalculator input[type="text"], * #jQueryTipCalculator input[type="text"] {
+    width: 100%; }
+  * #jQueryTipCalculator p {
+    display: none; }
+  * .clocks .styleBlock {
+    background-color: lightcoral;
+    font: 16px Calibri; }
+    * .clocks .styleBlock .message {
+      color: blueviolet;
+      font-size: 30px;
+      text-align: center;
+      margin-bottom: 20px; }
+    * .clocks .styleBlock .timer {
+      display: block;
+      border-radius: 4px;
+      margin-bottom: 5px;
+      text-align: center; }
+      * .clocks .styleBlock .timer label {
+        width: 120px; }
+      * .clocks .styleBlock .timer select {
+        display: inline-block;
+        width: 27px;
+        padding: 5px;
+        margin: 0;
+        border: none;
+        appearance: none;
+        -webkit-appearance: none; }
+        * .clocks .styleBlock .timer select:first-child {
+          padding-right: 0; }
+        * .clocks .styleBlock .timer select:focus {
+          border: none; }
+    * .clocks .styleBlock a {
+      margin-top: 10px;
+      display: block;
+      width: 100px;
+      background-color: #b3d9ff;
+      cursor: pointer;
+      text-align: center;
+      position: relative;
+      left: 50%;
+      transform: translate(-50%, 0);
+      border: 1px solid #ccc;
+      border-radius: 4px; }
+  * .authentication {
+    position: relative; }
+    * .authentication a:link, * .authentication a:hover, * .authentication a:visited {
+      padding: 3px;
+      background-color: aliceblue;
+      text-decoration: none;
+      border: 1px solid darkblue;
+      border-radius: 5px;
+      color: darkblue; }
+    * .authentication .styleBlock input[type="button"] {
+      display: inline;
+      width: 45%; }
+    * .authentication .authentication-form {
+      width: 60%;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: 2px solid #8ad1d5;
+      background-color: #f2f2f2;
+      padding: 10px 20px;
+      border-radius: 5px;
+      z-index: 5; }
+      * .authentication .authentication-form .row {
+        display: grid;
+        grid-template-rows: auto 20px; }
+        * .authentication .authentication-form .row input {
+          width: 100%; }
+          * .authentication .authentication-form .row input[type='button'] {
+            display: inline-block; }
+        * .authentication .authentication-form .row span {
+          position: relative;
+          top: 0;
+          left: 5%;
+          width: 90%;
+          text-align: center;
+          color: red;
+          padding: 3px 0;
+          margin-top: -7px;
+          background-color: lightgoldenrodyellow;
+          border: 1px solid orange;
+          border-radius: 3px;
+          opacity: 0; }
+          * .authentication .authentication-form .row span.hidden {
+            opacity: 1;
+            transition: opacity 0.3s; }
+          * .authentication .authentication-form .row span::before {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: 100%;
+            left: 15px;
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-bottom: 5px solid orange; }
+      * .authentication .authentication-form .closeForm {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        color: grey;
+        cursor: pointer; }
+    * .authentication #authenticationjQuery .authentication-form .row span {
+      display: none;
+      opacity: 1; }
+  * .todoLists {
+    /*#todoListjQuery{
+            ul li{
+                display: none;
+            }
+        }*/ }
+    * .todoLists input[type='text'],
+    * .todoLists input[type='button'] {
+      display: inline-block; }
+    * .todoLists input[type='button'] {
+      width: 30px;
+      padding: 3px 5px 4px 5px; }
+    * .todoLists ul li {
+      background-color: #80bfff;
+      padding: 5px 20px;
+      border: 1px solid #8383a2;
+      border-radius: 4px;
+      margin-bottom: 5px;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between; }
+      * .todoLists ul li span {
+        cursor: pointer; }
+      * .todoLists ul li.delete {
+        display: none; }
+
+@media only screen and (max-width: 970px) {
+  body .wrapper {
+    width: 100%; }
+  .styleBlock {
+    width: calc(50% - 10px); } }
+
+@media screen and (max-width: 650px) {
+  body .wrapper {
+    flex-flow: row wrap; }
+    body .wrapper nav {
+      width: 100%;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      margin-right: 0px; }
+      body .wrapper nav a {
+        margin-bottom: 8px; }
+    body .wrapper iframe {
+      width: 95vw;
+      min-height: 100vh; }
+  .authentication .authentication-form {
+    top: 40%;
+    width: 85vw; }
+    .authentication .authentication-form row input[type='button'] {
+      width: 100%; } }
+
+@media screen and (max-width: 400px) {
+  body .wrapper {
+    padding: 10px; }
+    body .wrapper iframe {
+      width: calc(100vw - 20px); }
+  .styleBlock {
+    width: 100vw;
+    margin-bottom: 20px; }
+  .authentication .authentication-form {
+    width: 100vw; } }

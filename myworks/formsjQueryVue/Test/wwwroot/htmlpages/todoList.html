@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>ToDo List</title>
+    <link rel="stylesheet" type="text/css" href="../StyleSheet.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../modules/todoList.js"></script>
+</head>
+<body>
+    <div class="todoLists">
+        <div id="todoListVue" class="styleBlock">
+            <h1>TO-DO Vue</h1>
+            <p>Enter text into the input field to add items to your list.</p>
+            <p>Click the item to mark it as complete.</p>
+            <p>Click the "X" to remove the item from your list.</p>
+            <input value="" type="text" v-model="valueToAdd" placeholder="New item..."
+                   v-on:keyup.13="addItem" />
+            <input type="button" value="✏️" v-on:click="addItem" />
+            <ul>
+                <li v-for="(item, index) in todoItems">
+                    {{item}}
+                    <span v-on:click="deleteItem(index)">❌</span>
+                </li>
+            </ul>
+        </div>
+        <div id="todoListjQuery" class="styleBlock">
+            <h1>TO-DO jQuery</h1>
+            <p>Enter text into the input field to add items to your list.</p>
+            <p>Click the item to mark it as complete.</p>
+            <p>Click the "X" to remove the item from your list.</p>
+            <input value="" type="text" placeholder="New item..."
+                   data-valueToAdd="data-valueToAdd"/>
+            <input type="button" value="✏️"/>
+            <ul data-type="list-of-items">
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

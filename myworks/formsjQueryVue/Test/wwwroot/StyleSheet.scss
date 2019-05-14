@@ -1,0 +1,448 @@
+﻿* {
+    box-sizing: border-box;
+
+    body {
+        margin: 0;
+        min-height: 100vh;
+        background-color: #ffffe6;
+
+        .wrapper {
+            padding: 50px;
+            min-height: 100vh;
+            width: 960px;
+            margin: 0 auto;
+            position: relative;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: flex-start;
+
+            nav {
+                width: 20%;
+                display: flex;
+                flex-flow: column nowrap;
+                margin-right: 10px;
+
+                a {
+                    background-color: blanchedalmond;
+                    text-decoration: none;
+                    font: 30px Calibri;
+                    color: forestgreen;
+                    padding: 10px;
+                    box-shadow: 0 0 3px 0 red;
+
+                    &:hover {
+                        background-color: burlywood;
+                    }
+
+                    span {
+                        display: block;
+                        margin-top: -10px;
+                    }
+                }
+            }
+
+            iframe {
+                width: 80%;
+                min-height: 70vh;
+                border: none;
+            }
+        }
+    }
+
+    .styleBlock {
+        display: inline-block;
+        vertical-align: top;
+        width: calc(50% - 2px);
+        border: 2px solid #8ad1d5;
+        padding: 10px 20px;
+        background-color: #f2f2f2;
+        color: #00264d;
+        position: relative;
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            top: 90%;
+            bottom: 4px;
+            box-shadow: 0 4px 5px rgba(0,0,0,0.5);
+            z-index: -1;
+        }
+
+        &::before {
+            background: transparent;
+            left: 5px;
+            right: 45px;
+            transform: rotate(-2deg);
+        }
+
+        &::after {
+            background-color: transparent;
+            left: 45px;
+            right: 5px;
+            transform: rotate(2deg);
+        }
+
+        h2 {
+            color: #3d4a97;
+        }
+
+        input, select {
+            margin: 5px 5px 5px 0;
+            padding: 5px 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            color: #00264d;
+
+            &[type="button"], &[type="text"]:focus {
+                background-color: #e6f2ff;
+            }
+
+            &[type="button"] {
+                width: 100%;
+                background-color: #b3d9ff;
+                cursor: pointer;
+            }
+
+
+            &[type="button"]:hover {
+                background-color: #80bfff;
+            }
+
+            &[type="text"] {
+                width: 60%;
+            }
+        }
+
+        label {
+            display: inline-block;
+            width: 30%;
+        }
+
+        select {
+            width: 100%;
+        }
+
+        ul {
+            padding: 0;
+            list-style: none;
+            margin: 17px 0 0;
+
+            li {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+
+                label {
+                    span {
+                        display: block;
+                        margin-top: -5px;
+                    }
+                }
+            }
+
+
+
+            .validation-message {
+                color: red;
+            }
+
+            .invalid {
+                border-color: red;
+            }
+        }
+    }
+
+    #VueTipCalculator, #jQueryTipCalculator {
+        label {
+            width: 100%;
+        }
+
+        input[type="text"] {
+            display: block;
+            width: 100%;
+        }
+
+        input[type="text"] {
+            width: 100%;
+        }
+    }
+
+    #jQueryTipCalculator {
+        p {
+            display: none;
+        }
+    }
+
+    .clocks {
+        .styleBlock {
+            background-color: lightcoral;
+            font: 16px Calibri;
+
+            .message {
+                color: blueviolet;
+                font-size: 30px;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .timer {
+                display: block;
+                border-radius: 4px;
+                margin-bottom: 5px;
+                text-align: center;
+
+
+                label {
+                    width: 120px;
+                }
+
+                select {
+                    display: inline-block;
+                    width: 27px;
+                    padding: 5px;
+                    margin: 0;
+                    border: none;
+                    appearance: none;
+                    -webkit-appearance: none;
+
+                    &:first-child {
+                        padding-right: 0;
+                    }
+
+                    &:last-child {
+                    }
+
+                    &:focus {
+                        border: none;
+                    }
+                }
+            }
+
+            a {
+                margin-top: 10px;
+                display: block;
+                width: 100px;
+                background-color: #b3d9ff;
+                cursor: pointer;
+                text-align: center;
+                position: relative;
+                left: 50%;
+                transform: translate(-50%, 0);
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+        }
+    }
+
+    .authentication {
+        position: relative;
+
+        a:link, a:hover, a:visited {
+            padding: 3px;
+            background-color: aliceblue;
+            text-decoration: none;
+            border: 1px solid darkblue;
+            border-radius: 5px;
+            color: darkblue;
+        }
+
+        .styleBlock {
+            input[type="button"] {
+                display: inline;
+                width: 45%;
+            }
+        }
+
+        .authentication-form {
+            width: 60%;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 2px solid #8ad1d5;
+            background-color: #f2f2f2;
+            padding: 10px 20px;
+            border-radius: 5px;
+            z-index: 5;
+
+            .row {
+                display: grid;
+                grid-template-rows: auto 20px;
+
+
+                input {
+                    width: 100%;
+
+                    &[type='button'] {
+                        display: inline-block;
+                    }
+                }
+
+
+                span {
+                    position: relative;
+                    top: 0;
+                    left: 5%;
+                    width: 90%;
+                    text-align: center;
+                    color: red;
+                    padding: 3px 0;
+                    margin-top: -7px;
+                    background-color: lightgoldenrodyellow;
+                    border: 1px solid orange;
+                    border-radius: 3px;
+                    opacity: 0;
+
+
+
+                    &.hidden {
+                        opacity: 1;
+                        transition: opacity 0.3s;
+                    }
+
+                    &::before {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        bottom: 100%;
+                        left: 15px;
+                        width: 0;
+                        height: 0;
+                        border-left: 5px solid transparent;
+                        border-right: 5px solid transparent;
+                        border-bottom: 5px solid orange;
+                    }
+                }
+            }
+
+            .closeForm {
+                position: absolute;
+                top: 5px;
+                right: 10px;
+                color: grey;
+                cursor: pointer;
+            }
+        }
+
+        #authenticationjQuery .authentication-form .row span {
+            display: none;
+            opacity: 1;
+        }
+    }
+
+    .todoLists {
+        /*#todoListjQuery{
+            ul li{
+                display: none;
+            }
+        }*/
+
+        input[type='text'],
+        input[type='button'] {
+            display: inline-block;
+        }
+
+        input[type='text'] {
+        }
+
+        input[type='button'] {
+            width: 30px;
+            padding: 3px 5px 4px 5px;
+        }
+
+        ul {
+            li {
+                background-color: #80bfff;
+                padding: 5px 20px;
+                border: 1px solid #8383a2;
+                border-radius: 4px;
+                margin-bottom: 5px;
+                display: flex;
+                flex-flow:row nowrap;
+                justify-content: space-between;
+
+                span{
+                    cursor: pointer;
+                }
+
+                &.delete{
+                    display:none;
+                }
+            }
+        }
+    }
+}
+
+    
+
+
+
+@media only screen and (max-width: 970px) {
+    body {
+        .wrapper {
+            width: 100%;
+        }
+    }
+    .styleBlock {
+        width: calc(50% - 10px);
+    }
+}
+
+@media screen and (max-width: 650px) {
+    body {
+        .wrapper {
+            flex-flow: row wrap;
+
+            nav {
+                width: 100%;
+                flex-flow: row wrap;
+                justify-content: space-between;
+                margin-right: 0px;
+                a {
+                    margin-bottom: 8px;
+                }
+            }
+            iframe{
+                width: 95vw;
+            min-height: 100vh;
+            }
+        }
+    }
+    .authentication {
+        .authentication-form {
+            top: 40%;
+            width: 85vw;
+
+            row {
+                input[type='button'] {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        .wrapper {
+            padding: 10px;
+
+            iframe {
+                width: calc(100vw - 20px);
+            }
+        }
+    }
+
+    .styleBlock {
+        width: 100vw;
+        margin-bottom: 20px;
+    }
+    .authentication {
+        .authentication-form {
+            width: 100vw;
+
+        }
+    }
+}

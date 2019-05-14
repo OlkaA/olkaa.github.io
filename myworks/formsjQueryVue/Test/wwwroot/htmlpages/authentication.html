@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Authentication</title>
+    <link rel="stylesheet" type="text/css" href="../StyleSheet.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../modules/authentication.js"></script>
+</head>
+<body>
+    <div class="authentication">
+        <div id="authenticationVue" class="styleBlock"
+             data-confirm-message="You are going to reset data."
+             data-empty-form-error-message="You should fill the form!">
+            <h2>Vue Log-in </h2>
+            <a href="#" v-on:click="showForm">Log in</a>
+            <form v-show="isShow" class="authentication-form">
+                <label for="email">E-mail</label>
+                <div class="row">
+                    <input type="email" id="email" v-model="email" />
+                    <span class="validation-message" v-bind:class="{hidden: showValidation && !isEmailValid}">{{emailMessage}}</span>
+                </div>
+                <label for="password">Password</label>
+                <div class="row">
+                    <input type="password" id="password" v-model="password" />
+                    <span class="validation-message" v-bind:class="{hidden: showValidation && !isPasswordValid}">{{passwordMessage}}</span>
+                </div>
+                <input type="button" value="Submit" v-on:click="submitForm" />
+                <input type="button" value="Reset" v-on:click="resetForm" />
+                <span class="closeForm" v-on:click="hideForm">X</span>
+            </form>
+        </div>
+        <div id="authenticationjQuery" class="styleBlock">
+            <h2>jQuery Log-in </h2>
+            <a href="#" class="closed" data-log-in="log-in">Log in</a>
+            <form class="authentication-form" data-show-form="show-form">
+                <label for="email">E-mail</label>
+                <div class="row">
+                    <input type="email" id="email" data-message-empty="Email should not be empty!"
+                           data-message-monkey="Please include an @ in your e-mail adress!"
+                           data-message-dot="Please enter a valid email" />
+                </div>
+                <label for="password">Password</label>
+                <div class="row">
+                    <input type="password" id="password" 
+                           data-message-invalid="Password should be at least 6 symbols."/>
+                </div>
+                <input type="button" value="Submit"
+                       data-submit-form="submit">
+                <input type="button" value="Reset"
+                       data-confirm-message="You are going to reset data."
+                       data-reset-form="reset" />
+                <span class="closeForm" data-close-form="close-form">X</span>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

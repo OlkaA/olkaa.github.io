@@ -1,0 +1,14 @@
+﻿[
+  {
+    "outputFile": "wwwroot/StyleSheet - Copy.css",
+    "inputFile": "wwwroot/StyleSheet - Copy.scss"
+  },
+  {
+    "outputFile": "wwwroot/StyleSheet.css",
+    "inputFile": "wwwroot/StyleSheet.scss"
+  },
+  {
+    "outputFile": "wwwroot/JavaScript.es5.js",
+    "inputFile": "wwwroot/JavaScript.js"
+  }
+]

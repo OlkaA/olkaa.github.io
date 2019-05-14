@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Tipcalculator</title>
+    <link rel="stylesheet" type="text/css" href="../StyleSheet.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../modules/tipcalculator.js"></script>
+</head>
+<body>
+    <div class="Tipcalculator">
+        <div class="styleBlock" id="VueTipCalculator">
+            <h2>Vue Tip Calculator</h2>
+            <label for="amountOfBill">How much was your bill?</label>
+            <input type="text" placeholder="Bill Amount (only numbers)" name="amountOfBill" v-model="amountOfBill" />
+            <label for="serviceLevel">How was your service?</label>
+            <select name="serviceLevel" v-model="serviceLevel">
+                <option value="">-- Choose an Option --</option>
+                <option v-for="(value, key) in service" v-bind:value="value">{{ key }}</option>
+            </select>
+            <label for="amountOfPeople">How many people are sharing the bill?</label>
+            <input type="text" placeholder="Number of people (only numbers)" name="amountOfPeople" v-model="amountOfPeople" />
+            <p v-if="result">
+                Your whole bill is {{ result.wholeAmount }}$, which includes tips - {{ result.tips }}$.
+                <span v-show="amountOfPeople != 0">For each person {{ result.wholeAmountPerPerson }}$.</span>
+            </p>
+        </div>
+
+        <div class="styleBlock" id="jQueryTipCalculator">
+            <h2>jQuery Tip Calculator</h2>
+            <label for="amountOfBill">How much was your bill?</label>
+            <input type="text" placeholder="Bill Amount (only numbers)" name="amountOfBill" data-change="amountOfBill" />
+            <label for="serviceLevel">How was your service?</label>
+            <select data-select="select-option" value="select">
+                <option value="">-- Choose an Option --</option>
+            </select>
+            <label for="amountOfPeople">How many people are sharing the bill?</label>
+            <input type="text" placeholder="Number of people (only numbers)" name="amountOfPeople" data-change="amountOfPeople" />
+            <p data-result="result"></p>
+        </div>
+    </div>
+</body>
+</html>

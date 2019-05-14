@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../StyleSheet.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../modules/formsVueJQuery.js"></script>
+</head>
+<body data-api-url="http://localhost">
+    <div class="forms">
+        <div id="userFormVue" class="styleBlock" data-empty-form-error-message="You should fill the form!" data-confirm-message="You are going to delete this User.">
+            <h2>Vue</h2>
+            <select v-model="selectedUserId">
+                <option value=""> - Select user - </option>
+                <option v-for="(value, key) in users" v-bind:value="key">{{value}}</option>
+            </select>
+            <input v-show="!isCreateMode" type="button" value="Create" v-on:click="onCreate" />
+
+
+
+            <ul v-show="selectedUserId || isCreateMode">
+                <li>
+                    <label>Name:</label><input type="text" v-model="person.name" v-bind:class="{ invalid: showValidation && isNameInvalid }" />
+                    <span class="validation-message" v-show="showValidation && isNameInvalid">Name should not be empty!</span>
+                </li>
+                <li>
+                    <label>Age:</label><input type="text" v-model="person.age" v-bind:class="{ invalid: showValidation && isAgeInvalid }" />
+                    <span class="validation-message" v-show="showValidation && isAgeInvalid">Age should not be empty and must contain only numbers!</span>
+                </li>
+                <li v-show="isMarriageVisible">
+                    <label>Family <span>Status:</span></label><input type="checkbox" v-model="person.isMarried" />
+                </li>
+                <li v-show="isNumberOfKidsVisible">
+                    <label>Kids:</label><input type="text" v-model="person.numberOfKids" />
+                </li>
+                <li class="button">
+                    <input type="button" v-on:click="onSave" value="Save" />
+                </li>
+                <li class="button" v-show="!isCreateMode">
+                    <input type="button" v-on:click="onDelete" value="Delete" />
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div id="userForm" class="styleBlock">
+            <h2>jQuery</h2>
+            <select data-select="select-user" value="select-user">
+                <option value=""> - Select user - </option>
+                <!--- In the JS--->
+            </select>
+            <div class="create-button">
+                <input type="button" data-type="createButton" value="Create" />
+            </div>
+
+
+            <ul data-type="edit-form">
+                <li>
+                    <label>Name:</label><input type="text" name="name" />
+                    <span class="validation-message" data-show-name-validation="isNameInvalid">Name should not be empty!</span>
+                </li>
+                <li>
+                    <label>Age:</label><input type="text" name="age" />
+                    <span class="validation-message" data-show-age-validation="isAgeInvalid">Age should not be empty and must contain only numbers!</span>
+                </li>
+                <li>
+                    <label>Family <span>Status:</span></label><input type="checkbox" name="isMarried" />
+                </li>
+                <li>
+                    <label>Kids:</label><input type="text" name="numberOfKids" />
+                </li>
+                <li class="button">
+                    <input type="button" data-type="saveButton" value="Save" data-empty-form-error-message="You should fill the form!" />
+                </li>
+                <li class="button">
+                    <input type="button" data-type="deleteButton" value="Delete" data-confirm-message="You are going to delete this User." />
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
