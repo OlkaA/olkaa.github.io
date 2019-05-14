@@ -1,0 +1,56 @@
+D:\Study\projects\Test\bin\Debug\netcoreapp2.1\Test.deps.json
+D:\Study\projects\Test\bin\Debug\netcoreapp2.1\Test.runtimeconfig.json
+D:\Study\projects\Test\bin\Debug\netcoreapp2.1\Test.runtimeconfig.dev.json
+D:\Study\projects\Test\bin\Debug\netcoreapp2.1\Test.dll
+D:\Study\projects\Test\bin\Debug\netcoreapp2.1\Test.pdb
+D:\Study\projects\Test\obj\Debug\netcoreapp2.1\Test.csprojAssemblyReference.cache
+D:\Study\projects\Test\obj\Debug\netcoreapp2.1\Test.csproj.CoreCompileInputs.cache
+D:\Study\projects\Test\obj\Debug\netcoreapp2.1\Test.RazorAssemblyInfo.cache
+D:\Study\projects\Test\obj\Debug\netcoreapp2.1\Test.RazorAssemblyInfo.cs
+D:\Study\projects\Test\obj\Debug\netcoreapp2.1\Test.AssemblyInfoInputs.cache
+D:\Study\projects\Test\obj\Debug\netcoreapp2.1\Test.AssemblyInfo.cs
+D:\Study\projects\Test\obj\Debug\netcoreapp2.1\Test.RazorTargetAssemblyInfo.cache
+D:\Study\projects\Test\obj\Debug\netcoreapp2.1\Test.dll
+D:\Study\projects\Test\obj\Debug\netcoreapp2.1\Test.pdb
+D:\Study\git\Test\bin\Debug\netcoreapp2.1\Test.deps.json
+D:\Study\git\Test\bin\Debug\netcoreapp2.1\Test.runtimeconfig.json
+D:\Study\git\Test\bin\Debug\netcoreapp2.1\Test.runtimeconfig.dev.json
+D:\Study\git\Test\bin\Debug\netcoreapp2.1\Test.dll
+D:\Study\git\Test\bin\Debug\netcoreapp2.1\Test.pdb
+D:\Study\git\Test\obj\Debug\netcoreapp2.1\Test.csprojAssemblyReference.cache
+D:\Study\git\Test\obj\Debug\netcoreapp2.1\Test.csproj.CoreCompileInputs.cache
+D:\Study\git\Test\obj\Debug\netcoreapp2.1\Test.RazorAssemblyInfo.cache
+D:\Study\git\Test\obj\Debug\netcoreapp2.1\Test.RazorAssemblyInfo.cs
+D:\Study\git\Test\obj\Debug\netcoreapp2.1\Test.AssemblyInfoInputs.cache
+D:\Study\git\Test\obj\Debug\netcoreapp2.1\Test.AssemblyInfo.cs
+D:\Study\git\Test\obj\Debug\netcoreapp2.1\Test.RazorTargetAssemblyInfo.cache
+D:\Study\git\Test\obj\Debug\netcoreapp2.1\Test.dll
+D:\Study\git\Test\obj\Debug\netcoreapp2.1\Test.pdb
+D:\Study\code\tests for job search\form jQuery Vue - Copy\Test\bin\Debug\netcoreapp2.1\Test.deps.json
+D:\Study\code\tests for job search\form jQuery Vue - Copy\Test\bin\Debug\netcoreapp2.1\Test.runtimeconfig.json
+D:\Study\code\tests for job search\form jQuery Vue - Copy\Test\bin\Debug\netcoreapp2.1\Test.runtimeconfig.dev.json
+D:\Study\code\tests for job search\form jQuery Vue - Copy\Test\bin\Debug\netcoreapp2.1\Test.dll
+D:\Study\code\tests for job search\form jQuery Vue - Copy\Test\bin\Debug\netcoreapp2.1\Test.pdb
+D:\Study\code\tests for job search\form jQuery Vue - Copy\Test\obj\Debug\netcoreapp2.1\Test.csprojAssemblyReference.cache
+D:\Study\code\tests for job search\form jQuery Vue - Copy\Test\obj\Debug\netcoreapp2.1\Test.csproj.CoreCompileInputs.cache
+D:\Study\code\tests for job search\form jQuery Vue - Copy\Test\obj\Debug\netcoreapp2.1\Test.RazorAssemblyInfo.cache
+D:\Study\code\tests for job search\form jQuery Vue - Copy\Test\obj\Debug\netcoreapp2.1\Test.RazorAssemblyInfo.cs
+D:\Study\code\tests for job search\form jQuery Vue - Copy\Test\obj\Debug\netcoreapp2.1\Test.AssemblyInfoInputs.cache
+D:\Study\code\tests for job search\form jQuery Vue - Copy\Test\obj\Debug\netcoreapp2.1\Test.AssemblyInfo.cs
+D:\Study\code\tests for job search\form jQuery Vue - Copy\Test\obj\Debug\netcoreapp2.1\Test.RazorTargetAssemblyInfo.cache
+D:\Study\code\tests for job search\form jQuery Vue - Copy\Test\obj\Debug\netcoreapp2.1\Test.dll
+D:\Study\code\tests for job search\form jQuery Vue - Copy\Test\obj\Debug\netcoreapp2.1\Test.pdb
+D:\Study\code\tests for job search\forms jQuery Vue\Test\bin\Debug\netcoreapp2.1\Test.deps.json
+D:\Study\code\tests for job search\forms jQuery Vue\Test\bin\Debug\netcoreapp2.1\Test.runtimeconfig.json
+D:\Study\code\tests for job search\forms jQuery Vue\Test\bin\Debug\netcoreapp2.1\Test.runtimeconfig.dev.json
+d:\Study\code\tests for job search\forms jQuery Vue\Test\bin\Debug\netcoreapp2.1\Test.dll
+d:\Study\code\tests for job search\forms jQuery Vue\Test\bin\Debug\netcoreapp2.1\Test.pdb
+d:\Study\code\tests for job search\forms jQuery Vue\Test\obj\Debug\netcoreapp2.1\Test.csprojAssemblyReference.cache
+d:\Study\code\tests for job search\forms jQuery Vue\Test\obj\Debug\netcoreapp2.1\Test.csproj.CoreCompileInputs.cache
+d:\Study\code\tests for job search\forms jQuery Vue\Test\obj\Debug\netcoreapp2.1\Test.RazorAssemblyInfo.cache
+d:\Study\code\tests for job search\forms jQuery Vue\Test\obj\Debug\netcoreapp2.1\Test.RazorAssemblyInfo.cs
+d:\Study\code\tests for job search\forms jQuery Vue\Test\obj\Debug\netcoreapp2.1\Test.AssemblyInfoInputs.cache
+d:\Study\code\tests for job search\forms jQuery Vue\Test\obj\Debug\netcoreapp2.1\Test.AssemblyInfo.cs
+d:\Study\code\tests for job search\forms jQuery Vue\Test\obj\Debug\netcoreapp2.1\Test.RazorTargetAssemblyInfo.cache
+d:\Study\code\tests for job search\forms jQuery Vue\Test\obj\Debug\netcoreapp2.1\Test.dll
+d:\Study\code\tests for job search\forms jQuery Vue\Test\obj\Debug\netcoreapp2.1\Test.pdb

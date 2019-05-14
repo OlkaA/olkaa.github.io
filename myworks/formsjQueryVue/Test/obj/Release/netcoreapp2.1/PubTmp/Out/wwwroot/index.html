@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link  rel="stylesheet" type="text/css" href="StyleSheet.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="JavaScript.js"></script>
+</head>
+<body data-api-url="http://localhost">
+    <div id="userForm">
+        <select data-select="select-user" value="select-user">
+            <option value=""> - Select user - </option>
+            <!--- In the JS--->
+        </select>
+        <input type="button" data-type="createButton" value="Create" />
+
+        <ul data-type="edit-form">
+            <li>
+                <label>Name:</label><input type="text" name="name" />
+            </li>
+            <li>
+                <label>Age:</label><input type="text" name="age" />
+            </li>
+            <li>
+                <label>Family Status:</label><input type="checkbox" name="isMarried" />
+            </li>
+            <li>
+                <label>Kids:</label><input type="text" name="numberOfKids" />
+            </li>
+            <li class="button">
+                <input type="button" data-type="saveButton" value="Save" data-empty-form-error-message="You should fill the form!" />
+            </li>
+            <li class="button">
+                <input type="button" data-type="deleteButton" value="Delete" data-confirm-message="You are going to delete this User." />
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
