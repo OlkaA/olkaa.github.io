@@ -3,7 +3,7 @@ window.onload = function () {
     let basket = new Vue({
             el: '#basket',
             data: {
-                cart: [] || JSON.parse(localStorage.getItem('key')),
+                cart: JSON.parse(localStorage.getItem('key')) || [],
                 isBasketShown: false
             },
             watch: {
@@ -15,27 +15,27 @@ window.onload = function () {
             computed: {
                 totalAmountOfItems: function(){
                     return this.cart.reduce((total, element) => {
-                        console.log(total + element.amount);
                         return total + element.amount;
                     }, 0);
                 }
             },
             methods: {
                 addOneElement: function(item){
-                    let self = this;
                     item.amount++;
                 },
                 removeOneElement: function(item){
-                        if(item.amount > 0){
+                        if(item.amount > 1){
                             item.amount--;
                         }
                         else{
                             item.amount = 0;
+                            this.cart = this.cart.filter(element => element.id !== item.id);
+                            console.log('1' + this.cart);
                         }
                 },
-                removeAll: function(id){
-                    this.cart = this.cart.filter(element => element.id !== id);
-                    console.log(this.cart);
+                removeAll: function(item){
+                    this.cart = this.cart.filter(element => element.id !== item.id);
+                    console.log('2' + this.cart);
                 },
                 showBasket: function(){
                     this.isBasketShown = !this.isBasketShown;
