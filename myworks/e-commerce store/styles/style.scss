@@ -1,0 +1,161 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+$bg-color: #ece7e7;
+$main-font-size: 15px;
+//$button-font-size: 14px;
+
+body{
+    min-height: 100vh;
+    background-color: $bg-color;
+    font-size: $main-font-size;
+}
+
+.wrapper{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+#basket{
+    position: sticky;
+    top:0;
+    left:0;
+    z-index: 1;
+
+    &.container-fluid{
+        padding-right:0;
+        padding-left:0;
+    }
+    .cart-button{
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        z-index: 1;
+        font-size: 20px;
+    }
+
+    .card{
+        h2{
+            position: relative;
+            i{
+                position: absolute;
+                top:5px;
+                right: 10px;
+            }
+        }
+    }
+
+    i.fa-plus{
+        color: green;
+    }
+
+    i.fa-minus{
+        color: red;
+    }
+
+    i.fa-trash{
+        margin-left: 25px;
+        color: orange;
+    }
+}
+ul#products_list{
+    
+
+    li{
+        display:grid;
+        grid-template-columns: 50% auto;
+        grid-template-areas: "h3 h3"
+                            "img addToBasket"
+                            "p p"
+                            "readMoreLess readMoreLess";
+        grid-template-rows: auto max-content auto;
+        grid-column-gap: 10px;
+        position: relative;
+
+        h3{
+            grid-area: h3;
+        }
+        img{
+            grid-area: img;
+            width: 150px;
+            max-width: 100%;
+        }
+        p{
+            grid-area: p;
+            margin-top: 1em;
+        }
+        .readMoreLess{
+            grid-area: readMoreLess;
+            justify-self: left;
+            align-self: center;
+
+        }
+        .addToBasket{
+            grid-area: addToBasket;
+            justify-self: left;
+            align-self: center;
+        }
+
+        button{
+            font-size: $main-font-size;
+            
+            i{
+                margin-left: 5px;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 768px) {
+    ul#products_list{
+
+        li{
+            grid-template-columns: 30% auto auto;
+            grid-template-areas: "h3 h3 h3"
+                                "img addToBasket addToBasket"
+                                "img p p"
+                                "img readMoreLess readMoreLess";
+
+            h3{
+                margin-left: 30px;
+            }
+            img{
+                margin-left: 30px;
+            }
+        }
+    }
+} 
+
+@media (min-width: 960px) {
+    .wrapper{
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    ul#products_list{
+
+        li{
+            grid-template-columns: 25% auto auto;
+        }
+    }
+}
+
+                // <h3>{{item.title}}</h3>
+                // <img class="img-thumbnail" v-bind:src="item.img" v-bind:alt="item.title">
+                // <p class="short-text" v-show="!item.isFullText">{{item.text}}</p>
+                // <p v-show="item.isFullText">{{item.text_added}}</p>
+                // <button class="btn btn-info" v-on:click="readMoreLess(item)">
+                //     <span v-show="!item.isFullText">
+                //         Read more
+                //     </span>
+                //     <span v-show="item.isFullText">
+                //         Read less
+                //     </span>
+                // </button>
+                // <button class="btn btn-success addToBasket"
+                //     v-on:click='add(item.title, item.id)'>
+                //     Add to basket<i class="fas fa-shopping-cart"></i>
+                // </button>
