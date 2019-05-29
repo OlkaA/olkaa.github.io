@@ -28,7 +28,7 @@ body {
 
 #basket .cart-button {
   position: absolute;
-  top: 5px;
+  top: -40px;
   right: 10px;
   z-index: 1;
   font-size: 20px;

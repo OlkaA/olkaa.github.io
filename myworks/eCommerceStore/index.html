@@ -10,7 +10,7 @@
         <link rel="stylesheet" type="text/css" href="styles/style.css">
     </head>
 <body>
-    <div class="wrapper container-fluid d-flex justify-content-center flex-column text-justify">
+    <div class="wrapper d-flex justify-content-center flex-column text-justify">
         <h1>E-store</h1>
         <div id="basket" class="container-fluid">
             <a class="cart-button" v-show="!isBasketShown" v-on:click="showBasket()">
@@ -36,7 +36,7 @@
         </div>
 
         <ul id="products_list" class="list-group">
-            <li class="list-group-item container" v-for="item in products">
+            <li class="list-group-item" v-for="item in products">
                 <h3>{{item.title}}</h3>
                 <img class="img-thumbnail img-fluid" v-bind:src="item.img" v-bind:alt="item.title" @error="imgPlaceholder">
                 <p class="short-text" v-show="!item.isFullText">{{item.text}}</p>
