@@ -22,7 +22,7 @@ The number shows total amount of added items(regardless what type of item it is.
 
 By clicking on the short version of basket, the full version of basket is shown and the small version of basket is hidden.
 The full basket contains a list of added items with titles, amount of each items and buttons("+", "-", "(picture of trash bin)", "X").
-User can add or substract amount of items by 1 by clicking on buttons "-" and "+" accordingly.
+User can add or subtract amount of items by 1 by clicking on buttons "-" and "+" accordingly.
 If amount of each item is less than one, the item is removed from the basket.
 User can also click on the "(picture of trash bin)" to remove item completely from basket.
 By clicking on the "X" button the small version of basket is shown and the full version of basket is hidden.
