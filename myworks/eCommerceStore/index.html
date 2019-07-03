@@ -39,6 +39,7 @@
             <li class="list-group-item" v-for="item in products">
                 <h3>{{item.title}}</h3>
                 <img class="img-thumbnail img-fluid" v-bind:src="item.img" v-bind:alt="item.title" @error="imgPlaceholder">
+                <!-- //@error – which listens to DOM events.  -->
                 <p class="short-text" v-show="!item.isFullText">{{item.text}}</p>
                 <p class="full-text" v-show="item.isFullText">{{item.text_added}}</p>
                 <button class="btn btn-info readMoreLess" v-on:click="readMoreLess(item)">

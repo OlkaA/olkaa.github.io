@@ -33,13 +33,5 @@ let products = [
         title: 'Network Storage',
         text: 'Flexibility, reliability, and high performance are key elements of ...',
         text_added: 'Flexibility, reliability, and high performance are key elements of state-of-the-art network storage. DB Computer Solutions recommends robust HP Network Storage systems to provide the resources you need, with the agility to meet ever-changing, secure data storage requirements.'
-    }
-    // ,
-    //{
-    //     img: '',
-    //     title: '',
-    //     text: '',
-    //     text_added: ''
-    // }
-    
+    }    
 ];
