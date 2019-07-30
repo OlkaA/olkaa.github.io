@@ -1,5 +1,5 @@
 window.onload = function () {
-  
+
     let basket = new Vue({
             el: '#basket',
             data: {
@@ -35,12 +35,10 @@ window.onload = function () {
                         else{
                             item.amount = 0;
                             this.cart = this.cart.filter(element => element.id !== item.id);
-                            console.log('1' + this.cart);
                         }
                 },
                 removeAll: function(item){
                     this.cart = this.cart.filter(element => element.id !== item.id);
-                    console.log('2' + this.cart);
                 },
                 showBasket: function(){
                     this.isBasketShown = !this.isBasketShown;
