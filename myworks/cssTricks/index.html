@@ -1,0 +1,54 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tricks</title>
+    <meta name="description" content="CSS Tricks">
+    <link rel="stylesheet" href="styles/style.css?v=1.0">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div>
+                <h1>LOGO
+                    
+                </h1>
+                <p>extra information</p>
+            </div>
+
+
+            <nav>
+                <ul class="tabs">
+                    <li data-tab-target="#home" class="active">Home</li>
+                    <li data-tab-target="#contact">Contact</li>
+                    <li data-tab-target="#about">About</li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <div class="tab-content">
+            <div id="home" data-tab-content class="active">
+                <h2>Home</h2>
+                <p>Something about Home</p>
+            </div>
+            <div id="contact" data-tab-content>
+                <h2>Contact</h2>
+                <p>Something about Contact</p>
+            </div>
+            <div id="about" data-tab-content>
+                <h2>About</h2>
+                <p>Something about About</p>
+            </div>
+        </div>
+        <footer>FOOTER</footer>
+    </div>
+    <script src="scripts/main.js" defer></script>
+</body>
+
+</html>
