@@ -26,6 +26,39 @@ body {
     background-color: $second-color;
 }
 
+a.button {
+    font-size: 1.5rem;
+    color: $main-text-color;
+    padding: 1rem 2rem;
+    border: 2px solid $main-text-color;
+    transition: color 0.25s, background-color 0.25s;
+
+    i.material-icons {
+        font-size: 1rem;
+        margin-top: 5px;
+        transform: rotate(0);
+        transition: transform 0.5s;
+    }
+
+    &:hover {
+        color: $second-color;
+        background-color: $hover-color;
+        border: 2px solid $main-text-color;
+
+        i.material-icons {
+            transform: rotate(90deg);
+            color: $second-color;
+        }
+    }
+}
+.button-to-the-top{
+    :hover{
+        i.material-icons {
+            transform: rotate(-90deg);
+        }
+    }
+}
+
 .wrapper {
     width: 700px;
     margin: 0 auto;
@@ -53,14 +86,15 @@ body {
                                 font-size: 2rem;
                                 vertical-align: middle;
                                 color: $hover-color;
-                                transition: color 0.25s ease-in-out;
+                                filter: brightness(100%);
+                                transition: filter 0.5s ease-in-out;
                             }
                         }
                     }
             
                     &:hover a i {
-                        color: $main-text-color;
-                        transition: color 0.5s ease-in-out;
+                        filter: brightness(70%);
+                        
                     }
                 }
             }
@@ -89,16 +123,28 @@ body {
                     color: #E31B6D;
                 }
             }
+        }        
+    }
+    
+    .projects{
+        min-height: 100vh;
         
-            a.button {
+        &:last-child{
+            position: relative;
+
+            a.button-to-the-top {
+                position: absolute;
+                bottom: 20px;
+                right: -100px;
                 font-size: 1.5rem;
                 color: $main-text-color;
-                padding: 1rem 2rem;
+                padding: 0.5rem 0.5rem;
                 border: 2px solid $main-text-color;
+                border-radius: 2.5rem;                
+                transition: background-color 250ms;
         
-                i.material-icons {
-                    font-size: 1rem;
-                    margin-top: 5px;
+                i{
+                    font-size: 2rem;
                     transform: rotate(0);
                     transition: color 0.3s, transform 0.3s;
                 }
@@ -107,47 +153,11 @@ body {
                     color: $second-color;
                     background-color: $hover-color;
                     border: 2px solid $main-text-color;
-                    transition: color 250ms, background-color 250ms;
-        
-                    i.material-icons {
-                        transform: rotate(90deg);
-                        color: $second-color;
-                        transition: color 0.3s, transform 0.3s;
-                    }
                 }
             }
-        }        
-    }
-    
-    .projects{
-        min-height: 100vh;
-        position: relative;
-    
-
-        a.button-to-the-top {
-            position: absolute;
-            bottom: 60px;
-            right: -100px;
-            font-size: 1.5rem;
-            color: $main-text-color;
-            padding: 0.5rem 0.5rem;
-            border: 2px solid $main-text-color;
-            border-radius: 2.5rem;
-            
-    
-            i{
-                font-size: 2rem;
-                transform: rotate(0);
-                transition: color 0.3s, transform 0.3s;
-            }
-    
-            &:hover {
-                color: $second-color;
-                background-color: $hover-color;
-                border: 2px solid $main-text-color;
-                transition: background-color 250ms;
-            }
         }
+
+        
 
         .list{
             background:url(../images/bg-ul-portfolio.png) no-repeat bottom;
@@ -155,7 +165,7 @@ body {
             position:relative;
             margin-bottom:50px;
             width:600px;
-            margin: 0 auto;
+            margin: 0 auto 40px auto;
 
             .jcarousel-clip{
                 overflow:hidden;
@@ -194,6 +204,10 @@ body {
                 left: -30px;
             }
         }
+    }
+
+    footer{
+        height: 4rem;
     }
 }
 
