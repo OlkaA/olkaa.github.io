@@ -16,6 +16,10 @@ h2 {
   padding: 3rem 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   min-height: 100%;
   font: 10px 'Lato';
