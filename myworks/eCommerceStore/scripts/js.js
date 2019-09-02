@@ -71,7 +71,7 @@ window.onload = function () {
                 //url with broken image replaces src in img. 
             },
             showShareWindow() {
-                console.log(1);
+                console.log(3);
                 if (navigator.share) {
                     console.log(2);
                   navigator
@@ -83,7 +83,7 @@ window.onload = function () {
                     })
                     .catch(console.error);
                 } else {
-                  console.log("no");
+                  console.log("nono");
                 }
               }
         }

@@ -42,7 +42,7 @@
                 <!-- //@error – which listens to DOM events.  -->
                 <p class="short-text" v-show="!item.isFullText">{{item.text}}</p>
                 <p class="full-text" v-show="item.isFullText">{{item.text_added}}</p>
-                <button class="btn btn-info readMoreLess" @click="showShareWindow">
+                <button class="btn btn-info readMoreLess" @click.stop="showShareWindow">
                     <span v-show="!item.isFullText">
                         Read more
                     </span>
