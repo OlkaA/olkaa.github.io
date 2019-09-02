@@ -11,7 +11,7 @@
     </head>
 <body>
     <div class="wrapper d-flex justify-content-center flex-column text-justify">
-        <h1>E-store</h1>
+        <a @click="showShareWindow">E-store</a>
         <div id="basket" class="container-fluid">
             <a class="cart-button" v-show="!isBasketShown" v-on:click="showBasket()">
                 <span class="text-success">{{totalAmountOfItems}}</span>

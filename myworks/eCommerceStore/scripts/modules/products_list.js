@@ -21,6 +21,22 @@ export default (basket) => new Vue({
             e.target.src = "https://via.placeholder.com/150"
             //e.target - is a reference to the object that dispatched (посилає) the event.
             //url with broken image replaces src in img. 
-        }
+        },
+        showShareWindow() {
+            console.log(1);
+            if (navigator.share) {
+              navigator
+                .share({
+                  title: "WebShare API Demo",
+                  url: 'https://developers.google.com/web/updates/2016/09/navigator-share'
+                })
+                .then(() => {
+                  console.log("Thanks for sharing!");
+                })
+                .catch(console.error);
+            } else {
+              console.log("no");
+            }
+          }
     }
 });
