@@ -35,7 +35,7 @@ export default (basket) => new Vue({
                 })
                 .catch(console.error);
             } else {
-              console.log("no");
+              console.log("nonono");
             }
           }
     }
