@@ -1,5 +1,6 @@
 *, *::after, *::before {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 a {
@@ -31,14 +32,19 @@ a.button {
   color: #000;
   padding: 1rem 2rem;
   border: 2px solid #000;
+  -webkit-transition: color 0.25s, background-color 0.25s;
   transition: color 0.25s, background-color 0.25s;
 }
 
 a.button i.material-icons {
   font-size: 1rem;
   margin-top: 5px;
-  transform: rotate(0);
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 a.button:hover {
@@ -48,12 +54,14 @@ a.button:hover {
 }
 
 a.button:hover i.material-icons {
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
   color: #fff;
 }
 
 .button-to-the-top :hover i.material-icons {
-  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 
 .wrapper {
@@ -63,15 +71,25 @@ a.button:hover i.material-icons {
 }
 
 .wrapper .about nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .wrapper .about nav ul.contact {
   margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .wrapper .about nav ul.contact li {
@@ -80,26 +98,40 @@ a.button:hover i.material-icons {
 
 .wrapper .about nav ul.contact li a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 .wrapper .about nav ul.contact li a i.material-icons, .wrapper .about nav ul.contact li a i.fa {
   font-size: 2rem;
   vertical-align: middle;
   color: grey;
-  filter: brightness(100%);
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%);
+  -webkit-transition: -webkit-filter 0.5s ease-in-out;
+  transition: -webkit-filter 0.5s ease-in-out;
   transition: filter 0.5s ease-in-out;
+  transition: filter 0.5s ease-in-out, -webkit-filter 0.5s ease-in-out;
 }
 
 .wrapper .about nav ul.contact li:hover a i {
-  filter: brightness(70%);
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
 }
 
 .wrapper .about .flex-center {
   min-height: 95vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-around;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .wrapper .about .flex-center p {
@@ -136,13 +168,18 @@ a.button:hover i.material-icons {
   padding: 0.5rem 0.5rem;
   border: 2px solid #000;
   border-radius: 2.5rem;
+  -webkit-transition: background-color 250ms;
   transition: background-color 250ms;
 }
 
 .wrapper .projects:last-child a.button-to-the-top i {
   font-size: 2rem;
-  transform: rotate(0);
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  -webkit-transition: color 0.3s, -webkit-transform 0.3s;
+  transition: color 0.3s, -webkit-transform 0.3s;
   transition: color 0.3s, transform 0.3s;
+  transition: color 0.3s, transform 0.3s, -webkit-transform 0.3s;
 }
 
 .wrapper .projects:last-child a.button-to-the-top:hover {
@@ -220,23 +257,30 @@ a.button:hover i.material-icons {
   background-color: lightcoral;
   border-radius: 4px;
   cursor: pointer;
+  -webkit-transition: background-color 0.5s, -webkit-transform 0.5s;
+  transition: background-color 0.5s, -webkit-transform 0.5s;
   transition: transform 0.5s, background-color 0.5s;
-  transition-timing-function: cubic-bezier(0.13, 0.24, 0.35, 1.64);
+  transition: transform 0.5s, background-color 0.5s, -webkit-transform 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.13, 0.24, 0.35, 1.64);
+          transition-timing-function: cubic-bezier(0.13, 0.24, 0.35, 1.64);
 }
 
 .close-button:hover:before {
   background-color: orange;
-  transform: translate(0, 11px) rotate(45deg);
+  -webkit-transform: translate(0, 11px) rotate(45deg);
+          transform: translate(0, 11px) rotate(45deg);
 }
 
 .close-button:hover span {
   background-color: transparent;
-  transform: translateX(-10px);
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
 }
 
 .close-button:hover:after {
   background-color: orange;
-  transform: translate(0, -11px) rotate(-45deg);
+  -webkit-transform: translate(0, -11px) rotate(-45deg);
+          transform: translate(0, -11px) rotate(-45deg);
 }
 
 #preview_bg {
@@ -248,8 +292,12 @@ a.button:hover i.material-icons {
   background: rgba(0, 0, 0, 0.5);
   z-index: 10000;
   display: none;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #preview_box {
@@ -277,12 +325,41 @@ a.button:hover i.material-icons {
 
 @media only screen and (max-width: 700px) {
   #portfolioJS {
-    width: 100%;
+    width: 200px !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    margin: 0 auto !important;
   }
   #portfolio {
-    width: 100%;
+    margin-left: calc((100vw - 200px - 40px)/2) !important;
+  }
+  #portfolio li {
+    margin-right: 100vw !important;
+  }
+  a.arrow-right {
+    right: 0px !important;
+  }
+  .arrow-left {
+    left: 0px !important;
   }
   .wrapper {
     width: 100%;
+    padding: 0 20px;
+  }
+  .list {
+    width: unset !important;
+    background-size: 100% !important;
+  }
+  .big {
+    margin: 20px 0;
+  }
+  a.button {
+    margin-top: 20px;
   }
 }
+/*# sourceMappingURL=Style.css.map */

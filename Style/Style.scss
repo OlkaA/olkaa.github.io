@@ -82,6 +82,7 @@ a.button {
                     margin-right: 1rem;
                     a {
                         text-decoration: none;
+                        cursor: pointer;
                         i {
                             &.material-icons,
                             &.fa {
@@ -158,8 +159,6 @@ a.button {
                 }
             }
         }
-
-        
 
         .list{
             background:url(../images/bg-ul-portfolio.png) no-repeat bottom;
@@ -285,16 +284,38 @@ a.button {
 }
 
 
-
-
 @media only screen and (max-width: 700px){
     #portfolioJS {
-        width: 100%;
+        width: 200px !important;
+        display: flex;
+        flex-flow: column nowrap;
+        margin: 0 auto !important;
     }
     #portfolio {
-        width: 100%;
+        margin-left: calc((100vw - 200px - 40px)/2) !important;
+
+        li{
+            margin-right: 100vw !important;
+        }
+    }
+    a.arrow-right {
+        right: 0px !important;
+    }
+    .arrow-left {
+        left: 0px !important;
     }
     .wrapper{
         width: 100%;
+        padding: 0 20px;
+    }
+    .list{
+        width: unset !important;
+        background-size: 100% !important;
+    }
+    .big{
+        margin: 20px 0;
+    }
+    a.button {
+        margin-top: 20px;
     }
 }
