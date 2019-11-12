@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/famly/static/css/main.19841a16.chunk.css",
+    "main.css": "/famly/static/css/main.85ec0271.chunk.css",
     "main.js": "/famly/static/js/main.293a3320.chunk.js",
     "main.js.map": "/famly/static/js/main.293a3320.chunk.js.map",
     "runtime-main.js": "/famly/static/js/runtime-main.da51217d.js",
@@ -8,14 +8,14 @@
     "static/js/2.14f4b7ce.chunk.js": "/famly/static/js/2.14f4b7ce.chunk.js",
     "static/js/2.14f4b7ce.chunk.js.map": "/famly/static/js/2.14f4b7ce.chunk.js.map",
     "index.html": "/famly/index.html",
-    "precache-manifest.d5eb977c182e6d1b5d79e702c88f8b0f.js": "/famly/precache-manifest.d5eb977c182e6d1b5d79e702c88f8b0f.js",
+    "precache-manifest.f279494893f05f3de4a797ace8d74cd1.js": "/famly/precache-manifest.f279494893f05f3de4a797ace8d74cd1.js",
     "service-worker.js": "/famly/service-worker.js",
-    "static/css/main.19841a16.chunk.css.map": "/famly/static/css/main.19841a16.chunk.css.map"
+    "static/css/main.85ec0271.chunk.css.map": "/famly/static/css/main.85ec0271.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.da51217d.js",
     "static/js/2.14f4b7ce.chunk.js",
-    "static/css/main.19841a16.chunk.css",
+    "static/css/main.85ec0271.chunk.css",
     "static/js/main.293a3320.chunk.js"
   ]
 }
