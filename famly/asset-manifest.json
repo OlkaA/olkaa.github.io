@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.19841a16.chunk.css",
-    "main.js": "/static/js/main.293a3320.chunk.js",
-    "main.js.map": "/static/js/main.293a3320.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.5f42aaa5.js",
-    "runtime-main.js.map": "/static/js/runtime-main.5f42aaa5.js.map",
-    "static/js/2.14f4b7ce.chunk.js": "/static/js/2.14f4b7ce.chunk.js",
-    "static/js/2.14f4b7ce.chunk.js.map": "/static/js/2.14f4b7ce.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.17ac09dc736a4976c5d21711e298f0dd.js": "/precache-manifest.17ac09dc736a4976c5d21711e298f0dd.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.19841a16.chunk.css.map": "/static/css/main.19841a16.chunk.css.map"
+    "main.css": "/famly/static/css/main.19841a16.chunk.css",
+    "main.js": "/famly/static/js/main.293a3320.chunk.js",
+    "main.js.map": "/famly/static/js/main.293a3320.chunk.js.map",
+    "runtime-main.js": "/famly/static/js/runtime-main.da51217d.js",
+    "runtime-main.js.map": "/famly/static/js/runtime-main.da51217d.js.map",
+    "static/js/2.14f4b7ce.chunk.js": "/famly/static/js/2.14f4b7ce.chunk.js",
+    "static/js/2.14f4b7ce.chunk.js.map": "/famly/static/js/2.14f4b7ce.chunk.js.map",
+    "index.html": "/famly/index.html",
+    "precache-manifest.d5eb977c182e6d1b5d79e702c88f8b0f.js": "/famly/precache-manifest.d5eb977c182e6d1b5d79e702c88f8b0f.js",
+    "service-worker.js": "/famly/service-worker.js",
+    "static/css/main.19841a16.chunk.css.map": "/famly/static/css/main.19841a16.chunk.css.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.5f42aaa5.js",
+    "static/js/runtime-main.da51217d.js",
     "static/js/2.14f4b7ce.chunk.js",
     "static/css/main.19841a16.chunk.css",
     "static/js/main.293a3320.chunk.js"
