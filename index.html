@@ -16,15 +16,12 @@
 </head>
 
 <body>
-    <div id="preview_bg">
-        <div id="preview_box">
-
+    <div class="wrapper-iframe" id="wrapperIframe">
+        <div>
+            <iframe name="previewIframe"></iframe>
+            <a class="wrapper-close-button" id="closeButton"><span></span></a>
         </div>
-        <a class="close-button">
-            <span></span>
-        </a>
     </div>
-
     <div class="wrapper">
         <section id="about" class="about">
             <nav>
@@ -47,125 +44,146 @@
                     (for example, new popular framework Vue, Vuetify). <br />
                     In me you will find a non-conflict person, easy to contact, who always tries to bring a
                     positive mood.</p>
-                <a class="button" href="#projects">View my works <i class="material-icons">arrow_forward</i></a>
+                <a class="arrow-button" href="#projects">View my works <i class="material-icons">arrow_forward</i></a>
             </div>
         </section>
         <section id="projects" class="projects">
-            <div class="list">
-                <h2>
-                    JavaScript - jQuery - VUE
-                </h2>
-                <ul id="portfolioJS" class="portfolio">
-                    <li>
-                        <a onclick="return false;"
-                            href="myworks/AnimatedNavToggleAndMenu/AnimatedNavToggleAndMenu.html">
-                            <img alt="images" src="images/portfolio/js1.png" />
-                        </a>
-                        <a onclick="return false;" href="myworks/TestDome/TestDome.html">
-                            <img alt="images" src="images/portfolio/js2.png" />
-                        </a>
-                    </li>
-                    <li>
-                        <a onclick="return false;" href="myworks/formsjQueryVue/Test/wwwroot/index.html">
-                            <img alt="images" src="images/portfolio/js3.png" />
-                        </a>
-                        <a onclick="return false;" href="myworks/eCommerceStore/index.html">
-                            <img alt="images" src="images/portfolio/js4.png" />
-                        </a>
-                    </li>
-                    <li>
-                        <a onclick="return false;" href="myworks/brown_rabbit/src/index.html">
-                            <img alt="images" src="images/portfolio/js5.png" />
-                        </a>
-                    </li>
-                </ul>
-            </div>
+            <h2>JS, Vue, React</h2>
+            <ul class="js">
+                
+                <li>
+                    <a target="previewIframe" href="myworks/TestDome/TestDome.html" class="link-to-iframe">
+                        <img alt="testdome" src="images/portfolio/js2.png" />
+                    </a>
+                </li>
+                
+                <li>
+                    <a target="previewIframe" href="myworks/eCommerceStore/index.html" class="link-to-iframe">
+                        <img alt="ecommerce" src="images/portfolio/js4.png" />
+                    </a>
+                </li>
+                <li>
+                    <a target="previewIframe" href="myworks/brown_rabbit/src/index.html" class="link-to-iframe">
+                        <img alt="HTML24" src="images/portfolio/js5.png" />
+                    </a>
+                </li>
+                
+                <!-- <li>
+                    <a target="previewIframe" href="myworks/github-users/index.html" class="link-to-iframe">
+                        <img alt="github" src="" />
+                    </a>
+                </li> -->
+                <!-- <li>
+                    <a target="previewIframe" href="myworks/AnimatedNavToggleAndMenu/AnimatedNavToggleAndMenu.html"
+                        class="link-to-iframe">
+                        <img alt="animated" src="images/portfolio/js1.png" />
+                    </a>
+                </li>
+                <li>
+                    <a target="previewIframe" href="myworks/formsjQueryVue/Test/wwwroot/index.html"
+                        class="link-to-iframe">
+                        <img alt="jQuery vue" src="images/portfolio/js3.png" />
+                    </a>
+                </li> -->
+            </ul>
             <h2>
                 HTML - CSS
             </h2>
-            <div class="list">
-                <ul id="portfolio" class="portfolio">
-                    <li>
-                        <a onclick="return false;" href="myworks/dark/index.html">
-                            <img alt="images" src="images/portfolio/7.png" />
-                        </a>
-                        <a onclick="return false;" href="myworks/eblog/index.html">
-                            <img alt="images" src="images/portfolio/8.png" />
-                        </a>
-                    </li>
-                    <li>
-                        <a onclick="return false;" href="myworks/facebook/index.html">
-                            <img alt="images" src="images/portfolio/9.png" />
-                        </a>
-                        <a onclick="return false;" href="myworks/films/index.html">
-                            <img alt="images" src="images/portfolio/10.png" />
-                        </a>
-                    </li>
-                    <li>
-                        <a onclick="return false;" href="myworks/floral/index.html">
-                            <img alt="images" src="images/portfolio/11.png" />
-                        </a>
-                        <a onclick="return false;" href="myworks/grid/index.html">
-                            <img alt="images" src="images/portfolio/12.png" />
-                        </a>
-                    </li>
-                    <li>
-                        <a onclick="return false;" href="myworks/photography/index.html">
-                            <img alt="images" src="images/portfolio/13.png" />
-                        </a>
-                        <a onclick="return false;" href="myworks/public/index.html">
-                            <img alt="images" src="images/portfolio/14.png" />
-                        </a>
-                    </li>
-                    <li>
-                        <a onclick="return false;" href="myworks/cafe/index.html">
-                            <img alt="images" src="images/portfolio/3.png" />
-                        </a>
-                        <a onclick="return false;" href="myworks/single/index.html">
-                            <img alt="images" src="images/portfolio/16.png" />
-                        </a>
-                    </li>
-                    <li>
-                        <a onclick="return false;" href="myworks/software/index.html">
-                            <img alt="images" src="images/portfolio/17.png" />
-                        </a>
-                        <a onclick="return false;" href="myworks/template/index.html">
-                            <img alt="images" src="images/portfolio/18.png" />
-                        </a>
-                    </li>
-                    <li class="last">
-                        <a onclick="return false;" href="myworks/vcard/index.html">
-                            <img alt="images" src="images/portfolio/19.png" />
-                        </a>
-                        <a onclick="return false;" href="myworks/website/index.html">
-                            <img alt="images" src="images/portfolio/20.png" />
-                        </a>
-                    </li>
-                    <li>
-                        <a onclick="return false;" href="myworks/green/1.html">
-                            <img alt="images" src="images/portfolio/1.png" />
-                        </a>
-                        <a onclick="return false;" href="myworks/darom/index.html">
-                            <img alt="images" src="images/portfolio/2.png" />
-                        </a>
-                    </li>
-                    <li>
-                        <a onclick="return false;" href="myworks/corporate/index.html">
-                            <img alt="images" src="images/portfolio/5.png" />
-                        </a>
-                        <a onclick="return false;" href="myworks/creativestudio/index.html">
-                            <img alt="images" src="images/portfolio/6.png" />
-                        </a>
-                    </li>
-                </ul>
-                <a href="javascript:void(0)" id="portfolio_prev" class="arrow-left">
-                    <</a> <a href="javascript:void(0)" id="portfolio_next" class="arrow-right">>
-                </a>
-                <!-- <a href="#about" class="button-to-the-top"><i class="material-icons">arrow_upward</i></a> -->
-            </div>
+            <ul class="html">
+                <li>
+                    <a target="previewIframe" href="myworks/dark/index.html" class="link-to-iframe">
+                        <img alt="animated" src="images/portfolio/7.png" />
+                    </a>
+                </li>
+                <li>
+                    <a target="previewIframe" href="myworks/eblog/index.html" class="link-to-iframe">
+                        <img alt="testdome" src="images/portfolio/8.png" />
+                    </a>
+                </li>
+                <li>
+                    <a target="previewIframe" href="myworks/facebook/index.html" class="link-to-iframe">
+                        <img alt="animated" src="images/portfolio/9.png" />
+                    </a>
+                </li>
+                <li>
+                    <a target="previewIframe" href="myworks/films/index.html" class="link-to-iframe">
+                        <img alt="testdome" src="images/portfolio/10.png" />
+                    </a>
+                </li>
+                <li>
+                    <a target="previewIframe" href="myworks/floral/index.html" class="link-to-iframe">
+                        <img alt="animated" src="images/portfolio/11.png" />
+                    </a>
+                </li>
+                <li>
+                    <a target="previewIframe" href="myworks/grid/index.html" class="link-to-iframe">
+                        <img alt="testdome" src="images/portfolio/12.png" />
+                    </a>
+                </li>
+                <li>
+                    <a target="previewIframe" href="myworks/photography/index.html" class="link-to-iframe">
+                        <img alt="animated" src="images/portfolio/13.png" />
+                    </a>
+                </li>
+                <li>
+                    <a target="previewIframe" href="myworks/public/index.html" class="link-to-iframe">
+                        <img alt="testdome" src="images/portfolio/14.png" />
+                    </a>
+                </li>
+                <li>
+                    <a target="previewIframe" href="myworks/cafe/index.html" class="link-to-iframe">
+                        <img alt="animated" src="images/portfolio/3.png" />
+                    </a>
+                </li>
+                <li>
+                    <a target="previewIframe" href="myworks/single/index.html" class="link-to-iframe">
+                        <img alt="testdome" src="images/portfolio/16.png" />
+                    </a>
+                </li>
+                <li>
+                    <a target="previewIframe" href="myworks/software/index.html" class="link-to-iframe">
+                        <img alt="animated" src="images/portfolio/17.png" />
+                    </a>
+                </li>
+                <li>
+                    <a target="previewIframe" href="myworks/template/index.html" class="link-to-iframe">
+                        <img alt="testdome" src="images/portfolio/18.png" />
+                    </a>
+                </li>
+                <li>
+                    <a target="previewIframe" href="myworks/vcard/index.html" class="link-to-iframe">
+                        <img alt="animated" src="images/portfolio/19.png" />
+                    </a>
+                </li>
+                <li>
+                    <a target="previewIframe" href="myworks/website/index.html" class="link-to-iframe">
+                        <img alt="testdome" src="images/portfolio/20.png" />
+                    </a>
+                </li>
+                <li>
+                    <a target="previewIframe" href="myworks/green/1.html" class="link-to-iframe">
+                        <img alt="animated" src="images/portfolio/1.png" />
+                    </a>
+                </li>
+                <li>
+                    <a target="previewIframe" href="myworks/darom/index.html" class="link-to-iframe">
+                        <img alt="testdome" src="images/portfolio/2.png" />
+                    </a>
+                </li>
+                <li>
+                    <a target="previewIframe" href="myworks/corporate/index.html" class="link-to-iframe">
+                        <img alt="animated" src="images/portfolio/5.png" />
+                    </a>
+                </li>
+                <li>
+                    <a target="previewIframe" href="myworks/creativestudio/index.html" class="link-to-iframe">
+                        <img alt="testdome" src="images/portfolio/6.png" />
+                    </a>
+                </li>
+            </ul>
         </section>
         <footer class="flex-center">
-            <a class="button button-to-the-top" href="#about">To the top<i class="material-icons">arrow_upward</i></a>
+            <a class="arrow-button button-to-the-top" href="#about">To the top<i class="material-icons">arrow_upward</i></a>
         </footer>
     </div>
 </body>

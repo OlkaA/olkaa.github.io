@@ -1,6 +1,25 @@
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100%;
+  font: 10px "Lato";
+  background-color: #fff;
+  position: relative;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    padding: 0 10px;
+  }
 }
 
 a {
@@ -17,17 +36,7 @@ h2 {
   padding: 3rem 0;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  min-height: 100%;
-  font: 10px 'Lato';
-  background-color: #fff;
-}
-
-a.button {
+.arrow-button {
   font-size: 1.5rem;
   color: #000;
   padding: 1rem 2rem;
@@ -36,7 +45,7 @@ a.button {
   transition: color 0.25s, background-color 0.25s;
 }
 
-a.button i.material-icons {
+.arrow-button i.material-icons {
   font-size: 1rem;
   margin-top: 5px;
   -webkit-transform: rotate(0);
@@ -47,16 +56,25 @@ a.button i.material-icons {
   transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
-a.button:hover {
+.arrow-button:hover {
   color: #fff;
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
   background-color: grey;
   border: 2px solid #000;
 }
 
-a.button:hover i.material-icons {
+.arrow-button:hover i.material-icons {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   color: #fff;
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+}
+
+.button-to-the-top {
+  display: inline-block;
+  margin: 50px 0;
 }
 
 .button-to-the-top :hover i.material-icons {
@@ -64,8 +82,104 @@ a.button:hover i.material-icons {
           transform: rotate(-90deg);
 }
 
+.wrapper-iframe {
+  visibility: hidden;
+  opacity: 0;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0.25);
+  -webkit-transition: visibility 0.5s;
+  transition: visibility 0.5s;
+}
+
+.wrapper-iframe iframe {
+  height: 90vh;
+  width: 90vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 500px) {
+  .wrapper-iframe iframe {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.wrapper-iframe .wrapper-close-button {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  z-index: 10002;
+}
+
+@media screen and (max-width: 500px) {
+  .wrapper-iframe .wrapper-close-button:before {
+    -webkit-transform: translate(0, 11px) rotate(45deg);
+            transform: translate(0, 11px) rotate(45deg);
+  }
+  .wrapper-iframe .wrapper-close-button span {
+    background-color: transparent !important;
+  }
+  .wrapper-iframe .wrapper-close-button:after {
+    -webkit-transform: translate(0, -11px) rotate(-45deg);
+            transform: translate(0, -11px) rotate(-45deg);
+  }
+}
+
+.wrapper-iframe .wrapper-close-button:before, .wrapper-iframe .wrapper-close-button:after,
+.wrapper-iframe .wrapper-close-button span {
+  content: "";
+  display: block;
+  height: 6px;
+  width: 40px;
+  margin-bottom: 5px;
+  background-color: red;
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.13, 0.24, 0.35, 1.64);
+          transition-timing-function: cubic-bezier(0.13, 0.24, 0.35, 1.64);
+}
+
+.wrapper-iframe .wrapper-close-button:hover:before {
+  -webkit-transform: translate(0, 11px) rotate(45deg);
+          transform: translate(0, 11px) rotate(45deg);
+}
+
+.wrapper-iframe .wrapper-close-button:hover span {
+  background-color: transparent;
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
+}
+
+.wrapper-iframe .wrapper-close-button:hover:after {
+  background-color: red;
+  -webkit-transform: translate(0, -11px) rotate(-45deg);
+          transform: translate(0, -11px) rotate(-45deg);
+}
+
 .wrapper {
-  width: 700px;
+  max-width: 900px;
   margin: 0 auto;
   text-align: center;
 }
@@ -148,218 +262,82 @@ a.button:hover i.material-icons {
 }
 
 .wrapper .about .flex-center p span.color {
-  color: #E31B6D;
+  color: #e31b6d;
 }
 
 .wrapper .projects {
   min-height: 100vh;
 }
 
-.wrapper .projects:last-child {
-  position: relative;
+.wrapper .projects ul.js {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.wrapper .projects:last-child a.button-to-the-top {
-  position: absolute;
-  bottom: 20px;
-  right: -100px;
-  font-size: 1.5rem;
-  color: #000;
-  padding: 0.5rem 0.5rem;
-  border: 2px solid #000;
-  border-radius: 2.5rem;
-  -webkit-transition: background-color 250ms;
-  transition: background-color 250ms;
+.wrapper .projects ul.js li {
+  width: 100%;
+  max-width: 400px;
+  height: 200px;
+  outline: 1px solid rgba(0, 0, 0, 0.4);
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
-.wrapper .projects:last-child a.button-to-the-top i {
-  font-size: 2rem;
-  -webkit-transform: rotate(0);
-          transform: rotate(0);
-  -webkit-transition: color 0.3s, -webkit-transform 0.3s;
-  transition: color 0.3s, -webkit-transform 0.3s;
-  transition: color 0.3s, transform 0.3s;
-  transition: color 0.3s, transform 0.3s, -webkit-transform 0.3s;
+.wrapper .projects ul.js li:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  z-index: 1;
 }
 
-.wrapper .projects:last-child a.button-to-the-top:hover {
-  color: #fff;
-  background-color: grey;
-  border: 2px solid #000;
+.wrapper .projects ul.html {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
 }
 
-.wrapper .projects .list {
-  background: url(../images/bg-ul-portfolio.png) no-repeat bottom;
-  padding: 12px 0 40px 0;
-  position: relative;
-  margin-bottom: 50px;
-  width: 600px;
-  margin: 0 auto 40px auto;
+.wrapper .projects ul.html li {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  margin-top: -10px;
 }
 
-.wrapper .projects .list .jcarousel-clip {
-  overflow: hidden;
+.wrapper .projects ul.html li:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  z-index: 1;
 }
 
-.wrapper .projects .list ul.portfolio {
-  overflow: hidden;
+.wrapper .projects ul.html li a img {
+  width: 150px;
 }
 
-.wrapper .projects .list ul.portfolio li {
-  float: left;
-  width: 200px;
-  padding: 0 3px;
-}
-
-.wrapper .projects .list ul.portfolio li a img {
-  margin-bottom: 10px;
-  width: 190px;
-  background: url(../images/border-image.png) no-repeat;
-  padding: 4px;
-  height: 123px;
-}
-
-.wrapper .projects .list a.arrow-left,
-.wrapper .projects .list a.arrow-right {
-  position: absolute;
-  top: 112px;
-  text-decoration: none;
-  font-size: 3rem;
-  color: rgba(0, 0, 0, 0.4);
-}
-
-.wrapper .projects .list a.arrow-right {
-  right: -30px;
-}
-
-.wrapper .projects .list .arrow-left {
-  left: -30px;
-}
-
-.wrapper footer {
-  height: 4rem;
-}
-
-.close-button {
-  display: none;
-  position: absolute;
-  top: 50px;
-  right: 50px;
-  z-index: 10002;
-}
-
-.close-button:before, .close-button:after, .close-button span {
-  content: '';
-  display: block;
-  height: 6px;
-  width: 40px;
-  margin-bottom: 5px;
-  background-color: lightcoral;
-  border-radius: 4px;
-  cursor: pointer;
-  -webkit-transition: background-color 0.5s, -webkit-transform 0.5s;
-  transition: background-color 0.5s, -webkit-transform 0.5s;
-  transition: transform 0.5s, background-color 0.5s;
-  transition: transform 0.5s, background-color 0.5s, -webkit-transform 0.5s;
-  -webkit-transition-timing-function: cubic-bezier(0.13, 0.24, 0.35, 1.64);
-          transition-timing-function: cubic-bezier(0.13, 0.24, 0.35, 1.64);
-}
-
-.close-button:hover:before {
-  background-color: orange;
-  -webkit-transform: translate(0, 11px) rotate(45deg);
-          transform: translate(0, 11px) rotate(45deg);
-}
-
-.close-button:hover span {
-  background-color: transparent;
-  -webkit-transform: translateX(-10px);
-          transform: translateX(-10px);
-}
-
-.close-button:hover:after {
-  background-color: orange;
-  -webkit-transform: translate(0, -11px) rotate(-45deg);
-          transform: translate(0, -11px) rotate(-45deg);
-}
-
-#preview_bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 10000;
-  display: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#preview_box {
-  z-index: 10001;
-  display: none;
-}
-
-#preview_frame {
-  height: calc(100% - 200px);
-  width: 90vw;
-  max-width: 1200px;
-}
-
-#portfolioJS {
-  width: 700px;
-}
-
-#portfolio {
-  width: 700px;
-}
-
-#portfolio-button {
-  top: -400px;
-}
-
-@media only screen and (max-width: 700px) {
-  #portfolioJS {
-    width: 200px !important;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap;
-    margin: 0 auto !important;
+@media screen and (max-width: 500px) {
+  .wrapper .projects ul.html {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
-  #portfolio {
-    margin-left: calc((100vw - 200px - 40px)/2) !important;
+  .wrapper .projects ul.html li {
+    margin-bottom: 20px;
   }
-  #portfolio li {
-    margin-right: 100vw !important;
-  }
-  a.arrow-right {
-    right: 0px !important;
-  }
-  .arrow-left {
-    left: 0px !important;
-  }
-  .wrapper {
-    width: 100%;
-    padding: 0 20px;
-  }
-  .list {
-    width: unset !important;
-    background-size: 100% !important;
-  }
-  .big {
-    margin: 20px 0;
-  }
-  a.button {
-    margin-top: 20px;
+  .wrapper .projects ul.html li a img {
+    width: 180px;
   }
 }
 /*# sourceMappingURL=Style.css.map */
