@@ -4,11 +4,16 @@ $(document).ready(function () {
     let closeButton = document.getElementById('closeButton');
     links.forEach(link => {
         link.addEventListener('click', () => {
+            event.stopPropagation();
             wrapperIframe.setAttribute('style', 'visibility: visible; opacity: 1; transition: all 0.5s');
         })
-    })
+    });
 
     closeButton.addEventListener('click', () => {
         wrapperIframe.setAttribute('style', 'visibility: hidden');
-    })
+    });
+
+    $(window).click(() => {
+        wrapperIframe.setAttribute('style', 'visibility: hidden');
+    });
 })
