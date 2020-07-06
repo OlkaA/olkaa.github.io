@@ -1,0 +1,81 @@
+@import "./variables.scss";
+
+.profile {
+  background-color: #f5f5f5;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px 80px;
+  color: $blackish;
+  box-shadow: 2px 2px 12px 2px lightgrey;
+
+  @media only screen and (max-width: 600px) {
+    max-width: 90%;
+    padding: 50px 0;
+  }
+
+  a {
+    color: $blackish;
+    text-decoration: none;
+  }
+
+  & > div {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+
+    @media only screen and (max-width: 600px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  & > div:first-child {
+    font-size: 32px;
+    align-items: center;
+    border-bottom: 1px solid rgba($blackish, 0.2);
+
+    img {
+      width: 150px;
+      height: 150px;
+      border-radius: 75px;
+      margin: 0 50px;
+    }
+
+    .bio {
+      font-size: 22px;
+    }
+  }
+
+  .card {
+    border: 1px solid $blackish;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+
+    @media only screen and (max-width: 600px) {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    & > div {
+      margin: 5px 0;
+    }
+
+    a {
+      width: fit-content;
+      padding: 10px 20px;
+      background-color: $blackish;
+      color: white;
+      border-radius: 5px;
+      transition: color, background-color, 150ms ease-in-out;
+      text-decoration: none;
+      margin: 10px 0;
+
+      &:hover {
+        background-color: lighten($blackish, 40%);
+        color: $blackish;
+      }
+    }
+  }
+}
