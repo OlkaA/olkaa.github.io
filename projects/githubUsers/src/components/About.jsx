@@ -1,9 +1,10 @@
 import React, { Component } from "react";
+import "../scss/index.scss";
 class About extends Component {
   render() {
     return (
       <>
-        <div className="align-center">
+        <div className="app align-center">
           <h1>Github</h1>
           <h2>is how people build software.</h2>
           <h4>At this project were used technologies</h4>

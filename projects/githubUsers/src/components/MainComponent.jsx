@@ -1,5 +1,5 @@
 import React from "react";
-import "../App.css";
+import "../scss/index.scss";
 import Users from "./Users";
 import Input from "./Input";
 import * as API from "../api";
@@ -42,13 +42,15 @@ class MainComponent extends React.Component {
     const { users, userName, isLoading, errorText } = this.state;
     return (
       <StateContext.Provider value={{ users, userName, isLoading, errorText }}>
-        <div className="App">
-          <Link to="/about" className="about">
+        <div className="app">
+          <>
+          <a href="/about" className="about">
             About
-          </Link>
+          </a>
           <h1>GitHub Users Search</h1>
           <Input updateData={this.updateData} />
           <Users data={this.state} />
+          </>
         </div>
       </StateContext.Provider>
     );

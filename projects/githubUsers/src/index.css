@@ -1,9 +1,7 @@
-body {
-  margin: 50px auto;
+/* body {
   font-family: 'Arial';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  min-height: 100vh;
 }
 
 .align-center {
@@ -182,4 +180,4 @@ input.user-search {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-/*# sourceMappingURL=index.css.map */
+# sourceMappingURL=index.css.map */

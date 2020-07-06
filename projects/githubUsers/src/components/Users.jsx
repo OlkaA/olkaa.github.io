@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { UsersItem } from "./UsersItem";
 import Loading from "./Loading";
-// import NoResults from './NoResults';
 import Error from "./Error";
 import { StateContext } from "../context/context";
+import "../scss/index.scss";
 
 export default class Users extends Component {
   render() {

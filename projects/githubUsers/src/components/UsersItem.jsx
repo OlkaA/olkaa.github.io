@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import InfoButton from "./InfoButton";
+import "../scss/index.scss";
 
 function getRandomColor() {
   var letters = "0123456789ABCDEF";

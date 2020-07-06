@@ -1,16 +1,22 @@
 import React from "react";
 import moment from "moment";
+import * as API from "../api";
 import "../scss/profile.scss";
+import "../scss/index.scss";
 class UserProfile extends React.Component {
   state = {
     user: {},
   };
 
-  async componentDidMount() {
+  async getUserData() {
     const { login } = this.props;
-    const resp = await fetch(`https://api.github.com/users/${login}`);
-    const user = await resp.json();
+    this.setState({ isLoading: true });
+    const user = await API.fetchDetailedInfoUser(login);
     this.setState({ user });
+  }
+
+  async componentDidMount() {
+    this.getUserData();
   }
 
   render() {
@@ -32,8 +38,7 @@ class UserProfile extends React.Component {
     ).format("MMM Do YY")}`;
 
     return (
-      <>
-        <div className="profile">
+        <div className="app profile">
           <div>
             <img src={avatar_url} alt={avatar_url} />
             <div>
@@ -63,7 +68,6 @@ class UserProfile extends React.Component {
             )}
           </div>
         </div>
-      </>
     );
   }
 }
