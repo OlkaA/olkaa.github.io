@@ -2,7 +2,7 @@
   "name": "githubusers",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://olkaa.github.io/githubusers",
+  "homepage": "https://olkaa.github.io/projects/githubUsers/build",
   "dependencies": {
     "moment": "^2.27.0",
     "node-sass": "^4.14.1",
