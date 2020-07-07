@@ -6,15 +6,19 @@
 
 body {
   font-family: "Arial";
-  color: red;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
 }
 
 .app{
-  padding: 100px 20px 0;
+  padding: 100px 100px 0;
   text-align: center;
+
+  @media only screen and (max-width: 600px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .align-center {

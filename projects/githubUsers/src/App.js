@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
-    <Router basename='/'>
+    <Router basename='/projects/githubUsers/build'>
       <Switch>
         <Route exact path="/">
           <MainComponent />
