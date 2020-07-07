@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://olkaa.github.io/projects/githubUsers/build",
   "dependencies": {
+    "gh-pages": "^3.1.0",
     "moment": "^2.27.0",
     "node-sass": "^4.14.1",
     "react": "^16.11.0",
