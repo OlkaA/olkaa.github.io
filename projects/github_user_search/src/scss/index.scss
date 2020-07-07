@@ -1,0 +1,142 @@
+@import "./variables.scss";
+
+*, *::after, *::before{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial";
+  color: green;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+}
+
+.app{
+  padding: 100px 20px 0;
+  text-align: center;
+}
+
+.align-center {
+  text-align: center;
+}
+
+h1{
+  margin-top: 0;
+}
+
+ul {
+  list-style: none;
+  overflow: hidden;
+}
+
+.loading {
+  height: 15px;
+}
+
+.error {
+  color: red;
+}
+
+ul.user-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0;
+
+  li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 250px;
+    height: 250px;
+    padding: 5px 0;
+    margin: 0 5px 10px;
+    border-radius: 5px;
+
+    img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      width: 80%;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.about {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  text-decoration: none;
+  background-color: rgb(62, 175, 62);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px 1px rgb(130, 196, 130);
+
+  &:hover,
+  &:focus {
+    background-color: #45a049;
+  }
+
+  &::before {
+    border-radius: 5px;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    border: 1px solid rgb(62, 175, 62);
+    transition: top, right, left, bottom, 100ms ease-in-out;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    z-index: 0;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    top: 10px;
+    right: 10px;
+  }
+}
+
+.infoButton {
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  color: $blackish;
+  padding: 7px 15px;
+  text-align: center;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+
+  &:hover,
+  &:focus {
+    box-shadow: 2px 2px 7px -3px #616161;
+  }
+}
+
+input.user-search {
+  width: 60%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
