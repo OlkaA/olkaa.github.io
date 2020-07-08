@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/projects/githubUsers/build/static/css/main.27cef914.chunk.css",
-    "main.js": "/projects/githubUsers/build/static/js/main.af3fe8e9.chunk.js",
-    "main.js.map": "/projects/githubUsers/build/static/js/main.af3fe8e9.chunk.js.map",
-    "runtime-main.js": "/projects/githubUsers/build/static/js/runtime-main.cc522867.js",
-    "runtime-main.js.map": "/projects/githubUsers/build/static/js/runtime-main.cc522867.js.map",
-    "static/js/2.e8e7f35e.chunk.js": "/projects/githubUsers/build/static/js/2.e8e7f35e.chunk.js",
-    "static/js/2.e8e7f35e.chunk.js.map": "/projects/githubUsers/build/static/js/2.e8e7f35e.chunk.js.map",
-    "index.html": "/projects/githubUsers/build/index.html",
-    "precache-manifest.bf81111f9079cfb3cbe2feaab6e97a1f.js": "/projects/githubUsers/build/precache-manifest.bf81111f9079cfb3cbe2feaab6e97a1f.js",
-    "service-worker.js": "/projects/githubUsers/build/service-worker.js",
-    "static/css/main.27cef914.chunk.css.map": "/projects/githubUsers/build/static/css/main.27cef914.chunk.css.map"
+    "main.css": "/projects/famly/build/static/css/main.a74640ee.chunk.css",
+    "main.js": "/projects/famly/build/static/js/main.0b3123a3.chunk.js",
+    "main.js.map": "/projects/famly/build/static/js/main.0b3123a3.chunk.js.map",
+    "runtime-main.js": "/projects/famly/build/static/js/runtime-main.ca090747.js",
+    "runtime-main.js.map": "/projects/famly/build/static/js/runtime-main.ca090747.js.map",
+    "static/js/2.14f4b7ce.chunk.js": "/projects/famly/build/static/js/2.14f4b7ce.chunk.js",
+    "static/js/2.14f4b7ce.chunk.js.map": "/projects/famly/build/static/js/2.14f4b7ce.chunk.js.map",
+    "index.html": "/projects/famly/build/index.html",
+    "precache-manifest.3c73f9db0410fccfe55ce49305eda883.js": "/projects/famly/build/precache-manifest.3c73f9db0410fccfe55ce49305eda883.js",
+    "service-worker.js": "/projects/famly/build/service-worker.js",
+    "static/css/main.a74640ee.chunk.css.map": "/projects/famly/build/static/css/main.a74640ee.chunk.css.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.cc522867.js",
-    "static/js/2.e8e7f35e.chunk.js",
-    "static/css/main.27cef914.chunk.css",
-    "static/js/main.af3fe8e9.chunk.js"
+    "static/js/runtime-main.ca090747.js",
+    "static/js/2.14f4b7ce.chunk.js",
+    "static/css/main.a74640ee.chunk.css",
+    "static/js/main.0b3123a3.chunk.js"
   ]
 }
