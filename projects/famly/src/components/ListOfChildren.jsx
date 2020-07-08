@@ -19,7 +19,7 @@ class ListOfChildren extends Component {
 
     render() {
         return (
-            <ul className="children">
+            <ul className="wrapper children">
                 {this.state.children.map(child =>
                     (<li key={child.childId}>
                         <Link to={(child.checkedIn ? '/out' : '/in') + '/' + child.childId}

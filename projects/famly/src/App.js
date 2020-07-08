@@ -11,7 +11,6 @@ import CheckOut from './components/CheckOut';
 
 function App() {
   return (
-    <div className="wrapper">
       <Router basename="/projects/famly/build">
         <Switch>
           <Route exact path='/'>
@@ -23,7 +22,6 @@ function App() {
           </Route>
         </Switch>
       </Router>
-    </div>
   );
 }
 

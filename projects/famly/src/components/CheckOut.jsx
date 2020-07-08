@@ -40,7 +40,7 @@ class CheckOut extends Component {
         }
 
         return this.state.child ? (
-            <div className="child-page">
+            <div className="wrapper child-page">
                 <div>
                     <img src={this.state.child.image.small} alt={this.state.child.name.fullName} />
                 </div>
