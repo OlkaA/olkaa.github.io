@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/olkaa.github.io/projects/slider/build/precache-manifest.838dabbf32522baa8d91764afab047b3.js"
+  "/olkaa.github.io/projects/slider/build/precache-manifest.a58b711a51826b1f4c17991f3b93f355.js"
 );
 
 self.addEventListener('message', (event) => {
