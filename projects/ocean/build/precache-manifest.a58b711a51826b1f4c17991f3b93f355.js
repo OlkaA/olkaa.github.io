@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "464f285c11326e4dbc4d5a5048a7b27b",
+    "revision": "b99356487039421f544558cb9c3363dd",
     "url": "/olkaa.github.io/projects/slider/build/index.html"
   },
   {
-    "revision": "d608832aff0bca2bd3c5",
+    "revision": "1109aaa9f05966e65bcd",
     "url": "/olkaa.github.io/projects/slider/build/static/css/main.c3ac2812.chunk.css"
   },
   {
-    "revision": "c002537b98dcbf110322",
-    "url": "/olkaa.github.io/projects/slider/build/static/js/2.fed8c795.chunk.js"
+    "revision": "fba5cea16a5bea4e0110",
+    "url": "/olkaa.github.io/projects/slider/build/static/js/2.5b93b4ba.chunk.js"
   },
   {
-    "revision": "99bd0487192ec9e7d9ee8fbbd91ee444",
-    "url": "/olkaa.github.io/projects/slider/build/static/js/2.fed8c795.chunk.js.LICENSE.txt"
+    "revision": "928d7b5eb39d16fe9a880722c974b51e",
+    "url": "/olkaa.github.io/projects/slider/build/static/js/2.5b93b4ba.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d608832aff0bca2bd3c5",
-    "url": "/olkaa.github.io/projects/slider/build/static/js/main.4134ee12.chunk.js"
+    "revision": "1109aaa9f05966e65bcd",
+    "url": "/olkaa.github.io/projects/slider/build/static/js/main.7739cbf2.chunk.js"
   },
   {
     "revision": "462175e0f0a34d6604b5",
