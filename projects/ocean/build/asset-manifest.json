@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/olkaa.github.io/projects/slider/build/static/css/main.c3ac2812.chunk.css",
-    "main.js": "/olkaa.github.io/projects/slider/build/static/js/main.7739cbf2.chunk.js",
-    "main.js.map": "/olkaa.github.io/projects/slider/build/static/js/main.7739cbf2.chunk.js.map",
-    "runtime-main.js": "/olkaa.github.io/projects/slider/build/static/js/runtime-main.54d1dbeb.js",
-    "runtime-main.js.map": "/olkaa.github.io/projects/slider/build/static/js/runtime-main.54d1dbeb.js.map",
-    "static/js/2.5b93b4ba.chunk.js": "/olkaa.github.io/projects/slider/build/static/js/2.5b93b4ba.chunk.js",
-    "static/js/2.5b93b4ba.chunk.js.map": "/olkaa.github.io/projects/slider/build/static/js/2.5b93b4ba.chunk.js.map",
-    "index.html": "/olkaa.github.io/projects/slider/build/index.html",
-    "precache-manifest.a58b711a51826b1f4c17991f3b93f355.js": "/olkaa.github.io/projects/slider/build/precache-manifest.a58b711a51826b1f4c17991f3b93f355.js",
-    "service-worker.js": "/olkaa.github.io/projects/slider/build/service-worker.js",
-    "static/css/main.c3ac2812.chunk.css.map": "/olkaa.github.io/projects/slider/build/static/css/main.c3ac2812.chunk.css.map",
-    "static/js/2.5b93b4ba.chunk.js.LICENSE.txt": "/olkaa.github.io/projects/slider/build/static/js/2.5b93b4ba.chunk.js.LICENSE.txt",
-    "static/media/blue-quotes.svg": "/olkaa.github.io/projects/slider/build/static/media/blue-quotes.566d192a.svg",
-    "static/media/cake.svg": "/olkaa.github.io/projects/slider/build/static/media/cake.86602f00.svg",
-    "static/media/pink-quotes.svg": "/olkaa.github.io/projects/slider/build/static/media/pink-quotes.e4739484.svg",
-    "static/media/smile.svg": "/olkaa.github.io/projects/slider/build/static/media/smile.e0d65ea3.svg"
+    "main.css": "/olkaa.github.io/projects/ocean/build/static/css/main.c3ac2812.chunk.css",
+    "main.js": "/olkaa.github.io/projects/ocean/build/static/js/main.11b50d3d.chunk.js",
+    "main.js.map": "/olkaa.github.io/projects/ocean/build/static/js/main.11b50d3d.chunk.js.map",
+    "runtime-main.js": "/olkaa.github.io/projects/ocean/build/static/js/runtime-main.55e0b661.js",
+    "runtime-main.js.map": "/olkaa.github.io/projects/ocean/build/static/js/runtime-main.55e0b661.js.map",
+    "static/js/2.5b93b4ba.chunk.js": "/olkaa.github.io/projects/ocean/build/static/js/2.5b93b4ba.chunk.js",
+    "static/js/2.5b93b4ba.chunk.js.map": "/olkaa.github.io/projects/ocean/build/static/js/2.5b93b4ba.chunk.js.map",
+    "index.html": "/olkaa.github.io/projects/ocean/build/index.html",
+    "precache-manifest.ac2ae89c6522384f3ded224c265596dc.js": "/olkaa.github.io/projects/ocean/build/precache-manifest.ac2ae89c6522384f3ded224c265596dc.js",
+    "service-worker.js": "/olkaa.github.io/projects/ocean/build/service-worker.js",
+    "static/css/main.c3ac2812.chunk.css.map": "/olkaa.github.io/projects/ocean/build/static/css/main.c3ac2812.chunk.css.map",
+    "static/js/2.5b93b4ba.chunk.js.LICENSE.txt": "/olkaa.github.io/projects/ocean/build/static/js/2.5b93b4ba.chunk.js.LICENSE.txt",
+    "static/media/blue-quotes.svg": "/olkaa.github.io/projects/ocean/build/static/media/blue-quotes.566d192a.svg",
+    "static/media/cake.svg": "/olkaa.github.io/projects/ocean/build/static/media/cake.86602f00.svg",
+    "static/media/pink-quotes.svg": "/olkaa.github.io/projects/ocean/build/static/media/pink-quotes.e4739484.svg",
+    "static/media/smile.svg": "/olkaa.github.io/projects/ocean/build/static/media/smile.e0d65ea3.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.54d1dbeb.js",
+    "static/js/runtime-main.55e0b661.js",
     "static/js/2.5b93b4ba.chunk.js",
     "static/css/main.c3ac2812.chunk.css",
-    "static/js/main.7739cbf2.chunk.js"
+    "static/js/main.11b50d3d.chunk.js"
   ]
 }

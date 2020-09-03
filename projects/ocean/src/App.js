@@ -13,7 +13,7 @@ function App() {
       <Route exact path='/'>
         <div className="App">
           <header className="App-header">
-            <h1>Ocean</h1>
+            <h1>Slider</h1>
             <Carousel/>
           </header>
         </div>
