@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/projects/elevator/build/static/css/main.813cf008.chunk.css",
+    "main.js": "/projects/elevator/build/static/js/main.810c448b.chunk.js",
+    "main.js.map": "/projects/elevator/build/static/js/main.810c448b.chunk.js.map",
+    "runtime-main.js": "/projects/elevator/build/static/js/runtime-main.20aa6f0a.js",
+    "runtime-main.js.map": "/projects/elevator/build/static/js/runtime-main.20aa6f0a.js.map",
+    "static/js/2.abee8e71.chunk.js": "/projects/elevator/build/static/js/2.abee8e71.chunk.js",
+    "static/js/2.abee8e71.chunk.js.map": "/projects/elevator/build/static/js/2.abee8e71.chunk.js.map",
+    "index.html": "/projects/elevator/build/index.html",
+    "precache-manifest.c9d5af7b4a297d97b8438dbf95c15006.js": "/projects/elevator/build/precache-manifest.c9d5af7b4a297d97b8438dbf95c15006.js",
+    "service-worker.js": "/projects/elevator/build/service-worker.js",
+    "static/css/main.813cf008.chunk.css.map": "/projects/elevator/build/static/css/main.813cf008.chunk.css.map",
+    "static/js/2.abee8e71.chunk.js.LICENSE.txt": "/projects/elevator/build/static/js/2.abee8e71.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.20aa6f0a.js",
+    "static/js/2.abee8e71.chunk.js",
+    "static/css/main.813cf008.chunk.css",
+    "static/js/main.810c448b.chunk.js"
+  ]
+}

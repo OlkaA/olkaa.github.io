@@ -1,0 +1,30 @@
+
+.elevator{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.floor{
+    border: 1px solid white;
+    border-radius: 2px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.floor:hover {
+    outline: 2px solid white;
+}
+  
+.floor--active {
+    outline: 2px solid white;
+    background: lightgreen;
+    transition: border-bottom .5s ease-in-out;
+}
+
+.infinite{
+    background: lightgrey;
+}
+.stop {
+    background: lightcoral;
+}
