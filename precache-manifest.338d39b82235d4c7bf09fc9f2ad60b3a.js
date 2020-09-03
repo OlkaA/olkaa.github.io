@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c3c5e29e0b1c7606dff3c7fb5c0f2a7e",
+    "revision": "5cafce6e06cb94ac5b1e98a085f7254c",
     "url": "/projects/ocean/build/index.html"
   },
   {
-    "revision": "39404e299b5b9fd372db",
+    "revision": "80ab952131a88c62074b",
     "url": "/projects/ocean/build/static/css/main.c3ac2812.chunk.css"
   },
   {
-    "revision": "fba5cea16a5bea4e0110",
-    "url": "/projects/ocean/build/static/js/2.5b93b4ba.chunk.js"
+    "revision": "c002537b98dcbf110322",
+    "url": "/projects/ocean/build/static/js/2.fed8c795.chunk.js"
   },
   {
-    "revision": "928d7b5eb39d16fe9a880722c974b51e",
-    "url": "/projects/ocean/build/static/js/2.5b93b4ba.chunk.js.LICENSE.txt"
+    "revision": "99bd0487192ec9e7d9ee8fbbd91ee444",
+    "url": "/projects/ocean/build/static/js/2.fed8c795.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "39404e299b5b9fd372db",
-    "url": "/projects/ocean/build/static/js/main.47149ef6.chunk.js"
+    "revision": "80ab952131a88c62074b",
+    "url": "/projects/ocean/build/static/js/main.d8107e15.chunk.js"
   },
   {
     "revision": "b46b53ff6e83935dc6e5",
