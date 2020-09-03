@@ -14,6 +14,7 @@ body {
   font: 10px "Lato";
   background-color: #fff;
   position: relative;
+  font-family: 'Lato', sans-serif;
 }
 
 @media screen and (max-width: 500px) {
@@ -30,10 +31,16 @@ h1 {
   font-size: 2rem;
 }
 
-h2 {
+article {
   font-size: 2rem;
   text-transform: uppercase;
   padding: 3rem 0;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .arrow-button {
@@ -269,7 +276,7 @@ h2 {
   min-height: 100vh;
 }
 
-.wrapper .projects ul.js {
+.wrapper .projects ul.js-projects {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -281,23 +288,86 @@ h2 {
       justify-content: space-around;
 }
 
-.wrapper .projects ul.js li {
+.wrapper .projects ul.js-projects li {
+  cursor: pointer;
   width: 100%;
   max-width: 400px;
   height: 200px;
-  outline: 1px solid rgba(0, 0, 0, 0.4);
   margin-bottom: 20px;
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
+  -webkit-perspective: 150rem;
+          perspective: 150rem;
+}
+
+.wrapper .projects ul.js-projects li.temp {
+  overflow: hidden;
+  outline: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.wrapper .projects ul.js-projects li .card {
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  outline: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.wrapper .projects ul.js-projects li:hover .card {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.wrapper .projects ul.js-projects li .card-front, .wrapper .projects ul.js-projects li .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   overflow: hidden;
 }
 
-.wrapper .projects ul.js li:hover {
-  -webkit-box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
-          box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
-  z-index: 1;
+.wrapper .projects ul.js-projects li .card-back {
+  padding: 15px 40px;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(227, 27, 109, 0.6)), to(rgba(227, 27, 109, 0.08)));
+  background-image: linear-gradient(to right bottom, rgba(227, 27, 109, 0.6), rgba(227, 27, 109, 0.08));
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.wrapper .projects ul.js-projects li .card-back h2, .wrapper .projects ul.js-projects li .card-back h3, .wrapper .projects ul.js-projects li .card-back a {
+  color: #fff;
+  font-weight: bold;
+}
+
+.wrapper .projects ul.js-projects li .card-back h2 {
+  font-size: 20px;
+}
+
+.wrapper .projects ul.js-projects li .card-back h3, .wrapper .projects ul.js-projects li .card-back a {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.wrapper .projects ul.js-projects li .card-back a {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 5px 20px;
+  display: block;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border: solid 1px #fff;
+  text-align: center;
+}
+
+.wrapper .projects ul.js-projects li .card-back a:hover {
+  -webkit-transition: background-color, opacity 0.2s ease-out;
+  transition: background-color, opacity 0.2s ease-out;
+  background-color: #e31b6d;
+  opacity: 0.6;
 }
 
 .wrapper .projects ul.html {
