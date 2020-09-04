@@ -1,4 +1,4 @@
-## GitHub Users Search
+## CheckIn / CheckOut
 The project that helps to checkIn with picking up the time and Checkout user.
 
 ### Features
