@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Portfolio Olha Afanasieva</title>
+    <title>Olha Afanasieva Portfolio</title>
+    <link rel="shortcut icon" href="images/favicon.ico" />
     <link href="Style/Reset.css" type="text/css" rel="Stylesheet" />
     <link href="Style/Style.css" type="text/css" rel="Stylesheet" />
     <link href="Style/skin.css" type="text/css" rel="Stylesheet" />
@@ -16,38 +17,29 @@
 </head>
 
 <body>
-    <div class="wrapper-iframe" id="wrapperIframe">
-        <div>
-            <iframe name="previewIframe"></iframe>
-            <a class="wrapper-close-button" id="closeButton"><span></span></a>
-        </div>
-    </div>
-    <div class="wrapper">
-        <section id="about" class="about">
-            <nav>
-                <ul class="contact">
-                    <li><a href="mailto:afanasievaolja@gmail.com"><i class="material-icons">mail</i></a></li>
-                    <li><a href="tel:+4560567160"><i class="material-icons">phone</i></a> </li>
-                    <li><a href="https://linkedin.com/in/olha-afanasieva/" target="_blank"><i
-                                class="fa fa-linkedin"></i></a></li>
-                    <li><a href="https://github.com/OlkaA" target="_blank"><i class="fa fa-github"></i></i></a></li>
+    <header>
+        <section id="main">            
+            <nav class="section-navbar">
+                <ul>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a> </li>
                 </ul>
             </nav>
-            <div class="flex-center">
-                <p class="big">Hi. I am <span class="color"> Olha Afanasieva. </span></p>
-                <p class="small">I'm a front end developer living in Copenhagen, Danmark.<br />
-                    I have a passion to create web applications.<br />
-                    My technical skills include developing websites in popular technologies (HTML5,
-                    CSS3/SCSS, JS, jQuery, Bootstrap, Vuetify) and using software such as Visual Studio, Photoshop, Git.
-                    I'm also interested in the latest trends on new technologies and I include them into my
-                    projects (for example, popular frameworks Vue, React). <br />
-                    In me you will find a non-conflict person, easy to contact, who always tries to bring a
-                    positive mood.</p>
-                <a class="arrow-button" href="#projects">Go to projects<i class="material-icons">arrow_forward</i></a>
-            </div>
+            <div class="header-info">
+                <p class="big">Hi, I am Olha </p>
+                <p class="medium-small ">
+                    a Ukrainian<img src="images/ukraine_heart.png" alt="ukraine_heart" /> front end developer based in Copenhagen.
+                </p> 
+            </div>    
+            <div class="header-bottom">
+                <a class="goto-button" href="#projects">Go to projects</a>
+            </div>        
         </section>
+    </header>
+    <main>
         <section id="projects" class="projects">
-            <article>Projects</article>
+            <p class="medium title">Projects</p>
             <ul class="js-projects">   
                 <li>
                     <div class="card">
@@ -78,7 +70,7 @@
                 <li>
                     <div class="card">
                         <div class="card-front">                            
-                            <img alt="pleo" src="images/react-pleo.png" />                      
+                            <img alt="pleo" src="images/main/react-pleo.png" />                      
                         </div>
                         <div class="card-back">
                             <h2>Expences</h2>
@@ -91,7 +83,7 @@
                 <li>
                     <div class="card">
                         <div class="card-front">                            
-                            <img alt="ecommerce" src="images/first-2.png" />                     
+                            <img alt="ecommerce" src="images/main/ecommerce.png" />                     
                         </div>
                         <div class="card-back">
                             <h2>E Commerce store</h2>
@@ -104,7 +96,7 @@
                 <li>
                     <div class="card">
                         <div class="card-front">                            
-                            <img alt="HTML24" src="images/first-3.png" />                   
+                            <img alt="HTML24" src="images/main/brown_rabbit.png" />                   
                         </div>
                         <div class="card-back">
                             <h2>Search with highlight, pagination</h2>
@@ -117,7 +109,7 @@
                 <li>
                     <div class="card">
                         <div class="card-front">                            
-                            <img alt="ocean test assignment" src="images/first-4.png" />                
+                            <img alt="ocean test assignment" src="images/main/slider.png" />                
                         </div>
                         <div class="card-back">
                             <h2>Slider</h2>
@@ -130,7 +122,7 @@
                 <li>
                     <div class="card">
                         <div class="card-front">                            
-                            <img alt="zendesk test assignment" src="images/first-5.png" />                   
+                            <img alt="zendesk test assignment" src="images/main/elevator.png" />                   
                         </div>
                         <div class="card-back">
                             <h2>Elevator</h2>
@@ -236,11 +228,42 @@
                     </a>
                 </li>
             </ul> -->
-        </section>
-        <footer class="flex-center">
-            <a class="arrow-button button-to-the-top" href="#about">To the top<i class="material-icons">arrow_upward</i></a>
-        </footer>
-    </div>
+            <!-- <div class="flex-center">
+                <a class="arrow-button button-to-the-top" href="#about">To the top<i class="material-icons">arrow_upward</i></a>
+            </div> -->
+        </section>        
+    </main>
+    <section id="about"  >
+        <p class="medium title">About me</p>
+        <div class="about">
+            <img src="images/Olha.jpg" alt="me" />
+            <p class="medium-small">
+                I have a passion to create web applications.<br />
+                My technical skills include developing websites in popular technologies (HTML5,
+                CSS3/SCSS, JS, jQuery, Bootstrap, Vuetify) and using software such as Visual Studio, Photoshop, Git.
+                I'm also interested in the latest trends on new technologies and I include them into my
+                projects (for example, popular frameworks Vue, React). <br />
+            </p>
+        </div>  
+    </section>
+    <section id="contact" class="contact">
+        <p class="medium title">Get In Touch</p>
+        <p class="medium-small" >
+            If you wanna get in touch, talk to me about a project collaboration or 
+            hire me, send me an email to <span class="lowercase">afanasievaolja@gmail.com</span> and let's talk.
+        </p>
+        <nav class="contacts">
+            <ul>                    
+                <li><a href="mailto:afanasievaolja@gmail.com"><i class="material-icons">mail</i></a></li>
+                <li><a href="https://linkedin.com/in/olha-afanasieva/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/OlkaA" target="_blank" target="_blank"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://www.facebook.com/olya.kondrykina.3" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <!-- <li><a href="https://twitter.com/Kondrykina"><i class="fa fa-twitter"></i></a></li> -->
+            </ul>
+        </nav>
+        
+    </section>  
+    <footer>Made by Olha Afanasieva, 2020</footer>
 </body>
 
 </html>
