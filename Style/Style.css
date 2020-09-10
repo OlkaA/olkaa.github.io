@@ -327,6 +327,9 @@ ul.js-projects li .card-back a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .about img {
@@ -346,6 +349,7 @@ ul.js-projects li .card-back a:hover {
 .about p {
   text-align: right;
   padding-left: 53px;
+  max-width: 800px;
 }
 
 @media screen and (max-width: 1000px) {
