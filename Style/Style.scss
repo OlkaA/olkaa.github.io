@@ -1,13 +1,7 @@
-$main-text-color: #000;
-$hover-color: grey;
-$second-color: #fff;
-$main-background: #bcd5de;
-$highlight-color: #e31b6d;
 $color-0: #FFECCC;
 $color-1: #fffcf6;
 $color-2: #B17D36;
 $color-3: #784C00;
-$color-4: #aa4a30;
 
 $size-big: 3rem;
 $size-medium: 2rem;
@@ -24,7 +18,6 @@ $xl: 1550px;
   box-sizing: border-box;
   text-transform: uppercase;
 }
-
 
 html {
   scroll-behavior: smooth;
@@ -241,7 +234,7 @@ ul.js-projects {
       transform: rotateY(180deg);
 
       h2, h3, a {
-        color: $second-color;
+        color: $color-1;
         font-weight: bold;
       }
       h2{
@@ -259,7 +252,7 @@ ul.js-projects {
         padding: 8px 20px;
         display: block;
         transition: all .2s;
-        border: solid 1px $second-color;
+        border: solid 1px $color-1;
         text-align: center;
 
         &:hover{
@@ -355,7 +348,6 @@ ul.js-projects {
   
         &:hover {
           box-shadow: inset 0 0 0 2em $color-3;
-          // background-color: $color-3;
           a i {
             color: $color-1;              
           }

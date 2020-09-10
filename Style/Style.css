@@ -280,7 +280,7 @@ ul.js-projects li .card-back {
 }
 
 ul.js-projects li .card-back h2, ul.js-projects li .card-back h3, ul.js-projects li .card-back a {
-  color: #fff;
+  color: #fffcf6;
   font-weight: bold;
 }
 
@@ -301,7 +301,7 @@ ul.js-projects li .card-back a {
   display: block;
   -webkit-transition: all .2s;
   transition: all .2s;
-  border: solid 1px #fff;
+  border: solid 1px #fffcf6;
   text-align: center;
 }
 
