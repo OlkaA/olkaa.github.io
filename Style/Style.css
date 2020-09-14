@@ -148,7 +148,7 @@ header nav.section-navbar ul li:first-child {
 }
 
 header .header-info {
-  margin-top: 5rem;
+  min-height: 500px;
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
           flex-grow: 2;
