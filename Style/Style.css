@@ -3,7 +3,6 @@
 *::before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  text-transform: uppercase;
 }
 
 html {
@@ -12,10 +11,10 @@ html {
 
 body {
   min-height: 100%;
-  background-color: #fffcf6;
+  background-color: #ffffff;
   position: relative;
   font-family: 'Lato', sans-serif;
-  color: #784C00;
+  color: #436970;
   line-height: 50px;
 }
 
@@ -33,12 +32,15 @@ a, a:visited {
   padding: 10px 20px;
 }
 
+strong {
+  font-weight: bold;
+}
+
 h1 {
   font-size: 2rem;
 }
 
 p {
-  text-transform: uppercase;
   margin: 1rem;
 }
 
@@ -58,14 +60,12 @@ p.small {
   font-size: 1rem;
 }
 
-.title {
-  margin: 8rem 0;
+p.xxl {
+  font-size: 4rem;
 }
 
-@media screen and (max-width: 500px) {
-  .title {
-    margin: 4rem 0 1rem;
-  }
+.title {
+  margin: 3rem 0;
 }
 
 .lowercase {
@@ -73,8 +73,6 @@ p.small {
 }
 
 section {
-  min-height: 100vh;
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -87,20 +85,23 @@ section {
           align-items: center;
 }
 
-header nav.section-navbar {
+nav.section-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  padding-top: 2rem;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  margin-right: 2rem;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 1rem 0;
+  margin-right: 1rem;
+  background-color: #ffe6c9;
+  z-index: 1;
 }
 
-header nav.section-navbar ul {
+nav.section-navbar ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -112,83 +113,147 @@ header nav.section-navbar ul {
           align-items: flex-start;
 }
 
-header nav.section-navbar ul li {
-  margin-left: 1rem;
+nav.section-navbar ul li {
+  margin-right: 1rem;
 }
 
-header nav.section-navbar ul li a, header nav.section-navbar ul li a:visited {
-  color: #784C00;
+nav.section-navbar ul li a, nav.section-navbar ul li a:visited {
+  color: #436970;
   font-size: 1rem;
   cursor: pointer;
-  border: 1px solid #784C00;
+  border: 1px solid #436970;
   border-radius: 0;
   padding: 10px 20px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
-header nav.section-navbar ul li:hover a {
+nav.section-navbar ul li:hover a {
   color: #fffcf6;
-  background-color: #784C00;
-  -webkit-box-shadow: inset 6.5em 0 0 0 #784C00;
-          box-shadow: inset 6.5em 0 0 0 #784C00;
+  background-color: #436970;
+  -webkit-box-shadow: inset 6.5em 0 0 0 #436970;
+          box-shadow: inset 6.5em 0 0 0 #436970;
 }
 
-header nav.section-navbar ul li:first-child {
+nav.section-navbar ul li:first-child {
   margin-left: 0;
 }
 
 @media screen and (max-width: 500px) {
-  header nav.section-navbar {
+  nav.section-navbar {
     margin-right: 0;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    top: unset;
+    bottom: 0;
+    background-color: #ffffff;
   }
 }
 
+nav.sticky-nav-bar {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 8px 24px rgba(0, 0, 0, 0.13);
+          box-shadow: 0 8px 24px rgba(0, 0, 0, 0.13);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+header {
+  background-color: #ffe6c9;
+  padding-top: 200px;
+}
+
 header .header-info {
-  min-height: 500px;
-  -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
   overflow: hidden;
+  min-height: 55vh;
   width: 100%;
   text-align: center;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  background-image: url("../images/activity-olha600-300.png");
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: 600px 300px;
 }
 
-header .header-info p.big {
+header .header-info p.slide-left {
   -webkit-animation: 0.7s slide-left ease-out;
           animation: 0.7s slide-left ease-out;
+  text-transform: uppercase;
 }
 
-header .header-info p.medium-small {
+header .header-info p.slide-right {
   -webkit-animation: 0.7s slide-right ease-out;
           animation: 0.7s slide-right ease-out;
+  margin: 3rem;
 }
 
-header .header-info p.medium-small img {
-  height: 1rem;
+header .header-info p.slide-right img {
+  height: 1.5rem;
   margin: 0 3px;
 }
 
 @media screen and (max-width: 500px) {
-  header .header-info {
-    background-image: url("../images/activity-olha300-150.png");
-    background-size: 300px 150px;
+  header .header-info p.slide-left {
+    margin: 5rem 0;
+    font-size: 3rem;
+  }
+}
+
+header .about {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 4rem;
+}
+
+header .about img {
+  max-width: 280px;
+  max-height: 280px;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  margin-left: 4rem;
+}
+
+header .about p {
+  text-align: end;
+}
+
+header .about p strong {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1250px) {
+  header .about {
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  header .about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 2rem;
+  }
+  header .about img {
+    margin-left: 0;
+  }
+  header .about p {
+    text-align: center;
+    padding-left: 0;
   }
 }
 
 header .header-bottom {
-  background-color: #B17D36;
-  background: -webkit-gradient(linear, left top, right top, from(#784c00), color-stop(50%, #b17d36), to(#784c00));
-  background: linear-gradient(90deg, #784c00 0%, #b17d36 50%, #784c00 100%);
+  background-color: #91AA93;
+  background: #ffe6c9;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -204,19 +269,10 @@ header .header-bottom {
           flex-grow: 1;
 }
 
-.goto-button {
-  display: inline-block;
-  font-size: 2rem;
-  color: #784C00;
-  background-color: #fffcf6;
-  padding: 1rem 2rem;
-}
-
-.goto-button:hover {
-  -webkit-animation: pulse 1s;
-          animation: pulse 1s;
-  -webkit-box-shadow: 0 0 0 1rem rgba(120, 76, 0, 0);
-          box-shadow: 0 0 0 1rem rgba(120, 76, 0, 0);
+@media screen and (max-width: 500px) {
+  header {
+    padding-top: 0;
+  }
 }
 
 ul.js-projects {
@@ -232,13 +288,14 @@ ul.js-projects {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 2rem 0;
 }
 
 ul.js-projects li {
   cursor: pointer;
   width: 100%;
-  max-width: 400px;
-  height: 200px;
+  max-width: 300px;
+  height: 500px;
   margin: 40px;
   -webkit-perspective: 150rem;
           perspective: 150rem;
@@ -254,7 +311,8 @@ ul.js-projects li .card {
   position: relative;
   width: 100%;
   height: 100%;
-  outline: 1px solid #B17D36;
+  -webkit-box-shadow: rgba(12, 18, 138, 0.15) 0px 13px 26px 0px;
+          box-shadow: rgba(12, 18, 138, 0.15) 0px 13px 26px 0px;
 }
 
 ul.js-projects li:hover .card {
@@ -273,24 +331,42 @@ ul.js-projects li .card-front, ul.js-projects li .card-back {
 
 ul.js-projects li .card-back {
   padding: 15px 40px;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#b17d36), to(rgba(177, 125, 54, 0.1)));
-  background-image: linear-gradient(to right bottom, #b17d36, rgba(177, 125, 54, 0.1));
+  background: #ffe6c9;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 ul.js-projects li .card-back h2, ul.js-projects li .card-back h3, ul.js-projects li .card-back a {
-  color: #fffcf6;
+  color: #436970;
   font-weight: bold;
+  text-align: center;
 }
 
 ul.js-projects li .card-back h2 {
-  font-size: 20px;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+ul.js-projects li .card-back h3 {
+  padding: 1rem 0;
+  line-height: 1.5rem;
 }
 
 ul.js-projects li .card-back h3, ul.js-projects li .card-back a {
-  margin-top: 10px;
-  font-size: 16px;
+  margin-top: 1rem;
+  font-size: 1rem;
 }
 
 ul.js-projects li .card-back a {
@@ -301,15 +377,14 @@ ul.js-projects li .card-back a {
   display: block;
   -webkit-transition: all .2s;
   transition: all .2s;
-  border: solid 1px #fffcf6;
+  border: solid 1px #436970;
   text-align: center;
 }
 
 ul.js-projects li .card-back a:hover {
   -webkit-transition: background-color, opacity 0.2s ease-out;
   transition: background-color, opacity 0.2s ease-out;
-  background-color: #784C00;
-  opacity: 0.6;
+  background-color: #fffcf6;
 }
 
 @media screen and (max-width: 500px) {
@@ -318,63 +393,17 @@ ul.js-projects li .card-back a:hover {
   }
 }
 
-.about {
-  width: 80%;
+.contact {
+  padding: 0 30% 2rem;
+  text-align: center;
+  background: #ffe6c9;
+  color: #436970;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.about img {
-  max-width: 400px;
-  max-height: 400px;
-  border-radius: 10% 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-@media screen and (max-width: 1550px) {
-  .about img {
-    border-radius: 50%;
-  }
-}
-
-.about p {
-  text-align: right;
-  padding-left: 53px;
-  max-width: 800px;
-}
-
-@media screen and (max-width: 1000px) {
-  .about {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .about p {
-    text-align: center;
-    padding-left: 0;
-  }
-}
-
-.contact {
-  min-height: calc(100vh - 80px);
-  padding: 0 30% 2rem;
-  text-align: center;
-  background: -webkit-gradient(linear, left top, right top, from(#784c00), color-stop(50%, #b17d36), to(#784c00));
-  background: linear-gradient(90deg, #784c00 0%, #b17d36 50%, #784c00 100%);
-  color: #fffcf6;
 }
 
 .contact nav.contacts {
@@ -418,6 +447,10 @@ ul.js-projects li .card-back a:hover {
   transition: 0.25s;
 }
 
+.contact nav.contacts ul li:first-child {
+  margin-left: 0;
+}
+
 .contact nav.contacts ul li a {
   text-decoration: none;
   cursor: pointer;
@@ -426,22 +459,28 @@ ul.js-projects li .card-back a:hover {
 .contact nav.contacts ul li a i.material-icons, .contact nav.contacts ul li a i.fa {
   font-size: 2rem;
   vertical-align: middle;
-  color: #784C00;
+  color: #436970;
 }
 
 .contact nav.contacts ul li:hover {
-  -webkit-box-shadow: inset 0 0 0 2em #784C00;
-          box-shadow: inset 0 0 0 2em #784C00;
+  -webkit-box-shadow: inset 0 0 0 2em #436970;
+          box-shadow: inset 0 0 0 2em #436970;
 }
 
 .contact nav.contacts ul li:hover a i {
   color: #fffcf6;
 }
 
+@media screen and (max-width: 500px) {
+  .contact {
+    padding: 0 2rem 2rem;
+  }
+}
+
 footer {
   padding: 15px;
-  background-color: #784C00;
-  color: #B17D36;
+  background-color: #436970;
+  color: #fffcf6;
   text-align: center;
 }
 
@@ -519,15 +558,15 @@ footer {
 
 @-webkit-keyframes pulse {
   0% {
-    -webkit-box-shadow: 0 0 0 0 #784C00;
-            box-shadow: 0 0 0 0 #784C00;
+    -webkit-box-shadow: 0 0 0 0 #436970;
+            box-shadow: 0 0 0 0 #436970;
   }
 }
 
 @keyframes pulse {
   0% {
-    -webkit-box-shadow: 0 0 0 0 #784C00;
-            box-shadow: 0 0 0 0 #784C00;
+    -webkit-box-shadow: 0 0 0 0 #436970;
+            box-shadow: 0 0 0 0 #436970;
   }
 }
 /*# sourceMappingURL=Style.css.map */
