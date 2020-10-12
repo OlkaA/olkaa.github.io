@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAA;EACN,OAAO,EAAE,UAAU;CAMtB;;AAPD,AAGI,UAHM,CAGN,QAAQ,CAAA;EACJ,KAAK,EAAE,OAAO;EACd,UAAU,EAAE,MAAM;CACrB",
+    "sources": [
+        "slideOne.scss"
+    ],
+    "names": [],
+    "file": "slideOne.css"
+}

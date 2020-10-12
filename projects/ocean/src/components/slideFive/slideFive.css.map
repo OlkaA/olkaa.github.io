@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,WAAW,CAAA;EACP,UAAU,EAAE,kKAAkK;CACjL",
+    "sources": [
+        "slideFive.scss"
+    ],
+    "names": [],
+    "file": "slideFive.css"
+}
