@@ -20,7 +20,7 @@ theme.typography.h3 = {
 
 export default function App() {
   return (
-    <Router basename="/dhi1/#">
+    <Router basename="/projects/dhi/build/#">
       <ThemeProvider theme={theme}>
         <Grid container justify="center">
           <Grid item xs={12} sm={8} md={6}>
