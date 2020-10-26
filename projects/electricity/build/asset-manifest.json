@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/projects/electricity/build/static/css/main.d8feec61.chunk.css",
+    "main.js": "/projects/electricity/build/static/js/main.cc12ffe2.chunk.js",
+    "main.js.map": "/projects/electricity/build/static/js/main.cc12ffe2.chunk.js.map",
+    "runtime-main.js": "/projects/electricity/build/static/js/runtime-main.99c86c3f.js",
+    "runtime-main.js.map": "/projects/electricity/build/static/js/runtime-main.99c86c3f.js.map",
+    "static/js/2.8a6a0474.chunk.js": "/projects/electricity/build/static/js/2.8a6a0474.chunk.js",
+    "static/js/2.8a6a0474.chunk.js.map": "/projects/electricity/build/static/js/2.8a6a0474.chunk.js.map",
+    "static/js/3.20d32204.chunk.js": "/projects/electricity/build/static/js/3.20d32204.chunk.js",
+    "static/js/3.20d32204.chunk.js.map": "/projects/electricity/build/static/js/3.20d32204.chunk.js.map",
+    "index.html": "/projects/electricity/build/index.html",
+    "static/css/main.d8feec61.chunk.css.map": "/projects/electricity/build/static/css/main.d8feec61.chunk.css.map",
+    "static/js/2.8a6a0474.chunk.js.LICENSE.txt": "/projects/electricity/build/static/js/2.8a6a0474.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.99c86c3f.js",
+    "static/js/2.8a6a0474.chunk.js",
+    "static/css/main.d8feec61.chunk.css",
+    "static/js/main.cc12ffe2.chunk.js"
+  ]
+}
