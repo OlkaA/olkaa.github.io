@@ -1,0 +1,169 @@
+@import "./colors.scss";
+
+html {
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+}
+
+ul,
+h4,
+h6 {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+h4 {
+  margin: 30px 0 10px 0;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.main-box {
+  background-color: $color-light-grey;
+  border-top: 5px solid $color-grey;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    flex-wrap: wrap;
+
+    li {
+      flex-basis: 33.333333%;
+      height: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 5rem;
+      color: $color-white;
+    }
+  }
+
+  .button-box {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    button {
+      border: none;
+      width: 70%;
+      background-color: $color-blue-1;
+      border-radius: 5px;
+      border-bottom: 5px solid $color-blue-3;
+      padding: 10px 0;
+      margin-top: 20px;
+      color: $color-white;
+    }
+  }
+}
+
+.style-color-1 {
+  background-color: $color-blue-2;
+}
+
+.style-color-2 {
+  background-color: $color-blue-3;
+}
+
+.style-color-3 {
+  background-color: $color-blue-4;
+}
+
+.style-color-4 {
+  background-color: $color-grey;
+}
+
+h6 {
+  background-color: $color-light-grey;
+  padding: 15px 0 40px 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: $color-dark-grey;
+}
+
+@media only screen and (max-width: 375px) {
+  .wrapper {
+    width: 100%;
+
+    h4 {
+      background-color: $color-dark-grey;
+      color: $color-white;
+      padding: 10px 0;
+      margin: 0;
+    }
+
+    h6 {
+      background-color: $color-white;
+    }
+
+    .main-box {
+      flex-direction: column-reverse;
+      border: none;
+      background-color: $color-white;
+
+      .button-box {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+
+        button {
+          width: 30%;
+          padding: 20px 0;
+          margin-bottom: 20px;
+
+          &:first-child {
+            margin-right: 5px;
+          }
+        }
+      }
+
+      ul.number-box {
+        flex-direction: column;
+        align-self: center;
+        width: 90%;
+
+        li {
+          color: $color-black;
+          background-color: $color-light-grey;
+          flex-basis: 33.333333%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 1.5rem;
+          margin-bottom: 5px;
+          padding: 8px 0;
+        }
+      }
+    }
+  }
+
+  .style-color-1 {
+    border-left: 8px solid $color-blue-2;
+  }
+
+  .style-color-2 {
+    border-left: 8px solid $color-blue-3;
+  }
+
+  .style-color-3 {
+    border-left: 8px solid $color-blue-4;
+  }
+
+  .style-color-4 {
+    border-left: 8px solid $color-grey;
+  }
+}
